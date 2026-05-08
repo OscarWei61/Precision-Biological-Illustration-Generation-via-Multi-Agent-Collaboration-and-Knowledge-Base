@@ -1,0 +1,31 @@
+{
+  "query_id": "q04",
+  "domain": "human_anatomy",
+  "query": "Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve",
+  "reference": "2857.png",
+  "wall_time_s": 398.3,
+  "verifier_mode": "combined",
+  "mode": "flux_direct",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.2989,
+  "best_llm": 6.5,
+  "best_combined": 0.4745,
+  "passed": true,
+  "gen_time_s": 389.7,
+  "full_prompt": "Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve",
+  "clip_prompt": "human eye cross-section diagram, retina, lens, cornea, optic nerve, anatomical illustration, medical textbook, clean linework, white background, labeled anatomy, no text labels",
+  "t5_prompt": "A detailed cross-sectional anatomical illustration of the human eye showing all internal structures from front to back. The cornea is depicted as the clear dome-shaped anterior structure at the front. Behind it lies the aqueous humor filling the anterior chamber. The iris is shown as the colored muscular tissue surrounding the pupil, which appears as a dark central opening. The lens sits immediately behind the iris, depicted as a clear biconvex structure suspended by ciliary fibers. The vitreous humor fills the large posterior chamber as a translucent gel. The retina lines the inner posterior wall, shown as a layered tissue with the photoreceptor layer containing rods and cones closest to the back wall. The retinal pigment epithelium appears adjacent to the retina's outer surface. The choroid layer lies beneath the retina providing blood supply. The sclera forms the white outer fibrous coat of the eyeball. The optic nerve emerges from the back of the eye, depicted as a thick bundle of neural fibers. The fovea is shown as a slight depression on the retina at the posterior pole where vision is sharpest. All structures are rendered in anatomically accurate proportions with appropriate coloring: clear cornea and lens, red and orange tones for vascular tissues, white for sclera, pigmented retina, and the optic nerve in yellow and white. Scientific educational illustration style, white background, no labels, high detail medical diagram.",
+  "missing": [
+    "Lens (not distinctly shown as a separate transparent biconvex structure)",
+    "Vitreous humor/gel (not visually distinguished from other internal structures)",
+    "Fovea (not indicated on retina)",
+    "Aqueous humor (anterior chamber fluid not distinguished)",
+    "Ciliary body",
+    "Choroid layer",
+    "Clear anatomical boundaries between layers"
+  ]
+}

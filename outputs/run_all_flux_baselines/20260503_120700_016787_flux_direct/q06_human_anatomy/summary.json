@@ -1,0 +1,30 @@
+{
+  "query_id": "q06",
+  "domain": "human_anatomy",
+  "query": "Draw a labeled diagram of the human heart showing ventricles, atria and aorta",
+  "reference": "1382.png",
+  "wall_time_s": 405.2,
+  "verifier_mode": "combined",
+  "mode": "flux_direct",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.297,
+  "best_llm": 6.5,
+  "best_combined": 0.4735,
+  "passed": true,
+  "gen_time_s": 393.3,
+  "full_prompt": "Draw a labeled diagram of the human heart showing ventricles, atria and aorta",
+  "clip_prompt": "anatomical heart diagram, left ventricle, right ventricle, atria, aorta, medical illustration, cross-section view, clean linework, educational, white background, no text labels",
+  "t5_prompt": "An anatomical cross-section illustration of the human heart viewed from the anterior perspective, displaying the four chambers in their correct spatial positions with the right atrium positioned superiorly and laterally on the right side receiving blood from the superior and inferior vena cava, the right ventricle positioned inferiorly and anteriorly with thick muscular walls containing trabeculations, the left atrium positioned superiorly on the left side receiving oxygenated blood from the pulmonary veins, and the left ventricle positioned inferiorly and posteriorly with the thickest muscular wall suited for systemic circulation. The aorta is shown emerging from the left ventricle at the superior aspect curving upward and to the right as the ascending aorta before branching into the brachiocephalic, left common carotid, and left subclavian arteries. The pulmonary artery is visible branching from the right ventricle dividing into right and left pulmonary arteries. The four pulmonary veins are shown entering the left atrium, and the superior and inferior vena cava are shown entering the right atrium. The endocardium, myocardium, and epicardium layers are subtly differentiated by color shading. The valves including the tricuspid valve, pulmonary valve, mitral valve, and aortic valve are visible at their anatomical locations. Rendered as a medical textbook illustration with careful attention to anatomical accuracy, three-dimensional depth, white background, educational style, no text labels, professional medical illustration.",
+  "missing": [
+    "Septum (not visually distinct)",
+    "Heart valves (not visible)",
+    "Pulmonary veins",
+    "Superior vena cava",
+    "Inferior vena cava",
+    "Pulmonary trunk"
+  ]
+}

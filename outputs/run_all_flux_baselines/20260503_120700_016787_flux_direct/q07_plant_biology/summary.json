@@ -1,0 +1,29 @@
+{
+  "query_id": "q07",
+  "domain": "plant_biology",
+  "query": "Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil",
+  "reference": "1014.png",
+  "wall_time_s": 407.0,
+  "verifier_mode": "combined",
+  "mode": "flux_direct",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.2989,
+  "best_llm": 6.5,
+  "best_combined": 0.4745,
+  "passed": true,
+  "gen_time_s": 398.1,
+  "full_prompt": "Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil",
+  "clip_prompt": "flower diagram, petal, sepal, stamen, pistil, botanical illustration, cross-section, educational, clean linework, scientific diagram, white background, no labels, detailed structure",
+  "t5_prompt": "Create a scientific botanical diagram showing a complete flower structure in cross-sectional and frontal views against a clean white background. Display the outer protective sepals arranged in a ring formation, followed by the colorful petals positioned radially outward in the next layer. In the center, show the male reproductive organs including the stamens with their thin filaments supporting the pollen-producing anthers at the tips. Depict the female reproductive organ, the pistil, with its central ovary at the base containing developing ovules, a slender style extending upward, and the stigma at the apex positioned to receive pollen. Show the flower's attachment point where all parts connect to the receptacle and floral axis. Render the parts in natural botanical colors with the petals in vibrant hues, stamens in contrasting yellows and creams, and the pistil in soft greens and whites. Include both a side profile showing the layered arrangement of sepals, petals, stamens, and pistil from outside to inside, and a top-down view showing radial symmetry. Use clean botanical illustration style typical of educational textbooks with precise anatomical accuracy, crisp lines, and subtle shading to show three-dimensional form. Scientific educational diagram, no labels, no text, detailed flower anatomy.",
+  "missing": [
+    "sepals (not visually distinct)",
+    "stigma (not clearly identifiable)",
+    "style (not visible)",
+    "ovary (not visible)",
+    "clear anther distinction from filament"
+  ]
+}

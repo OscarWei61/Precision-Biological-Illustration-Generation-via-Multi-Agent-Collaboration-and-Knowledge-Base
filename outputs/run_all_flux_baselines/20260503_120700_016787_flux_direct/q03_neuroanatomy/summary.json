@@ -1,0 +1,31 @@
+{
+  "query_id": "q03",
+  "domain": "neuroanatomy",
+  "query": "Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath",
+  "reference": "2925.png",
+  "wall_time_s": 397.6,
+  "verifier_mode": "combined",
+  "mode": "flux_direct",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.306,
+  "best_llm": 4.5,
+  "best_combined": 0.378,
+  "passed": false,
+  "gen_time_s": 389.9,
+  "full_prompt": "Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath",
+  "clip_prompt": "neuron diagram, axon, dendrites, myelin sheath, scientific illustration, educational, clean linework, white background, biology textbook style, no text labels",
+  "t5_prompt": "A detailed scientific illustration of a complete neuron showing all major anatomical structures on a white background in an educational diagram style. The neuron cell body or soma is positioned centrally, containing the large round nucleus with a darker nucleolus visible inside. Extending outward from the soma are multiple branching dendrites with smaller dendritic spines along their length, showing how they receive signals from other neurons. The single long axon projects from the axon hillock and extends downward, wrapped in a myelin sheath that appears as segments of white insulation separated by small gaps called nodes of Ranvier where the axon membrane is exposed. The myelin sheath is formed by oligodendrocytes that wrap around the axon in multiple layers, and these wrappings are shown as concentric rings in cross-section views. At the terminal end of the axon are the axon terminals forming synaptic knobs that connect to other neurons. The entire structure is rendered with realistic biological coloring showing the gray cell body, the myelin sheath in lighter tones contrasting against exposed axon segments, and fine detail of the branching dendritic tree. This is a clean scientific textbook illustration with anatomical accuracy suitable for neuroscience education.",
+  "missing": [
+    "Myelin sheath",
+    "Nodes of Ranvier",
+    "Nucleus",
+    "Axon hillock",
+    "Schwann cells",
+    "Synaptic vesicles",
+    "Synaptic cleft"
+  ]
+}

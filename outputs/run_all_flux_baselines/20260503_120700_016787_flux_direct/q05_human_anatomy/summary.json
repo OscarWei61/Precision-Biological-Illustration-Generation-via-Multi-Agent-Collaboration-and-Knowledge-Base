@@ -1,0 +1,30 @@
+{
+  "query_id": "q05",
+  "domain": "human_anatomy",
+  "query": "Draw a labeled diagram of the human digestive system",
+  "reference": "1385.png",
+  "wall_time_s": 405.1,
+  "verifier_mode": "combined",
+  "mode": "flux_direct",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.3053,
+  "best_llm": 4.5,
+  "best_combined": 0.3776,
+  "passed": false,
+  "gen_time_s": 396.6,
+  "full_prompt": "Draw a labeled diagram of the human digestive system",
+  "clip_prompt": "scientific anatomical diagram, human digestive system, esophagus, stomach, small intestine, large intestine, liver, pancreas, educational illustration, cross-section view, clean linework, white background, biology textbook style, medical diagram, no text labels",
+  "t5_prompt": "A comprehensive anatomical illustration of the human digestive system shown in frontal view against a white background. Starting from the top, show the oral cavity with the tongue, teeth, and salivary glands, then the pharynx leading to the esophagus which descends through the thorax. The esophagus connects to the stomach positioned in the upper left abdominal region, showing its curved shape with the cardia, fundus, body, and pylorus regions. From the stomach, depict the small intestine consisting of the duodenum, jejunum, and ileum with their characteristic loops and folds, occupying the central and lower abdominal cavity. Show the large intestine or colon surrounding the small intestine, including the ascending colon on the right side, transverse colon across the top, descending colon on the left, and sigmoid colon leading to the rectum and anal canal. Include the accessory organs: the liver positioned in the upper right abdomen with a dark red-brown color, the gallbladder nestled beneath the liver shown in green, and the pancreas in pale yellow located behind the stomach. Show the appendix attached to the junction of small and large intestine. Include the mesentery supporting and suspending the intestines. Depict the path of food movement through peristalsis. Use color differentiation: stomach in lighter pink, small intestine in tan, large intestine in darker brown, liver in deep red-brown, pancreas in pale yellow, and gallbladder in green. Present as an educational scientific diagram with clear anatomical accuracy, textbook illustration style, no labels or text visible.",
+  "missing": [
+    "appendix",
+    "anus",
+    "clear anatomical labels/text (per requirements)",
+    "pharynx",
+    "duodenum distinction",
+    "salivary glands"
+  ]
+}
