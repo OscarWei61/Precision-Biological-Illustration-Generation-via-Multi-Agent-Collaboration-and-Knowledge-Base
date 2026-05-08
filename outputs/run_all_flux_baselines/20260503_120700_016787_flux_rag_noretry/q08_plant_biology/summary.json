@@ -1,0 +1,26 @@
+{
+  "query_id": "q08",
+  "domain": "plant_biology",
+  "query": "Draw a labeled diagram of a leaf showing blade, midrib, petiole and veins",
+  "reference": "1086.png",
+  "wall_time_s": 391.5,
+  "verifier_mode": "combined",
+  "mode": "flux_rag_noretry",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.3109,
+  "best_llm": 6.5,
+  "best_combined": 0.4804,
+  "passed": true,
+  "gen_time_s": 384.2,
+  "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a leaf, leaf margin with the edge of the blade, Stipules are small leaf-like appendages at the base of the petiole, midrib with the central vein running through the leaf, petiole with the stalk that attaches the leaf to the stem, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+  "clip_prompt": "scientific cross-section diagram, leaf anatomy, midrib, lateral veins, petiole, stipules, blade margin, vascular tissue, educational illustration, detailed botanical diagram, white background, biology textbook style, clean linework, no labels",
+  "t5_prompt": "A highly detailed scientific cross-section and surface view diagram of a complete leaf structure showing all botanical components and their spatial relationships. The illustration displays the petiole as a stalk-like structure connecting the leaf blade to the main stem, with stipules positioned as small leaf-like appendages flanking the base where the petiole attaches. The leaf blade extends from the petiole with clearly defined edges forming the leaf margin. The midrib runs prominently down the center of the leaf blade as the primary vein, serving as the main conduit for water and nutrient transport. Lateral veins branch systematically off from the midrib in a pinnate pattern, spreading toward the leaf margins and creating the characteristic vein network that distributes resources throughout the leaf tissue. The cross-sectional view shows the internal anatomical layers including the upper and lower epidermis, mesophyll tissue with palisade and spongy parenchyma cells, and the vascular bundles within the veins. Every structure is rendered with scientific accuracy showing proper proportions and biological function. The illustration uses a clean white background in an educational textbook style, presenting the anatomy in a precise, detailed manner without any text labels or annotations, suitable for botanical and biological education.",
+  "missing": [
+    "Stipules",
+    "Text labels (as required by query)"
+  ]
+}

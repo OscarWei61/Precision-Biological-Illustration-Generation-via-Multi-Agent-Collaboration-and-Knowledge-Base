@@ -1,0 +1,175 @@
+{
+  "query_id": "q02",
+  "domain": "cell_biology",
+  "query": "Draw a detailed cross-section of a mitochondria showing cristae and matrix",
+  "reference": "3288.png",
+  "wall_time_s": 1268.0,
+  "verifier_mode": "combined",
+  "params": {
+    "max_retries": 3,
+    "steps": 20,
+    "seed": 42
+  },
+  "backend": "flux",
+  "constraints": [
+    "Mitochondria have an outer membrane and a folded inner membrane",
+    "The inner membrane folds are called cristae, which increase surface area",
+    "The space between outer and inner membrane is the intermembrane space",
+    "The central fluid-filled region is called the matrix",
+    "Mitochondrial DNA is located in the matrix",
+    "ATP synthesis occurs along the inner membrane (cristae)",
+    "Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers"
+  ],
+  "retrieved": [
+    "Mitochondria have an outer membrane and a folded inner membrane",
+    "Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers",
+    "Mitochondrial DNA is located in the matrix",
+    "Mitochondria are the powerhouse of the cell, producing ATP via respiration",
+    "ATP synthesis occurs along the inner membrane (cristae)",
+    "The inner membrane folds are called cristae, which increase surface area",
+    "Lateral veins branch off the midrib and transport water and nutrients",
+    "Nodes of Ranvier are gaps in the myelin sheath"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 389.7,
+      "sas": 0.2532,
+      "clip_score": 0.2743,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of a mitochondria, Mitochondria with an outer membrane and a folded inner membrane, Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers, Mitochondrial DNA with located in the matrix, Mitochondria are the powerhouse of the cell, producing ATP via respiration, ATP synthesis occurs along the inner membrane (cristae), scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, mitochondria, outer membrane, inner membrane cristae, matrix, oval-shaped, ATP synthesis, white background, biology textbook illustration, detailed anatomical, educational, clean linework, no text, no labels",
+      "t5_prompt": "A detailed scientific cross-section diagram showing the complete internal architecture of a mitochondrion in textbook illustration style. The mitochondrion is depicted as an oval-shaped organelle with a smooth outer membrane forming the outer boundary. The inner membrane is extensively folded into numerous cristae that project into the interior space, creating a labyrinthine structure that maximizes surface area for ATP synthesis. The intermembrane space between the outer and inner membranes is shown as a thin compartment. The matrix fills the central region and contains circular mitochondrial DNA depicted as a coiled structure floating within the fluid interior. The electron transport chain complexes are embedded throughout the cristae membrane, shown as integral protein complexes involved in the oxidative phosphorylation process. The ATP synthase molecules are positioned along the inner membrane, illustrating their role in converting the proton gradient into ATP energy. Color coding distinguishes the different membrane components and the matrix space. The overall structure emphasizes how the folded inner membrane and its embedded proteins enable efficient ATP production through aerobic respiration. Educational scientific diagram style with detailed anatomical accuracy, rendered against a clean white background with no text labels or annotations, following standard molecular biology textbook illustration conventions.",
+      "image_file": "attempt_01_text2img_seed42.png",
+      "combined_score": 0.5016,
+      "improved": true,
+      "rollback": false,
+      "llm_score": 7.5,
+      "present_structures": [
+        "Outer membrane",
+        "Inner membrane",
+        "Cristae (folded inner membrane)",
+        "Matrix (central fluid region)",
+        "Intermembrane space",
+        "Oval/elongated shape",
+        "Multiple cristae folds"
+      ],
+      "missing_structures": [
+        "Mitochondrial DNA (nucleoid) - not visibly depicted",
+        "ATP synthase complexes - not explicitly shown on cristae"
+      ],
+      "improvement_suggestions": "Add a distinct nucleoid region in the matrix to represent mitochondrial DNA, and consider including small protein complexes or enzyme markers along the cristae to represent the electron transport chain and ATP synthase for enhanced biological accuracy.",
+      "refined_clip_for_next": "scientific cross-section diagram, mitochondria, mitochondrial DNA nucleoid, ATP synthase complexes, outer membrane, inner membrane cristae, matrix, oval-shaped, ATP synthesis, white background, biology textbook illustration, detailed anatomical, educational, clean linework, no text, no labels",
+      "refined_t5_for_next": "A detailed scientific cross-section diagram showing the complete internal architecture of a mitochondrion in textbook illustration style. The mitochondrion is depicted as an oval-shaped organelle with a smooth outer membrane forming the outer boundary. The inner membrane is extensively folded into numerous cristae that project into the interior space, creating a labyrinthine structure that maximizes surface area for ATP synthesis. The intermembrane space between the outer and inner membranes is shown as a thin compartment. The matrix fills the central region. A distinct mitochondrial DNA nucleoid is depicted as a coiled structure floating within the matrix. ATP synthase complexes are positioned along the inner membrane and cristae, illustrated as small mushroom-shaped protein complexes involved in converting the proton gradient into ATP energy. The electron transport chain complexes are embedded throughout the cristae membrane as integral protein structures. Color coding distinguishes the different membrane components and the matrix space.",
+      "refiner_changes": [
+        "Added 'mitochondrial DNA nucleoid' to CLIP prompt as explicit keyword",
+        "Added 'ATP synthase complexes' to CLIP prompt as explicit keyword",
+        "Added sentence to T5 describing distinct mitochondrial DNA nucleoid in matrix",
+        "Added sentence to T5 describing ATP synthase complexes positioned on inner membrane and cristae",
+        "Enhanced T5 description of electron transport chain complexes as visible protein structures"
+      ],
+      "next_strength": 0.28,
+      "next_gen_mode": "img2img"
+    },
+    {
+      "attempt": 2,
+      "seed": 42,
+      "mode": "img2img_str0.28",
+      "gen_time_s": 417.9,
+      "sas": 0.2491,
+      "clip_score": 0.2698,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of a mitochondria, Mitochondria with an outer membrane and a folded inner membrane, Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers, Mitochondrial DNA with located in the matrix, Mitochondria are the powerhouse of the cell, producing ATP via respiration, ATP synthesis occurs along the inner membrane (cristae), scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, mitochondria, mitochondrial DNA nucleoid, ATP synthase complexes, outer membrane, inner membrane cristae, matrix, oval-shaped, ATP synthesis, white background, biology textbook illustration, detailed anatomical, educational, clean linework, no text, no labels",
+      "t5_prompt": "A detailed scientific cross-section diagram showing the complete internal architecture of a mitochondrion in textbook illustration style. The mitochondrion is depicted as an oval-shaped organelle with a smooth outer membrane forming the outer boundary. The inner membrane is extensively folded into numerous cristae that project into the interior space, creating a labyrinthine structure that maximizes surface area for ATP synthesis. The intermembrane space between the outer and inner membranes is shown as a thin compartment. The matrix fills the central region. A distinct mitochondrial DNA nucleoid is depicted as a coiled structure floating within the matrix. ATP synthase complexes are positioned along the inner membrane and cristae, illustrated as small mushroom-shaped protein complexes involved in converting the proton gradient into ATP energy. The electron transport chain complexes are embedded throughout the cristae membrane as integral protein structures. Color coding distinguishes the different membrane components and the matrix space.",
+      "image_file": "attempt_02_img2img_str0.28_seed42.png",
+      "combined_score": 0.2245,
+      "improved": false,
+      "rollback": true,
+      "llm_score": 2.0,
+      "present_structures": [
+        "Outer membrane",
+        "Inner membrane",
+        "Central cavity (attempting matrix representation)"
+      ],
+      "missing_structures": [
+        "Cristae (inner membrane folds)",
+        "Intermembrane space",
+        "Mitochondrial DNA",
+        "Proper matrix fluid region",
+        "Correct oval morphology",
+        "ATP synthase complexes",
+        "Electron transport chain proteins"
+      ],
+      "improvement_suggestions": "This appears to be a cross-section of a bacterial cell or organelle with flagella, not a mitochondrion. Regenerate with a clear request for a mitochondrial cross-section showing prominent cristae as visible folds in the inner membrane, a distinct intermembrane space, and a well-defined matrix interior.",
+      "refined_clip_for_next": "mitochondrion cross-section, cristae folds, intermembrane space, matrix fluid, mitochondrial DNA, ATP synthase, electron transport chain, oval-shaped organelle, scientific diagram, white background, detailed anatomy, clean linework, no text, no labels",
+      "refined_t5_for_next": "A detailed scientific cross-section diagram of a mitochondrion showing clear internal architecture. The mitochondrion has an oval shape with a smooth outer membrane boundary. The inner membrane is prominently folded into visible cristae projections that extend into the interior, creating extensive surface area. The intermembrane space is shown as a distinct thin compartment between the outer and inner membranes. The matrix occupies the central region as a fluid-filled space containing circular mitochondrial DNA depicted as coiled structures. ATP synthase complexes are embedded along the cristae membranes. Electron transport chain proteins are integrated throughout the inner membrane structures. All components are clearly distinguished in a clean, educational illustration style on a white background.",
+      "refiner_changes": [
+        "Added 'cristae folds' to CLIP prompt as critical distinguishing feature",
+        "Added 'intermembrane space' to CLIP prompt",
+        "Added 'matrix fluid' to CLIP prompt for clarity",
+        "Added 'mitochondrial DNA' to CLIP prompt",
+        "Added 'ATP synthase' and 'electron transport chain' to CLIP prompt",
+        "Reinforced 'oval-shaped organelle' in CLIP to prevent bacterial cell confusion",
+        "Expanded T5 with explicit sentence on cristae as inner membrane folds",
+        "Added dedicated T5 sentence on intermembrane space as distinct compartment",
+        "Added T5 description of mitochondrial DNA as coiled structures in matrix",
+        "Clarified matrix as fluid-filled central region in T5",
+        "Added T5 descriptions of ATP synthase and electron transport chain positioning",
+        "Removed excessive color-coding mention from T5 to focus on structural clarity"
+      ],
+      "next_strength": null,
+      "next_gen_mode": "text2img"
+    },
+    {
+      "attempt": 3,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 402.0,
+      "sas": 0.2378,
+      "clip_score": 0.2684,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of a mitochondria, Mitochondria with an outer membrane and a folded inner membrane, Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers, Mitochondrial DNA with located in the matrix, Mitochondria are the powerhouse of the cell, producing ATP via respiration, ATP synthesis occurs along the inner membrane (cristae), scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, mitochondria, outer membrane, cristae, inner membrane folds, matrix, mitochondrial DNA, oval-shaped organelle, ATP synthesis, white background, biology textbook illustration, detailed linework, educational diagram, no text, no labels",
+      "t5_prompt": "Create a detailed scientific cross-section diagram of a mitochondrion showing all internal structures and biological processes. The mitochondrion should be depicted as an oval-shaped organelle with a smooth outer membrane forming the perimeter. Inside, show the highly folded inner membrane creating cristae structures that extend into the interior space. The innermost compartment is the matrix, which should contain circular mitochondrial DNA molecules dispersed throughout. Illustrate the spatial relationship between these layers: the outer membrane, the intermembrane space between the outer and inner membranes, the inner membrane with its characteristic folds, and the matrix cavity. Color-code the structures to show their distinct compartments, with the outer membrane in one tone, the inner membrane folds in another, and the matrix space in a contrasting color. Include embedded protein complexes along the cristae membranes representing the electron transport chain and ATP synthase complexes where aerobic respiration occurs and ATP is produced. The diagram should emphasize the functional relationship between structure and the process of ATP synthesis through oxidative phosphorylation. Render this as an educational scientific illustration in textbook style with white background, no text labels, and accurate biological proportions and details.",
+      "image_file": "attempt_03_text2img_seed42.png",
+      "combined_score": 0.2189,
+      "improved": false,
+      "rollback": true,
+      "llm_score": 2.0,
+      "present_structures": [
+        "Outer membrane",
+        "Inner membrane",
+        "Matrix region",
+        "Oval/elliptical shape"
+      ],
+      "missing_structures": [
+        "Cristae (inner membrane folds)",
+        "Intermembrane space (clearly defined)",
+        "Mitochondrial DNA",
+        "Ribosomes in matrix",
+        "ATP synthase complexes on cristae",
+        "Proper proportional cristae folding"
+      ],
+      "improvement_suggestions": "This diagram appears to depict a cell or organelle other than a mitochondrion (possibly an auditory or sensory cell). Request a cross-sectional view of a single mitochondrion showing prominent cristae as deeply folded infoldings of the inner membrane, with visible ATP synthase particles along the cristae, mtDNA strands in the matrix, and clear separation of the intermembrane space."
+    }
+  ],
+  "best_clip": 0.2743,
+  "total_gen_time_s": 1209.6,
+  "attempts_used": 3,
+  "passed": false,
+  "fully_passed": false,
+  "final_missing": [
+    "Cristae (inner membrane folds)",
+    "Intermembrane space (clearly defined)",
+    "Mitochondrial DNA",
+    "Ribosomes in matrix",
+    "ATP synthase complexes on cristae",
+    "Proper proportional cristae folding"
+  ]
+}

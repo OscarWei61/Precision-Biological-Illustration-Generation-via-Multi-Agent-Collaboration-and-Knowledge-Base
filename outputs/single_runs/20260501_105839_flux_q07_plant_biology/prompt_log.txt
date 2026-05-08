@@ -1,0 +1,17 @@
+Query: Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil
+Constraints (7):
+  - A flower has petals that attract pollinators
+  - Sepals are leaf-like structures that protect the flower bud
+  - The stamen is the male reproductive organ consisting of anther and filament
+  - The anther produces pollen grains
+  - The pistil is the female reproductive organ consisting of stigma, style, and ovary
+  - The stigma traps pollen during pollination
+  - The ovary contains egg cells that develop into seeds after fertilization
+
+--- Attempt 1 (text2img) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the parts of a flower, Sepals are leaf-like structures that protect the flower bud, Stipules are small leaf-like appendages at the base of the petiole, stamen with the male reproductive organ consisting of anther and filament, pistil with the female reproductive organ consisting of stigma, style, and ovary, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: flower cross-section diagram, sepals, stamen, pistil, anther, filament, stigma, style, ovary, scientific illustration, educational, botanical, detailed linework, white background, biology textbook, no labels, no text
+T5 prompt:   A highly detailed scientific cross-section diagram showing the complete anatomical structure of a flower with all its reproductive and protective organs clearly visible. The outer sepals are depicted as green leaf-like protective structures surrounding the flower bud. Small stipules are shown as tiny leaf-like appendages positioned at the base where the petiole connects to the stem. The stamen, the male reproductive organ, is prominently displayed with elongated filaments supporting the anthers at their tips, where pollen is produced. The pistil, the female reproductive organ in the center, shows its three-part structure with the stigma at the apex designed to receive pollen, the style extending downward as a tubular connector, and the ovary at the base containing developing ovules. Individual plant cells are illustrated in magnified detail showing the rigid cellulose cell wall surrounding the cell membrane, demonstrating the cellular architecture that gives the flower its structural support. The spatial relationships between all floral parts are accurately represented, showing how the protective sepals enclose the reproductive structures, how the stamen surrounds the central pistil, and how all components connect through the receptacle. The illustration uses scientific educational textbook style with careful anatomical accuracy, presented as a clean educational diagram on a white background with no text labels or annotations.
+Gen time:    846.6s
+

@@ -1,0 +1,17 @@
+Query: Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil
+Constraints (7):
+  - A flower has petals that attract pollinators
+  - Sepals are leaf-like structures that protect the flower bud
+  - The stamen is the male reproductive organ consisting of anther and filament
+  - The anther produces pollen grains
+  - The pistil is the female reproductive organ consisting of stigma, style, and ovary
+  - The stigma traps pollen during pollination
+  - The ovary contains egg cells that develop into seeds after fertilization
+
+--- Attempt 1 (text2img) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of the parts of a flower, Sepals are leaf-like structures that protect the flower bud, Stipules are small leaf-like appendages at the base of the petiole, stamen with the male reproductive organ consisting of anther and filament, pistil with the female reproductive organ consisting of stigma, style, and ovary, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style
+CLIP prompt: scientific cross-section diagram, flower anatomy, sepals, stamens, pistil, anther, filament, stigma, style, ovary, plant cell, cell wall, cellulose, labeled parts, educational illustration, biology textbook, detailed linework, white background, accurate botanical diagram
+T5 prompt:   A highly detailed scientific cross-section diagram of a complete flower anatomy showing all reproductive and protective structures in educational textbook style on a white background. The illustration displays the outer sepals as protective leaf-like structures that guard the flower bud during development. At the flower's base, small stipules are shown as leaf-like appendages positioned at the base of the petiole where the stem connects. The stamen structures represent the male reproductive organs, each consisting of a filament which is the thin stalk that elevates the anther, and the anther which is the pollen-producing structure containing the male gametes. The pistil occupies the flower's center as the female reproductive organ, with the stigma at the apex as the receptive surface for pollen, the style as the elongated structure connecting stigma to ovary, and the ovary at the base containing the ovules that develop into seeds. The illustration includes a detailed inset showing plant cell anatomy with a rigid cellulose cell wall as the outer layer providing structural support, the cell membrane beneath the wall controlling substance passage, and internal organelles and cytoplasm. All anatomical parts are clearly labeled with leader lines pointing to their locations. The diagram employs scientific color coding and precise anatomical accuracy suitable for educational and botanical textbook reference, with careful attention to spatial relationships and biological function of each structure.
+Gen time:    368.2s
+

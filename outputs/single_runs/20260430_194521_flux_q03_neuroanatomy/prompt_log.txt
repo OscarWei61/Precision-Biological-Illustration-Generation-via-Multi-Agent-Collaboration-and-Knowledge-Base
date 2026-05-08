@@ -1,0 +1,17 @@
+Query: Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath
+Constraints (7):
+  - A neuron has a cell body (soma), dendrites, and an axon
+  - Dendrites receive signals from other neurons
+  - The axon transmits electrical signals away from the cell body
+  - The myelin sheath insulates the axon and speeds signal transmission
+  - Nodes of Ranvier are gaps in the myelin sheath
+  - Axon terminals release neurotransmitters into the synapse
+  - Schwann cells produce the myelin sheath in the peripheral nervous system
+
+--- Attempt 1 (text2img) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of a neuron, neuron with a cell body (soma), dendrites, and an axon, Dendrites receive signals from other neurons, The myelin sheath insulates the axon and speeds signal transmission, Schwann cells produce the myelin sheath in the peripheral nervous system, Axon terminals release neurotransmitters into the synapse, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style
+CLIP prompt: scientific cross-section diagram, neuron soma, dendrites, axon, myelin sheath, Schwann cells, axon terminals, synapse, neurotransmitters, labeled anatomical parts, educational illustration, detailed linework, white background, biology textbook style, accurate scientific diagram
+T5 prompt:   A detailed scientific cross-section diagram of a complete neuron showing all major anatomical components and their functions on a white background in textbook style. The neuron cell body, called the soma, is prominently displayed in the center containing the nucleus and cytoplasm. Multiple dendrites extend outward from the soma like branching trees, labeled with arrows indicating they receive electrical and chemical signals from other neurons at their synaptic terminals. A single long axon emerges from the axon hillock extending away from the soma, wrapped in segments of myelin sheath that appear as thick insulating bands of white material. The myelin sheath is produced by Schwann cells in the peripheral nervous system, with each Schwann cell wrapping around a section of the axon and labeled accordingly. The gaps between myelin segments are shown as the nodes of Ranvier where the axon membrane is exposed, allowing action potentials to jump along the axon for faster signal transmission. At the terminal end of the axon, the axon terminals branch into synaptic terminals shown in enlarged detail, displaying synaptic vesicles filled with neurotransmitters, the synaptic cleft gap between neurons, and receptor sites on the postsynaptic membrane. All anatomical structures are clearly labeled with leader lines and text. The illustration uses color coding to distinguish different cellular components and is rendered in a clean, precise scientific educational style suitable for neurology and biology textbooks.
+Gen time:    362.3s
+

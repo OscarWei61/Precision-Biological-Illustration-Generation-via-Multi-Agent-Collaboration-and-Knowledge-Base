@@ -1,0 +1,27 @@
+{
+  "query_id": "q10",
+  "domain": "zoology",
+  "query": "Draw a labeled diagram of an insect body showing head, thorax, abdomen and antennae",
+  "reference": "1191.png",
+  "wall_time_s": 406.1,
+  "verifier_mode": "combined",
+  "mode": "flux_direct",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.2858,
+  "best_llm": 7.5,
+  "best_combined": 0.5179,
+  "passed": true,
+  "gen_time_s": 397.8,
+  "full_prompt": "Draw a labeled diagram of an insect body showing head, thorax, abdomen and antennae",
+  "clip_prompt": "insect anatomy diagram, head thorax abdomen antennae, scientific illustration, educational, clean linework, white background, dorsal view, biological specimen, detailed structure, no text labels",
+  "t5_prompt": "A detailed anatomical illustration of an insect body shown in lateral profile view displaying the three main body regions: the head positioned anteriorly featuring large compound eyes, simple ocelli arranged in a triangle on the vertex, elongated segmented antennae extending upward and forward from between the eyes, and mouthparts including mandibles and maxillae below. The thorax forms the central muscular region divided into three segments: the prothorax bearing the first pair of legs, the mesothorax bearing the second pair of legs and anterior wings, and the metathorax bearing the third pair of legs and posterior wings when present. All six jointed legs display segmented structure with coxa, trochanter, femur, tibia, and tarsus. The abdomen extends posteriorly containing multiple visible segments with external segmentation visible through the exoskeleton, housing reproductive and digestive organs internally. The entire body is covered in chitinous exoskeleton showing natural iridescent coloring with darker thorax and lighter abdomen. White background scientific illustration style, textbook educational diagram format, cross-sectional clarity of body regions, no text labels or annotations, accurate biological proportions and segmentation visible throughout.",
+  "missing": [
+    "Wing detail (hindwings beneath elytra not visible)",
+    "Mouthparts clearly distinguished",
+    "Detailed leg segmentation (tarsi, tibia, femur)"
+  ]
+}

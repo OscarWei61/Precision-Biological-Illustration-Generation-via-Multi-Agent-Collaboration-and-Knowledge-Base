@@ -1,0 +1,52 @@
+{
+  "run_dir": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/single_runs/20260430_174454_flux_q04_human_anatomy",
+  "timestamp": "2026-04-30T17:51:19",
+  "wall_time_s": 381.7,
+  "verifier_mode": "clip",
+  "params": {
+    "max_retries": 3,
+    "steps": 20,
+    "seed": 42
+  },
+  "langsmith_enabled": false,
+  "backend": "flux",
+  "query": "Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve",
+  "constraints": [
+    "The cornea is the transparent front part of the eye that refracts light",
+    "The iris controls the size of the pupil",
+    "The lens focuses light onto the retina",
+    "The retina contains photoreceptor cells (rods and cones)",
+    "The optic nerve transmits signals from the retina to the brain",
+    "The fovea is the area of sharpest vision in the retina",
+    "The vitreous gel fills the space between the lens and retina"
+  ],
+  "retrieved": [
+    "The cornea is the transparent front part of the eye that refracts light",
+    "The retina contains photoreceptor cells (rods and cones)",
+    "The fovea is the area of sharpest vision in the retina",
+    "The optic nerve transmits signals from the retina to the brain",
+    "The lens focuses light onto the retina",
+    "The iris controls the size of the pupil",
+    "The vitreous gel fills the space between the lens and retina",
+    "The head contains compound eyes, antennae, and mouthparts"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 356.9,
+      "sas": 0.2882,
+      "clip_score": 0.2984,
+      "passed": true,
+      "violations": [],
+      "clip_prompt": "scientific cross-section diagram, human eye, cornea, retina, photoreceptor cells, rods cones, fovea, optic nerve, detailed anatomical illustration, educational textbook style, labeled parts, white background, biology diagram, accurate scientific rendering",
+      "t5_prompt": "A highly detailed scientific cross-section diagram of a human eye showing all major anatomical structures. The cornea is depicted as the transparent curved front part of the eye that refracts incoming light rays toward the lens. Behind the cornea, the aqueous humor fills the anterior chamber. The iris surrounds the pupil, which controls the amount of light entering the eye. The lens sits behind the iris and adjusts its shape for focusing light onto the retina. The vitreous humor fills the large chamber behind the lens, maintaining the eye's shape. The retina lines the back interior surface of the eye and contains photoreceptor cells including rods for low-light vision and cones for color vision and detail. The fovea is highlighted as a small specialized depression in the retina where cone cells are densely packed, providing the area of sharpest central vision and highest visual acuity. The optic nerve extends from the back of the eye at the optic disc, transmitting visual signals from photoreceptor cells through bipolar and ganglion cells to the brain. The sclera forms the white protective outer layer of the eye. Additional anatomical features include the choroid layer containing blood vessels that nourish the retina, the ciliary body controlling lens shape, and the macula surrounding the fovea. The entire diagram uses color coding to distinguish different tissue types and structures. All parts are clearly labeled with anatomical terminology. The illustration is rendered in scientific educational textbook style with precise anatomical accuracy on a clean white background.",
+      "image_file": "attempt_01_text2img_seed42.png"
+    }
+  ],
+  "best_clip": 0.2984,
+  "total_gen_time_s": 356.9,
+  "attempts_used": 1,
+  "passed": true
+}

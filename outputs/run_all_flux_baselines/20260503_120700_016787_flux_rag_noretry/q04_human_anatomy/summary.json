@@ -1,0 +1,28 @@
+{
+  "query_id": "q04",
+  "domain": "human_anatomy",
+  "query": "Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve",
+  "reference": "2857.png",
+  "wall_time_s": 405.2,
+  "verifier_mode": "combined",
+  "mode": "flux_rag_noretry",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.2942,
+  "best_llm": 6.5,
+  "best_combined": 0.4721,
+  "passed": true,
+  "gen_time_s": 397.0,
+  "full_prompt": "A highly detailed scientific cross-section diagram of a human eye, cornea with the transparent front part of the eye that refracts light, head with compound eyes, antennae, and mouthparts, retina with photoreceptor cells (rods and cones), fovea with the area of sharpest vision in the retina, The optic nerve transmits signals from the retina to the brain, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+  "clip_prompt": "scientific cross-section diagram, human eye, cornea, retina, photoreceptor cells, rods and cones, fovea, optic nerve, detailed anatomy, educational illustration, white background, biology textbook style, clean linework, no text",
+  "t5_prompt": "A highly detailed scientific cross-section diagram of a human eye showing all internal and external structures with accurate biological detail. The cornea is depicted as the transparent curved front surface that refracts incoming light rays. Behind the cornea lies the anterior chamber filled with clear aqueous humor. The iris is shown as the colored muscular diaphragm controlling pupil size for light regulation. The lens sits behind the iris, displaying its transparent biconvex shape for fine focus accommodation. The vitreous humor fills the large posterior chamber as a clear gel maintaining eye shape. The retina lines the back inner wall showing its layered structure with photoreceptor cells including rods for low-light vision distributed throughout, and cones concentrated in the central region for color vision and detail. The fovea is highlighted as the small depression in the retina at the macula representing the area of sharpest central vision with the highest concentration of cone cells. The optic nerve emerges from the optic disc at the back, shown as the thick bundle of nerve fibers transmitting visual signals to the brain. Additional structures include the sclera as the tough white outer fibrous layer, the choroid layer containing blood vessels supplying oxygen and nutrients, the ciliary body controlling lens accommodation, and the extraocular muscles positioned around the eye. All structures are shown in correct spatial relationships with appropriate color coding and semi-transparent layering to reveal internal anatomy. Scientific textbook educational illustration style, white background, no text labels, accurate detailed biology diagram.",
+  "missing": [
+    "fovea",
+    "pupil (not clearly distinguished)",
+    "ciliary body",
+    "aqueous humor chamber"
+  ]
+}

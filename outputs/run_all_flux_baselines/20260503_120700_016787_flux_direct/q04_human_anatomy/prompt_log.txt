@@ -1,0 +1,18 @@
+Mode:        flux_direct
+Query:       Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve
+Constraints (7):
+  - The cornea is the transparent front part of the eye that refracts light
+  - The iris controls the size of the pupil
+  - The lens focuses light onto the retina
+  - The retina contains photoreceptor cells (rods and cones)
+  - The optic nerve transmits signals from the retina to the brain
+  - The fovea is the area of sharpest vision in the retina
+  - The vitreous gel fills the space between the lens and retina
+
+--- Attempt 1 (text2img) ---
+Full prompt:  Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve
+CLIP prompt:  human eye cross-section diagram, retina, lens, cornea, optic nerve, anatomical illustration, medical textbook, clean linework, white background, labeled anatomy, no text labels
+T5 prompt:    A detailed cross-sectional anatomical illustration of the human eye showing all internal structures from front to back. The cornea is depicted as the clear dome-shaped anterior structure at the front. Behind it lies the aqueous humor filling the anterior chamber. The iris is shown as the colored muscular tissue surrounding the pupil, which appears as a dark central opening. The lens sits immediately behind the iris, depicted as a clear biconvex structure suspended by ciliary fibers. The vitreous humor fills the large posterior chamber as a translucent gel. The retina lines the inner posterior wall, shown as a layered tissue with the photoreceptor layer containing rods and cones closest to the back wall. The retinal pigment epithelium appears adjacent to the retina's outer surface. The choroid layer lies beneath the retina providing blood supply. The sclera forms the white outer fibrous coat of the eyeball. The optic nerve emerges from the back of the eye, depicted as a thick bundle of neural fibers. The fovea is shown as a slight depression on the retina at the posterior pole where vision is sharpest. All structures are rendered in anatomically accurate proportions with appropriate coloring: clear cornea and lens, red and orange tones for vascular tissues, white for sclera, pigmented retina, and the optic nerve in yellow and white. Scientific educational illustration style, white background, no labels, high detail medical diagram.
+Seed:         42
+Steps:        20
+Gen time:     389.7s

@@ -1,0 +1,18 @@
+Mode:        flux_direct
+Query:       Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath
+Constraints (7):
+  - A neuron has a cell body (soma), dendrites, and an axon
+  - Dendrites receive signals from other neurons
+  - The axon transmits electrical signals away from the cell body
+  - The myelin sheath insulates the axon and speeds signal transmission
+  - Nodes of Ranvier are gaps in the myelin sheath
+  - Axon terminals release neurotransmitters into the synapse
+  - Schwann cells produce the myelin sheath in the peripheral nervous system
+
+--- Attempt 1 (text2img) ---
+Full prompt:  Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath
+CLIP prompt:  neuron diagram, axon, dendrites, myelin sheath, scientific illustration, educational, clean linework, white background, biology textbook style, no text labels
+T5 prompt:    A detailed scientific illustration of a complete neuron showing all major anatomical structures on a white background in an educational diagram style. The neuron cell body or soma is positioned centrally, containing the large round nucleus with a darker nucleolus visible inside. Extending outward from the soma are multiple branching dendrites with smaller dendritic spines along their length, showing how they receive signals from other neurons. The single long axon projects from the axon hillock and extends downward, wrapped in a myelin sheath that appears as segments of white insulation separated by small gaps called nodes of Ranvier where the axon membrane is exposed. The myelin sheath is formed by oligodendrocytes that wrap around the axon in multiple layers, and these wrappings are shown as concentric rings in cross-section views. At the terminal end of the axon are the axon terminals forming synaptic knobs that connect to other neurons. The entire structure is rendered with realistic biological coloring showing the gray cell body, the myelin sheath in lighter tones contrasting against exposed axon segments, and fine detail of the branching dendritic tree. This is a clean scientific textbook illustration with anatomical accuracy suitable for neuroscience education.
+Seed:         42
+Steps:        20
+Gen time:     389.9s

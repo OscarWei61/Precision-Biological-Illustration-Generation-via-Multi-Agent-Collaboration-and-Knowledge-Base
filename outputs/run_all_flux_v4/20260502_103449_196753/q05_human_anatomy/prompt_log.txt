@@ -1,0 +1,37 @@
+Query: Draw a labeled diagram of the human digestive system
+Constraints (8):
+  - The digestive system begins at the mouth and ends at the anus
+  - The esophagus connects the mouth to the stomach
+  - The stomach uses acid and enzymes to break down food
+  - The liver produces bile to help digest fats
+  - The pancreas secretes digestive enzymes into the small intestine
+  - The small intestine absorbs nutrients
+  - The large intestine absorbs water and forms feces
+  - The appendix is a small pouch attached to the large intestine
+
+--- Attempt 1 (text2img) ---
+Seed:              42
+ControlNet scale:  0.70  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the human digestive system, The digestive system begins at the mouth and ends at the anus, abdomen with the digestive and reproductive organs, The pancreas secretes digestive enzymes into the small intestine, The esophagus connects the mouth to the stomach, The stomach uses acid and enzymes to break down food, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human digestive system, mouth, esophagus, stomach, small intestine, pancreas, large intestine, anus, anatomical illustration, educational, detailed linework, white background, biology textbook style, clean accurate rendering
+T5 prompt:   A highly detailed scientific cross-section illustration of the human digestive system showing the complete pathway from mouth through anus. The diagram displays the mouth cavity with tongue and salivary glands at the top, followed by the esophagus descending through the thorax as a muscular tube connecting to the stomach. The stomach is depicted as a large muscular organ with visible rugae and mucosal folds, positioned in the upper left abdomen beneath the diaphragm. The small intestine, consisting of the duodenum, jejunum, and ileum, is shown coiled throughout the lower abdomen with villi lining visible along its inner walls for nutrient absorption. The large intestine frames the small intestine, showing the ascending colon, transverse colon, descending colon, sigmoid colon, and rectum leading to the anus. The liver is positioned in the upper right abdomen with the gallbladder attached to its inferior surface. The pancreas is shown behind the stomach, with its duct visible entering the duodenum to secrete digestive enzymes. The stomach wall layers show the mucosa, submucosa, muscularis, and serosa. The small intestine wall demonstrates its columnar epithelium with microvilli for maximal absorption surface. All organs are shown in proper anatomical spatial relationships within the abdominal cavity. Scientific educational textbook style illustration, white background, accurate biology, no text, no labels, professional medical diagram.
+Gen time:    484.7s
+
+--- Attempt 2 (img2img_cn0.65_str0.75) ---
+Seed:              42
+ControlNet scale:  0.65  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the human digestive system, The digestive system begins at the mouth and ends at the anus, abdomen with the digestive and reproductive organs, The pancreas secretes digestive enzymes into the small intestine, The esophagus connects the mouth to the stomach, The stomach uses acid and enzymes to break down food, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human digestive system, mouth, esophagus, stomach, duodenum, small intestine, large intestine, appendix, anus, liver, pancreas, bile duct, anatomical illustration, educational, detailed linework, white background, biology textbook style, clean accurate rendering, distinct organ coloring, clear boundaries
+T5 prompt:   A highly detailed scientific cross-section illustration of the human digestive system showing the complete pathway from mouth through anus with distinct visual separation between all organs. The mouth and oral cavity are shown at the top with the tongue and salivary glands. The esophagus descends through the thorax as a muscular tube connecting to the stomach, depicted with visible rugae and mucosal folds in the upper left abdomen. The small intestine, including the duodenum, jejunum, and ileum, is shown coiled with visible villi for nutrient absorption. The large intestine frames the small intestine, displaying the ascending colon, transverse colon, descending colon, sigmoid colon, and rectum leading to the anus. The appendix is shown as a small tubular structure attached to the cecum. The liver is positioned in the upper right abdomen with the gallbladder attached to its inferior surface. The pancreas is shown behind the stomach. The bile duct is
+Strength:    0.75
+Gen time:    4772.0s
+
+--- Attempt 3 (img2img_cn0.65_str0.75) ---
+Seed:              42
+ControlNet scale:  0.65  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the human digestive system, The digestive system begins at the mouth and ends at the anus, abdomen with the digestive and reproductive organs, The pancreas secretes digestive enzymes into the small intestine, The esophagus connects the mouth to the stomach, The stomach uses acid and enzymes to break down food, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human digestive system, mouth, pharynx, esophagus, stomach, duodenum, small intestine, large intestine, colon, rectum, anus, appendix, liver, pancreas, bile ducts, anatomical illustration, educational, detailed linework, white background, biology textbook style, clean accurate rendering, distinct organ coloring
+T5 prompt:   A highly detailed scientific cross-section illustration of the human digestive system showing the complete pathway from mouth through anus with distinct visual separation between all organs. The mouth and oral cavity are shown at the top with the tongue and salivary glands. The pharynx connects the mouth to the esophagus, which descends through the thorax as a muscular tube. The stomach is depicted with visible rugae and mucosal folds in the upper left abdomen. The small intestine, including the duodenum, jejunum, and ileum, is shown coiled with visible villi for nutrient absorption. The large intestine frames the small intestine, displaying the ascending colon, transverse colon, descending colon, sigmoid colon, rectum, and anus. The appendix is shown as a small tubular structure attached to the cecum. The liver is positioned in the upper right abdomen with the gallbladder attached beneath it. The pancreas is shown behind the stomach. Bile ducts are
+Strength:    0.75
+Gen time:    3640.9s
+

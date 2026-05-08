@@ -1,0 +1,30 @@
+{
+  "query_id": "q03",
+  "domain": "neuroanatomy",
+  "query": "Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath",
+  "reference": "2925.png",
+  "wall_time_s": 408.6,
+  "verifier_mode": "combined",
+  "mode": "flux_rag_noretry",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.3065,
+  "best_llm": 2.5,
+  "best_combined": 0.2783,
+  "passed": false,
+  "gen_time_s": 399.4,
+  "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a neuron, neuron with a cell body (soma), dendrites, and an axon, Dendrites receive signals from other neurons, Nodes of Ranvier are gaps in the myelin sheath, The myelin sheath insulates the axon and speeds signal transmission, Schwann cells produce the myelin sheath in the peripheral nervous system, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+  "clip_prompt": "neuron cross-section diagram, soma, dendrites, axon, myelin sheath, nodes of Ranvier, Schwann cells, scientific illustration, educational textbook style, detailed anatomy, white background, clean linework, biology diagram, no text",
+  "t5_prompt": "A highly detailed scientific cross-section diagram of a complete neuron showing all major anatomical structures and their spatial relationships. The cell body or soma is prominently displayed in the center, containing the nucleus with visible nucleolus. Multiple dendrites extend from the soma in branching tree-like patterns, their surfaces covered with synaptic spines that receive signals from other neurons. A single axon emerges from the axon hillock region of the soma and extends outward, becoming progressively wrapped in myelin sheath layers. The myelin sheath consists of multiple concentric layers of lipid-rich insulation material produced by Schwann cells in the peripheral nervous system, with each Schwann cell wrapping around a segment of the axon. Regular gaps called Nodes of Ranvier interrupt the myelin sheath at intervals along the axon length, exposing the axon membrane where action potentials are regenerated to speed signal transmission. The axon terminal branches at its end into synaptic terminals containing synaptic vesicles filled with neurotransmitters. The diagram uses color differentiation to distinguish the soma in one color, dendrites in another, the axon in a third color, the myelin sheath in a contrasting shade, and the Nodes of Ranvier highlighted as gaps. The entire illustration is rendered in an educational, scientific textbook style with accurate biological proportions and precise structural detail, set against a clean white background with no text or labels visible.",
+  "missing": [
+    "Myelin sheath",
+    "Nodes of Ranvier",
+    "Axon terminals/synaptic endings",
+    "Schwann cells",
+    "Distinct axon hillock",
+    "Clear morphological differentiation between dendrites and axon"
+  ]
+}

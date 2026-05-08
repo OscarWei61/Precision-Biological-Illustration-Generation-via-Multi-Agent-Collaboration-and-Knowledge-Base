@@ -1,0 +1,18 @@
+Mode:        flux_direct
+Query:       Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil
+Constraints (7):
+  - A flower has petals that attract pollinators
+  - Sepals are leaf-like structures that protect the flower bud
+  - The stamen is the male reproductive organ consisting of anther and filament
+  - The anther produces pollen grains
+  - The pistil is the female reproductive organ consisting of stigma, style, and ovary
+  - The stigma traps pollen during pollination
+  - The ovary contains egg cells that develop into seeds after fertilization
+
+--- Attempt 1 (text2img) ---
+Full prompt:  Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil
+CLIP prompt:  flower diagram, petal, sepal, stamen, pistil, botanical illustration, cross-section, educational, clean linework, scientific diagram, white background, no labels, detailed structure
+T5 prompt:    Create a scientific botanical diagram showing a complete flower structure in cross-sectional and frontal views against a clean white background. Display the outer protective sepals arranged in a ring formation, followed by the colorful petals positioned radially outward in the next layer. In the center, show the male reproductive organs including the stamens with their thin filaments supporting the pollen-producing anthers at the tips. Depict the female reproductive organ, the pistil, with its central ovary at the base containing developing ovules, a slender style extending upward, and the stigma at the apex positioned to receive pollen. Show the flower's attachment point where all parts connect to the receptacle and floral axis. Render the parts in natural botanical colors with the petals in vibrant hues, stamens in contrasting yellows and creams, and the pistil in soft greens and whites. Include both a side profile showing the layered arrangement of sepals, petals, stamens, and pistil from outside to inside, and a top-down view showing radial symmetry. Use clean botanical illustration style typical of educational textbooks with precise anatomical accuracy, crisp lines, and subtle shading to show three-dimensional form. Scientific educational diagram, no labels, no text, detailed flower anatomy.
+Seed:         42
+Steps:        20
+Gen time:     398.1s

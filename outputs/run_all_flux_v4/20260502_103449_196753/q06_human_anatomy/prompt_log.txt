@@ -1,0 +1,36 @@
+Query: Draw a labeled diagram of the human heart showing ventricles, atria and aorta
+Constraints (7):
+  - The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle
+  - The aorta carries oxygenated blood from the left ventricle to the body
+  - The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs
+  - The septum separates the left and right sides of the heart
+  - Valves prevent backflow of blood between chambers
+  - The heart's right side receives deoxygenated blood and pumps it to the lungs
+  - The heart's left side receives oxygenated blood and pumps it to the body
+
+--- Attempt 1 (text2img) ---
+Seed:              42
+ControlNet scale:  0.70  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the human heart, The septum separates the left and right sides of the heart, heart with four chambers: right atrium, left atrium, right ventricle, left ventricle, The heart's left side receives oxygenated blood and pumps it to the body, The heart's right side receives deoxygenated blood and pumps it to the lungs, The aorta carries oxygenated blood from the left ventricle to the body, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human heart, four chambers, right atrium, left atrium, right ventricle, left ventricle, septum, aorta, educational illustration, detailed anatomy, white background, biology textbook style, clean linework, no text
+T5 prompt:   A highly detailed scientific cross-section illustration of the human heart showing all four chambers in precise anatomical arrangement. The right atrium is positioned on the upper right side, receiving deoxygenated blood from the superior and inferior vena cava. The right ventricle sits below and to the right, with its thick muscular wall designed to pump blood to the lungs via the pulmonary artery. The left atrium is positioned on the upper left, receiving oxygenated blood from the four pulmonary veins. The left ventricle occupies the lower left and apex of the heart, with its substantially thicker muscular wall built for powerful contractions that pump oxygenated blood throughout the entire body via the aorta. The interventricular septum runs vertically through the center, dividing the left and right sides completely and composed of thick myocardial tissue. The atrial septum separates the upper chambers. The four heart valves are shown in their anatomical positions: the tricuspid valve between right atrium and right ventricle, the mitral valve between left atrium and left ventricle, the pulmonary valve at the pulmonary artery opening, and the aortic valve at the aorta opening. The coronary arteries are visible on the heart's surface. The myocardium, endocardium, and epicardium layers are distinguishable. Educational scientific illustration style, accurate medical textbook diagram, white background, no text labels, cross-sectional cutaway view revealing internal chambers and structures.
+Gen time:    507.4s
+
+--- Attempt 2 (img2img_cn0.50_str0.28) ---
+Seed:              42
+ControlNet scale:  0.50  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the human heart, The septum separates the left and right sides of the heart, heart with four chambers: right atrium, left atrium, right ventricle, left ventricle, The heart's left side receives oxygenated blood and pumps it to the body, The heart's right side receives deoxygenated blood and pumps it to the lungs, The aorta carries oxygenated blood from the left ventricle to the body, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human heart, four chambers, right atrium, left atrium, right ventricle, left ventricle, septum, aorta, pulmonary arteries, superior vena cava, inferior vena cava, pulmonary veins, heart valves, text labels, educational illustration, detailed anatomy, white background, clean linework
+T5 prompt:   A highly detailed scientific cross-section illustration of the human heart showing all four chambers with clear anatomical precision and text labels for each structure. The right atrium receives deoxygenated blood from the superior and inferior vena cava. The right ventricle pumps blood to the lungs via the pulmonary artery. The left atrium receives oxygenated blood from the four pulmonary veins. The left ventricle with its thick muscular wall pumps oxygenated blood via the aorta. The interventricular septum divides left and right chambers with visible internal structure. The four heart valves are clearly depicted with distinct anatomical boundaries between chambers to show blood flow pathways. Include text labels for chambers, aorta, pulmonary arteries, superior and inferior vena cava, and pulmonary veins.
+Strength:    0.28
+Gen time:    1723.0s
+
+--- Attempt 3 (img2img_cn0.50_str0.28) ---
+Seed:              42
+ControlNet scale:  0.50  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the human heart, The septum separates the left and right sides of the heart, heart with four chambers: right atrium, left atrium, right ventricle, left ventricle, The heart's left side receives oxygenated blood and pumps it to the body, The heart's right side receives deoxygenated blood and pumps it to the lungs, The aorta carries oxygenated blood from the left ventricle to the body, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human heart, four chambers, right atrium, left atrium, right ventricle, left ventricle, ventricular septum, atrial septum, tricuspid valve, mitral valve, aortic valve, pulmonary valve, aorta, pulmonary arteries, pulmonary trunk, superior vena cava, inferior vena cava, pulmonary veins, coronary arteries, white background, clean linework, educational anatomy
+T5 prompt:   A highly detailed scientific cross-section illustration of the human heart showing all four chambers with precise anatomical labeling. The right atrium receives deoxygenated blood from the superior and inferior vena cava. The right ventricle pumps blood via the pulmonary trunk and pulmonary arteries to the lungs. The left atrium receives oxygenated blood from the four pulmonary veins. The left ventricle with thick muscular wall pumps blood via the aorta. The ventricular septum and atrial septum divide chambers with distinct color differentiation for visual clarity. Show all four valves with clear positioning: tricuspid valve between right chambers, mitral valve between left chambers, aortic valve at aortic outlet, and pulmonary valve at pulmonary trunk. Include coronary arteries on the heart surface. Pericardium visible as outer wall. Clear internal chamber divisions labeled throughout.
+Strength:    0.28
+Gen time:    1293.1s
+

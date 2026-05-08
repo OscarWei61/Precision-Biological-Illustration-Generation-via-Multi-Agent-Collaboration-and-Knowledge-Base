@@ -1,0 +1,18 @@
+Mode:        flux_rag_noretry
+Query:       Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil
+Constraints (7):
+  - A flower has petals that attract pollinators
+  - Sepals are leaf-like structures that protect the flower bud
+  - The stamen is the male reproductive organ consisting of anther and filament
+  - The anther produces pollen grains
+  - The pistil is the female reproductive organ consisting of stigma, style, and ovary
+  - The stigma traps pollen during pollination
+  - The ovary contains egg cells that develop into seeds after fertilization
+
+--- Attempt 1 (text2img) ---
+Full prompt:  A highly detailed scientific cross-section diagram of labeled diagram of the parts of a flower, Sepals are leaf-like structures that protect the flower bud, Stipules are small leaf-like appendages at the base of the petiole, stamen with the male reproductive organ consisting of anther and filament, pistil with the female reproductive organ consisting of stigma, style, and ovary, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt:  cross-section flower diagram, sepals, stamens, pistil, anther, filament, stigma, style, ovary, scientific illustration, botanical anatomy, educational, detailed linework, white background, biology textbook style, clean rendering, no text
+T5 prompt:    A highly detailed cross-section scientific illustration of a complete flower showing all reproductive and protective structures in educational textbook style. The diagram displays the outermost sepals as protective leaf-like structures surrounding the flower bud at the base. Small stipule appendages are visible at the base of the petiole where the flower connects to the stem. The stamen, representing the male reproductive organ, is shown with delicate filaments supporting the anthers at their tips where pollen is produced. The pistil, representing the female reproductive organ, is centrally positioned with the stigma at the top to receive pollen, a style shaft extending downward, and the ovary at the base containing ovules for seed development. A detailed inset shows a plant cell cross-section with the rigid cellulose cell wall surrounding the outer membrane, demonstrating the structural integrity that supports the flower's tissues. The illustration uses color differentiation to distinguish each floral part and their biological functions, arranged in concentric layers from protective outer structures to reproductive inner structures. All parts are shown in their natural spatial relationships and proportions. Scientific accuracy emphasizes botanical structures, reproduction mechanisms, and cellular composition. The diagram is rendered in clean, precise lines on a white background in an educational botanical illustration style suitable for textbooks and scientific reference materials.
+Seed:         42
+Steps:        20
+Gen time:     399.4s

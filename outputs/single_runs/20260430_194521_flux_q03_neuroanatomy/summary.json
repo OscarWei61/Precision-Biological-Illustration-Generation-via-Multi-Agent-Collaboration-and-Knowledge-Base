@@ -1,0 +1,73 @@
+{
+  "run_dir": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/single_runs/20260430_194521_flux_q03_neuroanatomy",
+  "timestamp": "2026-04-30T19:51:53",
+  "wall_time_s": 389.4,
+  "verifier_mode": "combined",
+  "params": {
+    "max_retries": 3,
+    "steps": 20,
+    "seed": 42,
+    "text2img_only": true
+  },
+  "langsmith_enabled": false,
+  "backend": "flux",
+  "query": "Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath",
+  "constraints": [
+    "A neuron has a cell body (soma), dendrites, and an axon",
+    "Dendrites receive signals from other neurons",
+    "The axon transmits electrical signals away from the cell body",
+    "The myelin sheath insulates the axon and speeds signal transmission",
+    "Nodes of Ranvier are gaps in the myelin sheath",
+    "Axon terminals release neurotransmitters into the synapse",
+    "Schwann cells produce the myelin sheath in the peripheral nervous system"
+  ],
+  "retrieved": [
+    "A neuron has a cell body (soma), dendrites, and an axon",
+    "The myelin sheath insulates the axon and speeds signal transmission",
+    "Dendrites receive signals from other neurons",
+    "Schwann cells produce the myelin sheath in the peripheral nervous system",
+    "Axon terminals release neurotransmitters into the synapse",
+    "Nodes of Ranvier are gaps in the myelin sheath",
+    "The axon transmits electrical signals away from the cell body",
+    "The optic nerve transmits signals from the retina to the brain"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 362.3,
+      "sas": 0.2838,
+      "clip_score": 0.3092,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of a neuron, neuron with a cell body (soma), dendrites, and an axon, Dendrites receive signals from other neurons, The myelin sheath insulates the axon and speeds signal transmission, Schwann cells produce the myelin sheath in the peripheral nervous system, Axon terminals release neurotransmitters into the synapse, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+      "clip_prompt": "scientific cross-section diagram, neuron soma, dendrites, axon, myelin sheath, Schwann cells, axon terminals, synapse, neurotransmitters, labeled anatomical parts, educational illustration, detailed linework, white background, biology textbook style, accurate scientific diagram",
+      "t5_prompt": "A detailed scientific cross-section diagram of a complete neuron showing all major anatomical components and their functions on a white background in textbook style. The neuron cell body, called the soma, is prominently displayed in the center containing the nucleus and cytoplasm. Multiple dendrites extend outward from the soma like branching trees, labeled with arrows indicating they receive electrical and chemical signals from other neurons at their synaptic terminals. A single long axon emerges from the axon hillock extending away from the soma, wrapped in segments of myelin sheath that appear as thick insulating bands of white material. The myelin sheath is produced by Schwann cells in the peripheral nervous system, with each Schwann cell wrapping around a section of the axon and labeled accordingly. The gaps between myelin segments are shown as the nodes of Ranvier where the axon membrane is exposed, allowing action potentials to jump along the axon for faster signal transmission. At the terminal end of the axon, the axon terminals branch into synaptic terminals shown in enlarged detail, displaying synaptic vesicles filled with neurotransmitters, the synaptic cleft gap between neurons, and receptor sites on the postsynaptic membrane. All anatomical structures are clearly labeled with leader lines and text. The illustration uses color coding to distinguish different cellular components and is rendered in a clean, precise scientific educational style suitable for neurology and biology textbooks.",
+      "llm_feedback": "Add explicit labels for Schwann cells surrounding the myelin sheath and include synaptic vesicles/neurotransmitters at the axon terminals to show the complete signal transmission mechanism. Consider adding a magnified inset of the synapse region.",
+      "image_file": "attempt_01_text2img_seed42.png",
+      "llm_score": 7.5,
+      "present_structures": [
+        "Cell body (soma)",
+        "Dendrites",
+        "Axon",
+        "Myelin sheath",
+        "Nodes of Ranvier",
+        "Axon terminals",
+        "Nucleus",
+        "Axon hillock"
+      ],
+      "missing_structures": [
+        "Schwann cells (explicitly labeled)",
+        "Synaptic vesicles",
+        "Neurotransmitters",
+        "Clear synapse representation"
+      ],
+      "improvement_suggestions": "Add explicit labels for Schwann cells surrounding the myelin sheath and include synaptic vesicles/neurotransmitters at the axon terminals to show the complete signal transmission mechanism. Consider adding a magnified inset of the synapse region."
+    }
+  ],
+  "best_clip": 0.3092,
+  "total_gen_time_s": 362.3,
+  "attempts_used": 1,
+  "passed": true
+}

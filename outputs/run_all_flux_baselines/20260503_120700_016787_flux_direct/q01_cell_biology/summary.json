@@ -1,0 +1,30 @@
+{
+  "query_id": "q01",
+  "domain": "cell_biology",
+  "query": "Draw a labeled diagram of a plant cell showing all major organelles",
+  "reference": "1071.png",
+  "wall_time_s": 365.8,
+  "verifier_mode": "combined",
+  "mode": "flux_direct",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.272,
+  "best_llm": 6.5,
+  "best_combined": 0.461,
+  "passed": true,
+  "gen_time_s": 356.1,
+  "full_prompt": "Draw a labeled diagram of a plant cell showing all major organelles",
+  "clip_prompt": "plant cell diagram, nucleus, mitochondria, chloroplast, endoplasmic reticulum, golgi apparatus, cell wall, vacuole, educational illustration, scientific cross-section, clean linework, white background, biology textbook style, no text labels",
+  "t5_prompt": "A detailed scientific illustration of a plant cell in cross-section showing all major organelles with accurate spatial relationships and biological structures. The cell is displayed against a white background in a clear educational diagram style. The cell wall forms the rigid outer boundary composed of cellulose fibers. Just inside the cell wall is the cell membrane, a thin lipid bilayer controlling substance transport. The large central vacuole occupies most of the cell interior, containing cell sap for turgor pressure and nutrient storage, surrounded by a distinct tonoplast membrane. The cytoplasm fills the space between the vacuole and cell membrane, appearing as a gel-like substance. The nucleus is positioned centrally, bounded by a double nuclear envelope with nuclear pores, containing the nucleolus where ribosomal RNA is synthesized and a network of chromatin. Mitochondria appear as elongated or rounded organelles with outer and inner membranes, cristae visible inside for cellular respiration. Chloroplasts are large, oval-shaped organelles containing stacked thylakoids arranged in grana and a stroma matrix for photosynthesis, with their own double membrane envelope. The endoplasmic reticulum extends throughout the cytoplasm, with rough endoplasmic reticulum studded with ribosomes for protein synthesis, and smooth endoplasmic reticulum without ribosomes for lipid synthesis. The Golgi apparatus appears as stacked cisternae for protein modification and packaging. Ribosomes are visible as small particles on rough ER and free in cytoplasm. Plasmodesmata connect through the cell wall to adjacent cells. The drawing uses scientific accuracy with clear three-dimensional perspective showing all organelles in their proper locations and proportions.",
+  "missing": [
+    "Mitochondria",
+    "Ribosomes",
+    "Golgi apparatus",
+    "Rough endoplasmic reticulum",
+    "Smooth endoplasmic reticulum",
+    "Cytoplasm (not clearly distinguished)"
+  ]
+}

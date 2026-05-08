@@ -1,0 +1,36 @@
+Query: Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil
+Constraints (7):
+  - A flower has petals that attract pollinators
+  - Sepals are leaf-like structures that protect the flower bud
+  - The stamen is the male reproductive organ consisting of anther and filament
+  - The anther produces pollen grains
+  - The pistil is the female reproductive organ consisting of stigma, style, and ovary
+  - The stigma traps pollen during pollination
+  - The ovary contains egg cells that develop into seeds after fertilization
+
+--- Attempt 1 (text2img) ---
+Seed:              42
+ControlNet scale:  0.70  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the parts of a flower, Sepals are leaf-like structures that protect the flower bud, Stipules are small leaf-like appendages at the base of the petiole, stamen with the male reproductive organ consisting of anther and filament, pistil with the female reproductive organ consisting of stigma, style, and ovary, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, flower anatomy, sepals, stamen, pistil, anther, filament, stigma, style, ovary, botanical illustration, educational, detailed linework, white background, biology textbook, no labels
+T5 prompt:   A highly detailed scientific cross-section diagram showing the complete anatomical structure of a flower in educational textbook style. The illustration displays all floral parts with precise biological accuracy. At the outermost layer, green sepals are positioned as protective leaf-like structures that encase the developing flower bud. Just beneath the sepals are small stipules visible as delicate leaf-like appendages attached at the base of the petiole where the stem connects. The stamen occupies the male reproductive region, consisting of a thin elongated filament supporting an anther at its tip, where pollen grains develop and mature. The pistil dominates the center as the female reproductive organ, with a stigma positioned at the apex to receive pollen, a tubular style extending downward, and an enlarged ovary at the base containing developing ovules. In a detailed inset or magnified section, a plant cell is shown in cross-section revealing the rigid cellulose cell wall surrounding the outer boundary, with the cell membrane positioned just inside the cell wall, and internal cellular structures visible within. The entire composition uses accurate biological coloring with soft greens for sepals and leaves, pale yellows for stamens, purples or pinks for pistil components, and translucent cellular structures. The diagram is rendered on a clean white background in a scientific educational illustration style with meticulous detail and no text labels or annotations, suitable for a biology textbook or educational reference.
+Gen time:    532.4s
+
+--- Attempt 2 (img2img_cn0.65_str0.75) ---
+Seed:              42
+ControlNet scale:  0.65  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the parts of a flower, Sepals are leaf-like structures that protect the flower bud, Stipules are small leaf-like appendages at the base of the petiole, stamen with the male reproductive organ consisting of anther and filament, pistil with the female reproductive organ consisting of stigma, style, and ovary, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section flower anatomy, sepals, petals, anther, filament, stigma, style, ovary, pollen grains, stamen, pistil, botanical illustration, detailed linework, white background, educational, no labels
+T5 prompt:   A highly detailed scientific cross-sectional botanical diagram of complete flower anatomy in educational textbook style. Green sepals are positioned as distinct protective leaf-like structures at the outermost layer beneath the pink/lavender petals. The stamen consists of a thin filament supporting an anther at its tip, with visible pollen grains developing on the anther surface. The pistil occupies the central reproductive region with a stigma positioned at the apex to receive pollen during pollination, a tubular style extending downward, and an enlarged ovary at the base containing developing ovules. All structures are shown with precise biological accuracy and clear differentiation of male and female reproductive organs. The illustration employs fine linework, scientific precision, and maintains a clean white background suitable for educational reference.
+Strength:    0.75
+Gen time:    4766.4s
+
+--- Attempt 3 (img2img_cn0.50_str0.28) ---
+Seed:              42
+ControlNet scale:  0.50  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the parts of a flower, Sepals are leaf-like structures that protect the flower bud, Stipules are small leaf-like appendages at the base of the petiole, stamen with the male reproductive organ consisting of anther and filament, pistil with the female reproductive organ consisting of stigma, style, and ovary, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section flower anatomy, anther, stigma, ovary, pollen grains, sepals, petals, filament, style, stamen, pistil, male female reproductive organs, botanical illustration, detailed linework, white background, educational
+T5 prompt:   A highly detailed scientific cross-sectional botanical diagram of complete flower anatomy in educational textbook style. Green sepals are positioned as distinct protective leaf-like structures at the outermost layer beneath pink/lavender petals. The stamen consists of a thin filament supporting a clearly defined anther at its tip, with visible pollen grains or granular surface detail on the anther surface to illustrate pollen production. The pistil occupies the central reproductive region with a distinct stigma positioned prominently at the apex to receive pollen, a tubular style extending downward, and an enlarged ovary at the base containing developing ovules. All structures show precise biological accuracy with clear differentiation between male reproductive organs (stamen, anther, pollen) and female reproductive organs (stigma, style, ovary). Fine linework and scientific precision maintain a clean white background suitable for educational reference.
+Strength:    0.28
+Gen time:    2355.3s
+

@@ -1,0 +1,15 @@
+Query: Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath
+Constraints (7):
+  - A neuron has a cell body (soma), dendrites, and an axon
+  - Dendrites receive signals from other neurons
+  - The axon transmits electrical signals away from the cell body
+  - The myelin sheath insulates the axon and speeds signal transmission
+  - Nodes of Ranvier are gaps in the myelin sheath
+  - Axon terminals release neurotransmitters into the synapse
+  - Schwann cells produce the myelin sheath in the peripheral nervous system
+
+--- Attempt 1 ---
+Mode: text2img
+[CLIP] scientific cross-section diagram, neuron, soma, dendrites, axon, myelin sheath, Schwann cells, axon terminals, synapse, neurotransmitters, labeled anatomical parts, educational illustration, detailed linework, white background, biology textbook style
+[T5]   A highly detailed scientific cross-section diagram of a complete neuron showing all major anatomical structures on a white background in textbook style. The diagram illustrates the cell body or soma in the center containing the nucleus and nucleolus, with multiple branching dendrites extending outward from the soma to receive incoming signals from other neurons. A single long axon projects from the axon hillock at the base of the soma, extending distally and wrapped in segmented myelin sheath produced by Schwann cells in the peripheral nervous system. The myelin sheath appears as white insulating layers around the axon with exposed nodes of Ranvier between segments, which accelerates action potential conduction along the axon through saltatory conduction. At the axon terminus, the diagram shows the presynaptic terminal containing synaptic vesicles filled with neurotransmitters, positioned above the synaptic cleft facing a postsynaptic membrane of an adjacent neuron. All structures are clearly labeled with anatomical terminology including soma, nucleus, dendrites, axon initial segment, myelin sheath, Schwann cells, nodes of Ranvier, synaptic vesicles, neurotransmitters, synaptic cleft, and postsynaptic receptor sites. The illustration uses color coding to distinguish different cellular compartments and emphasizes the functional organization of neural signal transmission from dendrite input through axon conduction to synaptic output. Professional scientific educational diagram style with precise anatomical accuracy.
+

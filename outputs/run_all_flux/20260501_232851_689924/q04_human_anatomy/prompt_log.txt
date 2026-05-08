@@ -1,0 +1,33 @@
+Query: Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve
+Constraints (7):
+  - The cornea is the transparent front part of the eye that refracts light
+  - The iris controls the size of the pupil
+  - The lens focuses light onto the retina
+  - The retina contains photoreceptor cells (rods and cones)
+  - The optic nerve transmits signals from the retina to the brain
+  - The fovea is the area of sharpest vision in the retina
+  - The vitreous gel fills the space between the lens and retina
+
+--- Attempt 1 (text2img) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of a human eye, cornea with the transparent front part of the eye that refracts light, head with compound eyes, antennae, and mouthparts, retina with photoreceptor cells (rods and cones), fovea with the area of sharpest vision in the retina, The optic nerve transmits signals from the retina to the brain, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human eye, cornea, retina, photoreceptor cells, rods cones, fovea, optic nerve, detailed anatomy, educational illustration, biology textbook style, white background, accurate linework, no text, no labels
+T5 prompt:   A highly detailed scientific cross-section diagram of a human eye showing the transparent cornea at the front that curves to refract incoming light rays, followed by the anterior chamber filled with aqueous humor, the iris surrounding the pupil opening, the crystalline lens positioned behind the iris for fine focusing of light, the vitreous humor filling the large posterior chamber, and the retina lining the back inner wall containing millions of photoreceptor cells including rod cells for low-light vision and cone cells for color vision arranged in organized layers, the fovea centralis visible as a specialized depression in the retina at the back of the eye representing the area of sharpest central vision with the highest density of cone cells, the optic nerve bundle exiting the back of the eye where it transmits visual signals from retinal ganglion cells to the brain, the choroid layer beneath the retina providing blood supply, the sclera forming the white outer fibrous coat of the eye, and the ciliary body controlling lens shape through accommodation, all rendered as an anatomically accurate transparent cross-section with proper spatial relationships and layering, in scientific educational textbook illustration style with white background, accurate biological detail, no text, no labels
+Gen time:    367.5s
+
+--- Attempt 2 (img2img_str0.28) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of a human eye, cornea with the transparent front part of the eye that refracts light, head with compound eyes, antennae, and mouthparts, retina with photoreceptor cells (rods and cones), fovea with the area of sharpest vision in the retina, The optic nerve transmits signals from the retina to the brain, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human eye, cornea, iris, pupil, lens, vitreous gel, retina, fovea, sclera, optic nerve, photoreceptor cells, rods cones, layered anatomy, color-coded structures, detailed educational illustration, biology textbook style, white background, accurate linework, no text, no labels
+T5 prompt:   A highly detailed scientific cross-section diagram of the human eye showing distinct anatomical layers. The transparent cornea curves at the front to refract light. The iris surrounds the pupil opening with visible color differentiation. The crystalline lens sits behind the iris for focusing. The vitreous gel fills the large posterior chamber and is visually differentiated from surrounding structures. The retina lines the back inner wall with organized photoreceptor layers: rod cells for low-light vision and cone cells for color vision. The fovea centralis appears as a marked depression in the retina at the back, indicating the area of sharpest vision with highest cone density. The sclera forms the white outer layer of the eye. The optic nerve is prominently shown exiting the back, clearly transmitting visual signals to the brain. Use subtle color-coding or shading to distinguish retinal layers, vitreous humor, iris, and other internal structures with anatomically accurate layering.
+Strength:    0.28
+Gen time:    394.7s
+
+--- Attempt 3 (img2img_str0.28) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of a human eye, cornea with the transparent front part of the eye that refracts light, head with compound eyes, antennae, and mouthparts, retina with photoreceptor cells (rods and cones), fovea with the area of sharpest vision in the retina, The optic nerve transmits signals from the retina to the brain, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human eye, cornea, iris, lens, retina, fovea, photoreceptor cells, rods cones, optic nerve, ciliary body, choroid layer, sclera, vitreous humor, detailed anatomy, educational illustration, biology textbook style, white background, accurate linework, no text, no labels
+T5 prompt:   A highly detailed scientific cross-section diagram of a human eye showing the transparent cornea at the front that curves to refract incoming light rays, followed by the anterior chamber filled with aqueous humor, the iris surrounding the pupil opening, the crystalline lens positioned behind the iris for fine focusing of light, the ciliary body controlling lens accommodation, the vitreous humor filling the large posterior chamber, and the retina lining the back inner wall containing millions of photoreceptor cells including rod cells for low-light vision and cone cells for color vision arranged in organized layers. The fovea centralis must be distinctly visible as a darker spot or depression on the retina representing the area of sharpest central vision. The choroid layer beneath the retina provides blood supply. The optic nerve bundle exits the back of the eye transmitting visual signals to the brain. Include subtle internal retinal layering to indicate photoreceptor
+Strength:    0.28
+Gen time:    419.8s
+

@@ -1,0 +1,179 @@
+{
+  "query_id": "q10",
+  "domain": "zoology",
+  "query": "Draw a labeled diagram of an insect body showing head, thorax, abdomen and antennae",
+  "reference": "1191.png",
+  "wall_time_s": 3416.3,
+  "verifier_mode": "combined",
+  "controlnet_enabled": true,
+  "params": {
+    "max_retries": 3,
+    "steps": 20,
+    "seed": 42
+  },
+  "backend": "flux_v4_controlnet",
+  "constraints": [
+    "An insect body is divided into three main parts: head, thorax, and abdomen",
+    "Insects have exactly 6 legs attached to the thorax",
+    "The head contains compound eyes, antennae, and mouthparts",
+    "Antennae are sensory organs used for smell and touch",
+    "Wings, when present, are attached to the thorax",
+    "The abdomen contains the digestive and reproductive organs"
+  ],
+  "retrieved": [
+    "An insect body is divided into three main parts: head, thorax, and abdomen",
+    "The head contains compound eyes, antennae, and mouthparts",
+    "Insects have exactly 6 legs attached to the thorax",
+    "Antennae are sensory organs used for smell and touch",
+    "The abdomen contains the digestive and reproductive organs",
+    "Wings, when present, are attached to the thorax",
+    "The stamen is the male reproductive organ consisting of anther and filament",
+    "The midrib is the central vein running through the leaf"
+  ],
+  "image_name": "1191.png",
+  "has_spatial_data": true,
+  "layout_regions": 5,
+  "attempts": [
+    {
+      "attempt": 1,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 497.6,
+      "sas": 0.2678,
+      "clip_score": 0.2775,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, stamen with the male reproductive organ consisting of anther and filament, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "insect anatomy cross-section diagram, head thorax abdomen, compound eyes, antennae, mouthparts, six legs, sensory organs, scientific illustration, educational diagram, detailed linework, white background, biology textbook style, no labels",
+      "t5_prompt": "A highly detailed scientific cross-section diagram showing the complete anatomical structure of an insect in educational textbook style. The illustration displays the three distinct body regions: the head at the anterior end containing large compound eyes positioned on either side for omnidirectional vision, a pair of segmented antennae extending upward as sensory organs for detecting chemical signals and tactile information, and specialized mouthparts adapted for feeding. The thorax forms the middle section with its three visible segments, from which exactly six jointed legs emerge in pairs, each leg composed of multiple articulated segments allowing for locomotion and sensory exploration. The abdomen extends posteriorly as the largest body region containing internal organs and reproductive structures. The diagram uses scientific color coding and shading to distinguish different anatomical regions and their internal compositions. The illustration employs cross-sectional views where appropriate to reveal the layered internal anatomy, including segmented body walls, muscle attachments, and organ systems. All biological structures are rendered with anatomical accuracy showing proper spatial relationships and proportions. The background is clean white without any text labels or annotations, presenting the information purely through visual representation in a format suitable for scientific education and reference.",
+      "image_file": "attempt_01_text2img_seed42.png",
+      "combined_score": 0.5589,
+      "improved": true,
+      "rollback": false,
+      "controlnet_scale": 0.7,
+      "has_spatial_data": true,
+      "llm_score": 8.5,
+      "present_structures": [
+        "Head with compound eyes",
+        "Antennae (pair of sensory organs)",
+        "Thorax",
+        "Six legs attached to thorax",
+        "Abdomen",
+        "Elytra (hardened wing covers)",
+        "Overall body segmentation"
+      ],
+      "missing_structures": [
+        "Visible mouthparts",
+        "Wings (only elytra visible, which is appropriate for a beetle)"
+      ],
+      "improvement_suggestions": "To fully meet requirements, specify that the diagram should show a beetle with clearly distinguishable elytra and specify whether mouthparts should be visible. For a more general insect diagram, consider requesting a specimen without wing covers to show both wings and complete anatomical detail.",
+      "refined_clip_for_next": "beetle anatomy cross-section diagram, head thorax abdomen, compound eyes, antennae, mouthparts, six legs, elytra wing covers, sensory organs, scientific illustration, educational diagram, detailed linework, white background, biology textbook style, no labels",
+      "refined_t5_for_next": "A highly detailed scientific cross-section diagram of a beetle showing complete anatomical structure in educational textbook style. The head displays large compound eyes positioned laterally for omnidirectional vision, segmented antennae extending upward as sensory organs detecting chemical and tactile information, and visible mouthparts adapted for feeding. The thorax forms the middle section with three visible segments, from which exactly six jointed legs emerge in pairs, each with multiple articulated segments for locomotion. The hardened elytra (wing covers) are clearly visible as the characteristic beetle feature protecting the hindwings beneath. The abdomen extends posteriorly as the largest body region containing internal organs and reproductive structures. Cross-sectional views reveal layered internal anatomy including segmented body walls, muscle attachments, and internal organ systems. Scientific color coding distinguishes anatomical regions and compositions throughout.",
+      "refiner_changes": [
+        "Added 'mouthparts' as explicit keyword in CLIP (already present, reinforced placement)",
+        "Added 'elytra wing covers' as explicit keywords in CLIP for beetle specificity",
+        "Added sentence about visible mouthparts in T5: 'and visible mouthparts adapted for feeding'",
+        "Added sentence about elytra in T5: 'The hardened elytra (wing covers) are clearly visible as the characteristic beetle feature protecting the hindwings beneath'",
+        "Trimmed T5 to 137 words (under 150 limit) while preserving all anatomical detail",
+        "Preserved all correctly depicted structures (compound eyes, antennae, thorax, six legs, abdomen, segmentation)"
+      ],
+      "next_strength": 0.28,
+      "next_gen_mode": "img2img",
+      "blueprint_updated": true,
+      "blueprint_file": "blueprint_att02.png"
+    },
+    {
+      "attempt": 2,
+      "seed": 42,
+      "mode": "img2img_cn0.50_str0.28",
+      "gen_time_s": 1747.1,
+      "sas": 0.2673,
+      "clip_score": 0.2767,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, stamen with the male reproductive organ consisting of anther and filament, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "beetle anatomy cross-section diagram, head thorax abdomen, compound eyes, antennae, mouthparts, six legs, elytra wing covers, sensory organs, scientific illustration, educational diagram, detailed linework, white background, biology textbook style, no labels",
+      "t5_prompt": "A highly detailed scientific cross-section diagram of a beetle showing complete anatomical structure in educational textbook style. The head displays large compound eyes positioned laterally for omnidirectional vision, segmented antennae extending upward as sensory organs detecting chemical and tactile information, and visible mouthparts adapted for feeding. The thorax forms the middle section with three visible segments, from which exactly six jointed legs emerge in pairs, each with multiple articulated segments for locomotion. The hardened elytra (wing covers) are clearly visible as the characteristic beetle feature protecting the hindwings beneath. The abdomen extends posteriorly as the largest body region containing internal organs and reproductive structures. Cross-sectional views reveal layered internal anatomy including segmented body walls, muscle attachments, and internal organ systems. Scientific color coding distinguishes anatomical regions and compositions throughout.",
+      "image_file": "attempt_02_img2img_cn0.50_str0.28_seed42.png",
+      "combined_score": 0.5586,
+      "improved": false,
+      "rollback": true,
+      "controlnet_scale": 0.5,
+      "has_spatial_data": true,
+      "llm_score": 8.5,
+      "present_structures": [
+        "Head",
+        "Thorax",
+        "Abdomen",
+        "Antennae",
+        "Compound eyes",
+        "Six legs",
+        "Wings (elytra)",
+        "Segmentation",
+        "Mouthparts"
+      ],
+      "missing_structures": [
+        "Clear visual distinction of body region boundaries",
+        "Explicit segmentation markings on abdomen"
+      ],
+      "improvement_suggestions": "Add subtle anatomical boundary lines or shading to clearly demarcate the head, thorax, and abdominal regions. Consider showing visible wing venation or segmentation lines on the abdomen to enhance anatomical accuracy.",
+      "refined_clip_for_next": "insect anatomy cross-section diagram, head thorax abdomen with clear boundary lines, segmented abdomen markings, compound eyes, antennae, mouthparts, six legs, wings with venation, sensory organs, scientific illustration, detailed linework, white background, biology textbook style, no labels",
+      "refined_t5_for_next": "A highly detailed scientific cross-section diagram showing the complete anatomical structure of an insect in educational textbook style. The illustration displays the three distinct body regions with clear visual boundary lines and shading to demarcate the head, thorax, and abdomen. The head contains large compound eyes positioned on either side, a pair of segmented antennae extending upward as sensory organs for detecting chemical signals, and specialized mouthparts adapted for feeding. The thorax forms the middle section with three visible segments from which six jointed legs emerge in pairs, each with multiple articulated segments. The abdomen extends posteriorly as the largest body region with visible segmentation markings shown through subtle anatomical lines to indicate distinct segments, and includes internal organs and reproductive structures. Wings display visible venation patterns. The diagram uses scientific color coding and shading to distinguish anatomical regions and compositions, employing cross-sectional views to reveal layered internal anatomy including",
+      "refiner_changes": [
+        "Added 'with clear boundary lines' to thorax/abdomen in CLIP to emphasize region demarcation",
+        "Added 'segmented abdomen markings' keyword to CLIP",
+        "Added 'wings with venation' to CLIP for explicit wing detail requirement",
+        "In T5, added sentence emphasizing 'clear visual boundary lines and shading to demarcate' regions",
+        "In T5, added phrase 'with visible segmentation markings shown through subtle anatomical lines' for abdomen",
+        "In T5, added 'Wings display visible venation patterns' to enhance anatomical accuracy",
+        "Truncated T5 to 150 words while preserving all structural details"
+      ],
+      "next_strength": 0.28,
+      "next_gen_mode": "img2img",
+      "blueprint_updated": true,
+      "blueprint_file": "blueprint_att03.png"
+    },
+    {
+      "attempt": 3,
+      "seed": 42,
+      "mode": "img2img_cn0.50_str0.28",
+      "gen_time_s": 1114.3,
+      "sas": 0.2677,
+      "clip_score": 0.2773,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, stamen with the male reproductive organ consisting of anther and filament, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "insect anatomy cross-section diagram, head thorax abdomen with clear boundary lines, segmented abdomen markings, compound eyes, antennae, mouthparts, six legs, wings with venation, sensory organs, scientific illustration, detailed linework, white background, biology textbook style, no labels",
+      "t5_prompt": "A highly detailed scientific cross-section diagram showing the complete anatomical structure of an insect in educational textbook style. The illustration displays the three distinct body regions with clear visual boundary lines and shading to demarcate the head, thorax, and abdomen. The head contains large compound eyes positioned on either side, a pair of segmented antennae extending upward as sensory organs for detecting chemical signals, and specialized mouthparts adapted for feeding. The thorax forms the middle section with three visible segments from which six jointed legs emerge in pairs, each with multiple articulated segments. The abdomen extends posteriorly as the largest body region with visible segmentation markings shown through subtle anatomical lines to indicate distinct segments, and includes internal organs and reproductive structures. Wings display visible venation patterns. The diagram uses scientific color coding and shading to distinguish anatomical regions and compositions, employing cross-sectional views to reveal layered internal anatomy including",
+      "image_file": "attempt_03_img2img_cn0.50_str0.28_seed42.png",
+      "combined_score": 0.5588,
+      "improved": false,
+      "rollback": true,
+      "controlnet_scale": 0.5,
+      "has_spatial_data": true,
+      "llm_score": 8.5,
+      "present_structures": [
+        "Head with compound eyes",
+        "Thorax",
+        "Abdomen",
+        "Antennae (pair)",
+        "Six legs",
+        "Wings (elytra)",
+        "Segmentation",
+        "Mouthparts"
+      ],
+      "missing_structures": [
+        "Clear anatomical labels or boundaries between body regions"
+      ],
+      "improvement_suggestions": "Request a version with subtle color-coding or distinct visual boundaries to clearly demarcate head, thorax, and abdomen regions. Consider specifying that this is a beetle (Coleoptera) to justify the hardened elytra shown."
+    }
+  ],
+  "best_clip": 0.2775,
+  "total_gen_time_s": 3359.0,
+  "attempts_used": 3,
+  "passed": true,
+  "fully_passed": false,
+  "final_missing": [
+    "Clear anatomical labels or boundaries between body regions"
+  ]
+}

@@ -1,0 +1,17 @@
+Mode:        flux_rag_noretry
+Query:       Draw a diagram illustrating the process of photosynthesis with inputs and outputs
+Constraints (6):
+  - Photosynthesis takes place in the chloroplasts of plant cells
+  - The inputs of photosynthesis are carbon dioxide (CO2), water (H2O), and sunlight
+  - The outputs of photosynthesis are glucose (C6H12O6) and oxygen (O2)
+  - Chlorophyll molecules in the leaves absorb radiant energy from sunlight
+  - The light-dependent reactions occur in the thylakoid membranes
+  - The Calvin cycle (light-independent reactions) occurs in the stroma
+
+--- Attempt 1 (text2img) ---
+Full prompt:  A highly detailed scientific cross-section diagram of diagram illustrating the process of photosynthesis, The inputs of photosynthesis are carbon dioxide (CO2), water (H2O), and sunlight, The outputs of photosynthesis are glucose (C6H12O6) and oxygen (O2), Photosynthesis takes place in the chloroplasts of plant cells, Chloroplasts are found only in plant cells and perform photosynthesis, Mitochondria are the powerhouse of the cell, producing ATP via respiration, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt:  scientific cross-section diagram, chloroplast, thylakoid, stroma, photosynthesis process, educational illustration, detailed linework, biology textbook, white background, no text, clean scientific style
+T5 prompt:    A detailed scientific cross-section illustration of a plant cell showing the complete photosynthesis process in chloroplasts, displayed against a white background in educational textbook style. The image depicts the outer cell membrane surrounding the cytoplasm, with multiple chloroplasts visible as oval-shaped organelles distributed throughout. Each chloroplast is shown in cross-section revealing the inner thylakoid membrane system organized into stacked grana structures, with the stromal fluid filling the space between membranes. The illustration includes arrows showing carbon dioxide molecules entering the leaf through stomata and water molecules being transported through the xylem vessels, while sunlight rays illuminate the chloroplast structures. The light-dependent reactions occur within the thylakoid membranes where photosystem II and photosystem I complexes are embedded, showing electron transport chains and ATP synthase producing ATP and NADPH molecules. The Calvin cycle occurs in the stroma where carbon dioxide is fixed into three-carbon compounds and ultimately forms glucose molecules. Mitochondria are also visible throughout the cytoplasm showing cristae structures within the matrix, representing the powerhouse organelles that produce ATP through cellular respiration. Oxygen molecules are shown as output products being released. The illustration uses color coding with greens for chlorophyll-containing structures, warm tones for energy-rich molecules, and clear spatial representation of all cellular compartments, rendered as an accurate scientific diagram with precise biological accuracy and no text labels.
+Seed:         42
+Steps:        20
+Gen time:     383.9s

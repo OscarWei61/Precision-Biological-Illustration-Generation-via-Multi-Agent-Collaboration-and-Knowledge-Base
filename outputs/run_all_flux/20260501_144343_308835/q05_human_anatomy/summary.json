@@ -1,0 +1,181 @@
+{
+  "query_id": "q05",
+  "domain": "human_anatomy",
+  "query": "Draw a labeled diagram of the human digestive system",
+  "reference": "1385.png",
+  "wall_time_s": 1565.9,
+  "verifier_mode": "combined",
+  "params": {
+    "max_retries": 3,
+    "steps": 20,
+    "seed": 42
+  },
+  "backend": "flux",
+  "constraints": [
+    "The digestive system begins at the mouth and ends at the anus",
+    "The esophagus connects the mouth to the stomach",
+    "The stomach uses acid and enzymes to break down food",
+    "The liver produces bile to help digest fats",
+    "The pancreas secretes digestive enzymes into the small intestine",
+    "The small intestine absorbs nutrients",
+    "The large intestine absorbs water and forms feces",
+    "The appendix is a small pouch attached to the large intestine"
+  ],
+  "retrieved": [
+    "The digestive system begins at the mouth and ends at the anus",
+    "The abdomen contains the digestive and reproductive organs",
+    "The esophagus connects the mouth to the stomach",
+    "The stomach uses acid and enzymes to break down food",
+    "The large intestine absorbs water and forms feces",
+    "The small intestine absorbs nutrients",
+    "The pancreas secretes digestive enzymes into the small intestine",
+    "The liver produces bile to help digest fats"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 368.4,
+      "sas": 0.2935,
+      "clip_score": 0.293,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of the human digestive system, The digestive system begins at the mouth and ends at the anus, abdomen with the digestive and reproductive organs, The pancreas secretes digestive enzymes into the small intestine, The esophagus connects the mouth to the stomach, The stomach uses acid and enzymes to break down food, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, human digestive system, mouth, esophagus, stomach, small intestine, pancreas, large intestine, anus, anatomical illustration, educational textbook style, detailed linework, white background, clean medical diagram, no text, no labels",
+      "t5_prompt": "A comprehensive scientific cross-section illustration of the complete human digestive system showing all organs from the mouth through the anus, displaying the entire pathway of food digestion and nutrient absorption, the mouth with teeth and tongue leading into the pharynx, the esophagus extending downward as a muscular tube connecting to the stomach, the stomach positioned in the upper left abdomen with its curved fundus, body and pyloric regions where gastric acids and pepsin break down food into chyme, the small intestine coiled extensively throughout the lower abdomen with the duodenum receiving secretions from the pancreas and bile from the liver and gallbladder, the jejunum and ileum for nutrient absorption with their villi and microvilli lining the intestinal walls, the pancreas nestled behind the stomach secreting digestive enzymes through the pancreatic duct into the duodenum, the liver positioned in the upper right abdomen with the gallbladder attached storing bile for fat digestion, the large intestine forming a frame around the small intestine absorbing water and electrolytes, the rectum and anal canal at the terminus of the digestive tract, all organs shown in accurate anatomical position within the abdominal cavity with proper spatial relationships, color-coded in natural tissue tones showing different organ systems, detailed cross-sectional view revealing internal structures and functions, textbook-style scientific illustration, educational diagram, white background, no text labels, anatomically precise medical illustration.",
+      "image_file": "attempt_01_text2img_seed42.png",
+      "llm_score": 3.5,
+      "present_structures": [
+        "Mouth",
+        "Esophagus",
+        "Stomach",
+        "Liver",
+        "Small intestine",
+        "Large intestine",
+        "Pancreas",
+        "Brain/head region"
+      ],
+      "missing_structures": [
+        "Appendix",
+        "Anus",
+        "Clear esophageal pathway",
+        "Salivary glands",
+        "Pyloric sphincter",
+        "Bile ducts"
+      ],
+      "improvement_suggestions": "The image contains labels and text annotations, violating the no-text requirement. Additionally, the appendix is not visible or identifiable, the anus is not shown, and the spatial relationships between organs lack anatomical accuracy (e.g., the stomach appears too large and positioned incorrectly relative to the small intestine).",
+      "refined_clip_for_next": "scientific cross-section diagram, human digestive system, mouth, salivary glands, esophagus, stomach, pyloric sphincter, small intestine, large intestine, appendix, anus, pancreas, liver, bile ducts, anatomical illustration, educational textbook style, detailed linework, white background, clean medical diagram, no text, no labels, no annotations",
+      "refined_t5_for_next": "A comprehensive scientific cross-section illustration of the complete human digestive system showing all organs from mouth through anus. Display the mouth with teeth and tongue, salivary glands in the jaw region, the esophagus as a clear muscular tube descending through the chest and into the abdomen. The stomach positioned in the upper left abdomen with its fundus, body, and pyloric sphincter clearly marked. The small intestine coiled in the lower abdomen with duodenum, jejunum, and ileum receiving pancreatic secretions and bile through bile ducts. The large intestine framing the small intestine with the appendix branching from the cecum at the junction. The anus at the terminus of the large intestine. The pancreas nestled behind the stomach, liver in the upper right abdomen. Ensure accurate anatomical proportions and spatial relationships. White background, no text labels or annotations, clean medical diagram style.",
+      "refiner_changes": [
+        "Added 'appendix' to CLIP prompt as missing structure",
+        "Added 'anus' to CLIP prompt as missing structure",
+        "Added 'salivary glands' to CLIP prompt as missing structure",
+        "Added 'pyloric sphincter' to CLIP prompt as missing structure",
+        "Added 'bile ducts' to CLIP prompt as missing structure",
+        "Strengthened 'no text, no labels' directive with 'no annotations' in CLIP",
+        "Added explicit mention of salivary glands in jaw region in T5",
+        "Added 'clear' descriptor for esophageal pathway in T5",
+        "Explicitly positioned pyloric sphincter in T5",
+        "Added appendix branching from cecum description in T5",
+        "Added anus at terminus of large intestine in T5",
+        "Included bile ducts in T5 with anatomical function",
+        "Added emphasis on accurate anatomical proportions and spatial relationships in T5 to address positioning violations",
+        "Reinforced no text/labels/annotations requirement in T5"
+      ]
+    },
+    {
+      "attempt": 2,
+      "seed": 42,
+      "mode": "img2img_str0.60",
+      "gen_time_s": 632.7,
+      "sas": 0.2945,
+      "clip_score": 0.2958,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of the human digestive system, The digestive system begins at the mouth and ends at the anus, abdomen with the digestive and reproductive organs, The pancreas secretes digestive enzymes into the small intestine, The esophagus connects the mouth to the stomach, The stomach uses acid and enzymes to break down food, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, human digestive system, mouth, salivary glands, esophagus, stomach, pyloric sphincter, small intestine, large intestine, appendix, anus, pancreas, liver, bile ducts, anatomical illustration, educational textbook style, detailed linework, white background, clean medical diagram, no text, no labels, no annotations",
+      "t5_prompt": "A comprehensive scientific cross-section illustration of the complete human digestive system showing all organs from mouth through anus. Display the mouth with teeth and tongue, salivary glands in the jaw region, the esophagus as a clear muscular tube descending through the chest and into the abdomen. The stomach positioned in the upper left abdomen with its fundus, body, and pyloric sphincter clearly marked. The small intestine coiled in the lower abdomen with duodenum, jejunum, and ileum receiving pancreatic secretions and bile through bile ducts. The large intestine framing the small intestine with the appendix branching from the cecum at the junction. The anus at the terminus of the large intestine. The pancreas nestled behind the stomach, liver in the upper right abdomen. Ensure accurate anatomical proportions and spatial relationships. White background, no text labels or annotations, clean medical diagram style.",
+      "image_file": "attempt_02_img2img_str0.60_seed42.png",
+      "llm_score": 4.5,
+      "present_structures": [
+        "Mouth",
+        "Esophagus",
+        "Stomach",
+        "Liver",
+        "Small intestine",
+        "Large intestine",
+        "Rectum",
+        "Brain",
+        "Vascular system in head"
+      ],
+      "missing_structures": [
+        "Pancreas",
+        "Appendix",
+        "Anus",
+        "Teeth representation",
+        "Salivary glands",
+        "Pharynx"
+      ],
+      "improvement_suggestions": "Request an unlabeled diagram focusing exclusively on the digestive tract pathway and accessory organs; specify to exclude non-digestive systems like the nervous and vascular systems to reduce clutter and improve clarity of digestive anatomy.",
+      "refined_clip_for_next": "scientific cross-section diagram, human digestive system, mouth with teeth, pharynx, salivary glands, esophagus, stomach, pyloric sphincter, small intestine, large intestine, appendix, anus, pancreas, liver, bile ducts, anatomical illustration, educational textbook style, detailed linework, white background, clean medical diagram, no text, no labels, digestive tract focus only",
+      "refined_t5_for_next": "A comprehensive scientific cross-section illustration of the complete human digestive system showing all organs from mouth through anus. Display the mouth with teeth and tongue, pharynx at the throat, salivary glands in the jaw region, the esophagus as a clear muscular tube descending through the chest into the abdomen. The stomach positioned in the upper left abdomen with fundus, body, and pyloric sphincter clearly marked. The small intestine coiled in the lower abdomen with duodenum, jejunum, and ileum receiving pancreatic secretions and bile through bile ducts. The large intestine framing the small intestine with the appendix branching from the cecum at the junction, terminating at the anus. The pancreas nestled behind the stomach, liver in the upper right abdomen. Ensure accurate anatomical proportions and spatial relationships. Focus exclusively on digestive tract and accessory organs; exclude nervous and vascular systems. White background, no text labels or annotations, clean medical diagram style.",
+      "refiner_changes": [
+        "Added 'pharynx' by name to CLIP prompt (missing structure)",
+        "Added 'teeth representation' via 'with teeth' to CLIP prompt",
+        "Added 'pancreas' and 'appendix' and 'anus' keywords to CLIP prompt (already present but now explicit)",
+        "Added pharynx description to T5 prompt as separate anatomical element",
+        "Emphasized digestive tract focus in CLIP with 'digestive tract focus only'",
+        "Added exclusion clause to T5: 'Focus exclusively on digestive tract and accessory organs; exclude nervous and vascular systems' per verifier suggestion to reduce clutter",
+        "Maintained all previously correct structures: mouth, esophagus, stomach, liver, small intestine, large intestine, rectum",
+        "Kept white background, no text/labels, clean medical diagram style throughout"
+      ]
+    },
+    {
+      "attempt": 3,
+      "seed": 42,
+      "mode": "img2img_str0.50",
+      "gen_time_s": 500.3,
+      "sas": 0.2929,
+      "clip_score": 0.3007,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of the human digestive system, The digestive system begins at the mouth and ends at the anus, abdomen with the digestive and reproductive organs, The pancreas secretes digestive enzymes into the small intestine, The esophagus connects the mouth to the stomach, The stomach uses acid and enzymes to break down food, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, human digestive system, mouth with teeth, pharynx, salivary glands, esophagus, stomach, pyloric sphincter, small intestine, large intestine, appendix, anus, pancreas, liver, bile ducts, anatomical illustration, educational textbook style, detailed linework, white background, clean medical diagram, no text, no labels, digestive tract focus only",
+      "t5_prompt": "A comprehensive scientific cross-section illustration of the complete human digestive system showing all organs from mouth through anus. Display the mouth with teeth and tongue, pharynx at the throat, salivary glands in the jaw region, the esophagus as a clear muscular tube descending through the chest into the abdomen. The stomach positioned in the upper left abdomen with fundus, body, and pyloric sphincter clearly marked. The small intestine coiled in the lower abdomen with duodenum, jejunum, and ileum receiving pancreatic secretions and bile through bile ducts. The large intestine framing the small intestine with the appendix branching from the cecum at the junction, terminating at the anus. The pancreas nestled behind the stomach, liver in the upper right abdomen. Ensure accurate anatomical proportions and spatial relationships. Focus exclusively on digestive tract and accessory organs; exclude nervous and vascular systems. White background, no text labels or annotations, clean medical diagram style.",
+      "image_file": "attempt_03_img2img_str0.50_seed42.png",
+      "llm_score": 3.5,
+      "present_structures": [
+        "Mouth",
+        "Esophagus",
+        "Stomach",
+        "Liver",
+        "Small intestine",
+        "Large intestine",
+        "Brain",
+        "Heart",
+        "Lungs"
+      ],
+      "missing_structures": [
+        "Pancreas",
+        "Appendix",
+        "Anus",
+        "Pharynx",
+        "Clear anatomical boundaries between digestive organs"
+      ],
+      "improvement_suggestions": "Specify 'unlabeled digestive system diagram' and request pancreas and appendix be distinctly visible. Request removal of non-digestive organs (brain, heart, lungs, liver vasculature) and focus only on the digestive tract organs and their associated glands."
+    }
+  ],
+  "best_clip": 0.2958,
+  "total_gen_time_s": 1501.4,
+  "attempts_used": 3,
+  "passed": false,
+  "fully_passed": false,
+  "final_missing": [
+    "Pancreas",
+    "Appendix",
+    "Anus",
+    "Pharynx",
+    "Clear anatomical boundaries between digestive organs"
+  ]
+}

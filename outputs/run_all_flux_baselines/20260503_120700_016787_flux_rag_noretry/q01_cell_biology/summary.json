@@ -1,0 +1,30 @@
+{
+  "query_id": "q01",
+  "domain": "cell_biology",
+  "query": "Draw a labeled diagram of a plant cell showing all major organelles",
+  "reference": "1071.png",
+  "wall_time_s": 412.1,
+  "verifier_mode": "combined",
+  "mode": "flux_rag_noretry",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.2782,
+  "best_llm": 6.5,
+  "best_combined": 0.4641,
+  "passed": true,
+  "gen_time_s": 403.9,
+  "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a plant cell, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, Photosynthesis takes place in the chloroplasts of plant cells, Chloroplasts are found only in plant cells and perform photosynthesis, Mitochondria are the powerhouse of the cell, producing ATP via respiration, nucleus with the control center and contains the cell's DNA, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+  "clip_prompt": "scientific cross-section diagram, plant cell, cell wall, cell membrane, chloroplasts, mitochondria, nucleus, educational illustration, detailed linework, white background, biology textbook style, no text, no labels",
+  "t5_prompt": "A highly detailed scientific cross-section illustration of a plant cell showing all major organelles and structures in accurate spatial arrangement. The rigid cellulose cell wall forms the outermost layer, displaying its characteristic gridded crystalline structure surrounding the flexible cell membrane beneath it. The large central vacuole dominates the interior, maintaining turgor pressure and occupying most of the cell volume, surrounded by the cytoplasm. Multiple chloroplasts are distributed throughout the cytoplasm, each showing internal thylakoid stacks arranged in grana where photosynthesis occurs, with visible starch granules inside. Numerous mitochondria with their characteristic double membranes and cristae are positioned throughout the cell, representing the powerhouse organelles that generate ATP through cellular respiration. The prominent nucleus is centrally located, containing the nucleolus and displaying the cell's genetic material DNA within chromatin. Additional organelles visible include the Golgi apparatus with its stacked cisternae, smooth and rough endoplasmic reticulum with ribosomes attached where applicable, small vesicles, peroxisomes, and the centrosome region. The diagram uses color coding to distinguish different structures and their functions. The composition is rendered in educational scientific textbook illustration style with clean line work, anatomically precise proportions, white background, and no text labels or annotations present.",
+  "missing": [
+    "Ribosomes",
+    "Golgi apparatus",
+    "Rough endoplasmic reticulum (rough ER)",
+    "Smooth endoplasmic reticulum (smooth ER)",
+    "Nucleolus",
+    "Plasmodesmata"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "run_dir": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/single_runs/20260430_195507_flux_q06_human_anatomy",
+  "timestamp": "2026-04-30T20:14:58",
+  "wall_time_s": 1188.3,
+  "verifier_mode": "combined",
+  "params": {
+    "max_retries": 3,
+    "steps": 20,
+    "seed": 42,
+    "text2img_only": true
+  },
+  "langsmith_enabled": false,
+  "backend": "flux",
+  "query": "Draw a labeled diagram of the human heart showing ventricles, atria and aorta",
+  "constraints": [
+    "The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle",
+    "The aorta carries oxygenated blood from the left ventricle to the body",
+    "The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs",
+    "The septum separates the left and right sides of the heart",
+    "Valves prevent backflow of blood between chambers",
+    "The heart's right side receives deoxygenated blood and pumps it to the lungs",
+    "The heart's left side receives oxygenated blood and pumps it to the body"
+  ],
+  "retrieved": [
+    "The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle",
+    "The aorta carries oxygenated blood from the left ventricle to the body",
+    "The septum separates the left and right sides of the heart",
+    "The heart's left side receives oxygenated blood and pumps it to the body",
+    "The heart's right side receives deoxygenated blood and pumps it to the lungs",
+    "The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs",
+    "Valves prevent backflow of blood between chambers",
+    "The digestive system begins at the mouth and ends at the anus"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 364.6,
+      "sas": 0.2863,
+      "clip_score": 0.3106,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of the human heart, heart with four chambers: right atrium, left atrium, right ventricle, left ventricle, The septum separates the left and right sides of the heart, The heart's left side receives oxygenated blood and pumps it to the body, The heart's right side receives deoxygenated blood and pumps it to the lungs, The aorta carries oxygenated blood from the left ventricle to the body, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+      "clip_prompt": "scientific cross-section diagram, human heart, four chambers, right atrium, left atrium, right ventricle, left ventricle, septum, aorta, oxygenated blood, deoxygenated blood, educational illustration, detailed anatomy, labeled parts, white background, biology textbook style",
+      "t5_prompt": "A detailed scientific cross-section illustration of the human heart displaying all four chambers in anatomical precision on a white background. The right atrium is positioned on the right side receiving deoxygenated blood from the superior and inferior vena cava. The left atrium sits on the left side receiving oxygenated blood from the pulmonary veins. Below these, the right ventricle occupies the lower right chamber with thick muscular walls, and the left ventricle dominates the lower left chamber with substantially thicker myocardial tissue for its powerful systemic pumping function. The interventricular septum clearly divides the left and right ventricular chambers vertically through the center. The bicuspid mitral valve separates the left atrium from the left ventricle, while the tricuspid valve separates the right atrium from the right ventricle. The aorta emerges from the top of the left ventricle carrying oxygenated blood to systemic circulation throughout the body. The pulmonary artery branches from the right ventricle directing deoxygenated blood to the lungs. The pulmonary veins return from the lungs entering the left atrium with oxygen-rich blood. The superior and inferior venae cavae return deoxygenated blood from the body into the right atrium. Color coding shows oxygen-rich blood in red and oxygen-poor blood in blue throughout the circulatory pathways. All anatomical structures are clearly labeled with precise positioning. This is an educational textbook-style anatomical diagram with scientific accuracy and professional medical illustration standards.",
+      "llm_feedback": "Add clear, visible labels for all four chambers (right/left atrium and ventricle), major vessels (aorta, pulmonary arteries, pulmonary veins, superior/inferior vena cava), and the four valves. Include arrows showing blood flow direction through the cardiac cycle.",
+      "image_file": "attempt_01_text2img_seed42.png",
+      "llm_score": 6.5,
+      "present_structures": [
+        "Right atrium",
+        "Left atrium",
+        "Right ventricle",
+        "Left ventricle",
+        "Aorta",
+        "Pulmonary arteries",
+        "Lungs (pulmonary circulation)",
+        "Heart outline/epicardium",
+        "Septum (partially visible)"
+      ],
+      "missing_structures": [
+        "Labeled ventricles (no clear labels)",
+        "Labeled atria (no clear labels)",
+        "Labeled aorta (no clear labels)",
+        "Pulmonary veins",
+        "Superior vena cava",
+        "Inferior vena cava",
+        "Heart valves (tricuspid, mitral, aortic, pulmonary)",
+        "Coronary arteries"
+      ],
+      "improvement_suggestions": "Add clear, visible labels for all four chambers (right/left atrium and ventricle), major vessels (aorta, pulmonary arteries, pulmonary veins, superior/inferior vena cava), and the four valves. Include arrows showing blood flow direction through the cardiac cycle."
+    },
+    {
+      "attempt": 2,
+      "seed": 49,
+      "mode": "text2img",
+      "gen_time_s": 386.0,
+      "sas": 0.2808,
+      "clip_score": 0.3042,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of the human heart, heart with four chambers: right atrium, left atrium, right ventricle, left ventricle, The septum separates the left and right sides of the heart, The heart's left side receives oxygenated blood and pumps it to the body, The heart's right side receives deoxygenated blood and pumps it to the lungs, The aorta carries oxygenated blood from the left ventricle to the body, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+      "clip_prompt": "scientific cross-section diagram, human heart, four chambers, right atrium, left atrium, right ventricle, left ventricle, septum, aorta, pulmonary arteries, vena cava, cardiac valves, blood flow arrows, labeled anatomy, white background, educational illustration, textbook style, detailed linework",
+      "t5_prompt": "A highly detailed scientific cross-section diagram of the human heart displayed in anatomical textbook style on a white background. The illustration shows all four cardiac chambers with clear anatomical accuracy: the right atrium positioned in the upper right receiving deoxygenated blood from the body, the left atrium in the upper left receiving oxygenated blood from the lungs, the right ventricle in the lower right, and the left ventricle in the lower left with its thicker muscular walls. The interventricular septum divides the left and right sides of the heart. Include all four cardiac valves with their precise locations: the tricuspid valve between the right atrium and right ventricle, the mitral valve between the left atrium and left ventricle, the pulmonary valve at the exit of the right ventricle, and the aortic valve at the exit of the left ventricle. Show the major vessels in their correct anatomical positions: the superior vena cava and inferior vena cava entering the right atrium, the pulmonary arteries exiting from the right ventricle toward the lungs, the pulmonary veins returning from the lungs to the left atrium, and the aorta emerging from the left ventricle carrying oxygenated blood throughout the body. Include directional arrows showing blood flow through the complete cardiac cycle, with color coding indicating oxygenated blood in red and deoxygenated blood in blue. Add clear, legible anatomical labels for every chamber, vessel, valve, and major structure. The illustration should reflect accurate human cardiac physiology and be suitable for educational and medical reference purposes.",
+      "llm_feedback": "Add clear text labels for all four chambers, major vessels, and anatomical features. Include a legend showing color coding for oxygenated (bright red) versus deoxygenated (dark red/blue) blood, and clearly label the septum and major valves to meet educational labeling standards.",
+      "image_file": "attempt_02_text2img_seed49.png",
+      "llm_score": 6.5,
+      "present_structures": [
+        "Right atrium",
+        "Left atrium",
+        "Right ventricle",
+        "Left ventricle",
+        "Aorta",
+        "Pulmonary arteries",
+        "Vena cava (superior and inferior)",
+        "Pulmonary veins",
+        "Myocardium",
+        "General heart shape and orientation"
+      ],
+      "missing_structures": [
+        "Anatomical labels/text identifying each structure",
+        "Septum clearly demarcated",
+        "Valves (mitral, tricuspid, aortic, pulmonary)",
+        "Clear distinction between oxygenated and deoxygenated blood flow indicators",
+        "Explicit label for coronary arteries"
+      ],
+      "improvement_suggestions": "Add clear text labels for all four chambers, major vessels, and anatomical features. Include a legend showing color coding for oxygenated (bright red) versus deoxygenated (dark red/blue) blood, and clearly label the septum and major valves to meet educational labeling standards."
+    },
+    {
+      "attempt": 3,
+      "seed": 56,
+      "mode": "text2img",
+      "gen_time_s": 389.3,
+      "sas": 0.2769,
+      "clip_score": 0.3062,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of the human heart, heart with four chambers: right atrium, left atrium, right ventricle, left ventricle, The septum separates the left and right sides of the heart, The heart's left side receives oxygenated blood and pumps it to the body, The heart's right side receives deoxygenated blood and pumps it to the lungs, The aorta carries oxygenated blood from the left ventricle to the body, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+      "clip_prompt": "scientific cross-section diagram, human heart, four chambers, right atrium, left atrium, right ventricle, left ventricle, septum, aorta, labeled anatomical parts, oxygenated blood bright red, deoxygenated blood dark blue, valves, educational illustration, white background, textbook style, detailed linework",
+      "t5_prompt": "A comprehensive scientific cross-section diagram of the human heart displaying all four chambers in anatomically accurate detail. The right atrium positioned on the right side receives deoxygenated blood from the superior and inferior vena cava, shown in dark blue coloring. The right ventricle located below the right atrium pumps this deoxygenated blood through the pulmonary artery to the lungs. The left atrium positioned on the left side receives oxygenated blood from the pulmonary veins, displayed in bright red coloring. The left ventricle located below the left atrium pumps oxygenated blood through the aorta to the entire body. The interventricular septum divides the left and right ventricles, shown as a thick muscular wall. The interatrial septum separates the two atria. The tricuspid valve controls blood flow from right atrium to right ventricle. The mitral valve, also called the bicuspid valve, controls blood flow from left atrium to left ventricle. The pulmonary valve and aortic valve are clearly marked. All major vessels including the aorta, pulmonary artery, superior vena cava, inferior vena cava, and pulmonary veins are labeled with their exact positions. A color legend indicates bright red for oxygenated blood and dark blue for deoxygenated blood. White background, detailed anatomical labels positioned clearly on all structures, scientific textbook style, educational diagram format, precise biological accuracy with all chambers and vessels distinctly visible in cross-sectional view.",
+      "llm_feedback": "Add clear text labels directly identifying each of the four chambers (right atrium, left atrium, right ventricle, left ventricle), and include labels for the major valves (tricuspid, mitral/bicuspid, aortic, pulmonary) to show blood flow prevention mechanisms. Consider highlighting or labeling the interventricular septum to show the division between left and right sides.",
+      "image_file": "attempt_03_text2img_seed56.png",
+      "llm_score": 6.5,
+      "present_structures": [
+        "Right atrium",
+        "Left atrium",
+        "Right ventricle",
+        "Left ventricle",
+        "Aorta",
+        "Pulmonary arteries",
+        "Pulmonary veins",
+        "Superior vena cava",
+        "Inferior vena cava",
+        "Heart chambers (general anatomy)",
+        "Myocardium (heart wall)"
+      ],
+      "missing_structures": [
+        "Septum (not clearly labeled)",
+        "Valves (tricuspid, mitral, aortic, pulmonary - not labeled)",
+        "Specific valve locations",
+        "Chamber labels (text labels for atria and ventricles are absent)"
+      ],
+      "improvement_suggestions": "Add clear text labels directly identifying each of the four chambers (right atrium, left atrium, right ventricle, left ventricle), and include labels for the major valves (tricuspid, mitral/bicuspid, aortic, pulmonary) to show blood flow prevention mechanisms. Consider highlighting or labeling the interventricular septum to show the division between left and right sides."
+    }
+  ],
+  "best_clip": 0.3106,
+  "total_gen_time_s": 1139.9,
+  "attempts_used": 3,
+  "passed": false
+}

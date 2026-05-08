@@ -1,0 +1,32 @@
+Query: Draw a labeled diagram of a leaf showing blade, midrib, petiole and veins
+Constraints (6):
+  - A leaf has a flat blade (lamina) that captures sunlight
+  - The midrib is the central vein running through the leaf
+  - Lateral veins branch off the midrib and transport water and nutrients
+  - The petiole is the stalk that attaches the leaf to the stem
+  - Stipules are small leaf-like appendages at the base of the petiole
+  - The leaf margin is the edge of the blade
+
+--- Attempt 1 (text2img) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of a leaf, leaf margin with the edge of the blade, Stipules are small leaf-like appendages at the base of the petiole, midrib with the central vein running through the leaf, petiole with the stalk that attaches the leaf to the stem, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, leaf anatomy, leaf margin, blade edge, stipules, midrib, central vein, petiole, stalk, lateral veins, vascular tissue, educational illustration, detailed linework, white background, biology textbook style, no text, no labels
+T5 prompt:   A detailed scientific cross-section and surface view diagram of a complete leaf structure showing all major anatomical components and their spatial relationships. The illustration displays a leaf blade with its flattened lamina extending from a central petiole or leaf stalk that connects to the main stem. At the base where the petiole attaches to the stem, small leaf-like stipules are positioned on either side. The leaf's internal vascular system is clearly visible with a prominent midrib running longitudinally down the center of the blade as the primary vein. Lateral veins branch perpendicularly from the midrib in a pinnate or netted pattern, subdividing progressively into smaller secondary and tertiary veins that distribute water and mineral nutrients throughout the leaf tissue. The leaf margins or edges of the blade are depicted with their characteristic serrated or entire borders. Cross-sectional views reveal the internal tissue layers including the upper and lower epidermis, mesophyll tissue with palisade and spongy cells, and the vascular bundles containing xylem and phloem for transport. The diagram uses color coding to distinguish different tissues and structures. Rendered in an educational scientific textbook style with high anatomical accuracy, clinical precision, detailed botanical illustration, clinical white background, no text labels, professional scientific diagram.
+Gen time:    376.2s
+
+--- Attempt 2 (img2img_str0.60) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of a leaf, leaf margin with the edge of the blade, Stipules are small leaf-like appendages at the base of the petiole, midrib with the central vein running through the leaf, petiole with the stalk that attaches the leaf to the stem, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, leaf anatomy, stipules, leaf blade lamina, midrib, petiole, lateral veins, leaf margin, vascular tissue, epidermis, mesophyll, educational illustration, detailed linework, white background, biology textbook style, no text, no labels, no annotations
+T5 prompt:   A detailed scientific cross-section and surface view diagram of a complete leaf structure showing all major anatomical components without any printed text or labels. The illustration displays a leaf blade with its flattened lamina extending from a central petiole or leaf stalk that connects to the main stem. At the base where the petiole attaches to the stem, a pair of small leaf-like stipules are positioned on either side. The leaf's internal vascular system is clearly visible with a prominent midrib running longitudinally down the center of the blade as the primary vein. Lateral veins branch perpendicularly from the midrib in a pinnate pattern, subdividing progressively into smaller secondary and tertiary veins. The leaf margins or edges of the blade are depicted with characteristic borders. Cross-sectional views reveal the internal tissue layers including the upper and lower epidermis and mesophyll tissue.
+Strength:    0.6
+Gen time:    660.3s
+
+--- Attempt 3 (img2img_str0.50) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of a leaf, leaf margin with the edge of the blade, Stipules are small leaf-like appendages at the base of the petiole, midrib with the central vein running through the leaf, petiole with the stalk that attaches the leaf to the stem, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific leaf anatomy diagram, stipules, leaf blade lamina, midrib, lateral veins, leaf margin, petiole, vascular tissue, epidermis, mesophyll, two-view illustration, detailed linework, white background, biology textbook style, absolutely no text, no labels, no annotations, no cross-sections
+T5 prompt:   A detailed scientific diagram of complete leaf anatomy presented in two clean views without any text or labels. First view: dorsal surface showing the full leaf blade with its flattened lamina, prominent central midrib running longitudinally, lateral veins branching perpendicularly in a pinnate pattern from the midrib, clearly defined leaf margins, petiole connecting the blade to the stem, and a pair of stipules positioned at the base where the petiole meets the stem. Second view: simple side profile showing the petiole attachment to the stem. The illustration clearly distinguishes major veins from minor subdividing veins. Internal tissue layers including epidermis and mesophyll are subtly indicated. No cross-sectional diagrams. Clean lines, scientific style, white background.
+Strength:    0.5
+Gen time:    484.7s
+

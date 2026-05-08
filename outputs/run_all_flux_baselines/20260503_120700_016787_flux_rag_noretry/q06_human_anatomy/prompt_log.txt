@@ -1,0 +1,18 @@
+Mode:        flux_rag_noretry
+Query:       Draw a labeled diagram of the human heart showing ventricles, atria and aorta
+Constraints (7):
+  - The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle
+  - The aorta carries oxygenated blood from the left ventricle to the body
+  - The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs
+  - The septum separates the left and right sides of the heart
+  - Valves prevent backflow of blood between chambers
+  - The heart's right side receives deoxygenated blood and pumps it to the lungs
+  - The heart's left side receives oxygenated blood and pumps it to the body
+
+--- Attempt 1 (text2img) ---
+Full prompt:  A highly detailed scientific cross-section diagram of labeled diagram of the human heart, The septum separates the left and right sides of the heart, heart with four chambers: right atrium, left atrium, right ventricle, left ventricle, The heart's left side receives oxygenated blood and pumps it to the body, The heart's right side receives deoxygenated blood and pumps it to the lungs, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt:  scientific cross-section diagram, human heart, four chambers, right atrium, left atrium, right ventricle, left ventricle, septum, oxygenated blood flow, deoxygenated blood, pulmonary circulation, educational illustration, detailed anatomy, white background, biology textbook style, clean linework, no labels
+T5 prompt:    A detailed scientific cross-section illustration of the human heart showing all four chambers in anatomical precision. The right atrium sits on the upper right, receiving deoxygenated blood from the superior and inferior vena cava. The right ventricle occupies the lower right chamber, with its thick muscular wall positioned below the atrium. The left atrium is positioned on the upper left, receiving oxygenated blood through the pulmonary veins. The left ventricle is the largest and most muscular chamber on the lower left, with its thick wall visible in cross-section. The interatrial septum runs vertically between the two atria, while the interventricular septum divides the two ventricles, showing the complete separation between the right and left sides of the heart. The cardiac valves are visible at chamber junctions, including the tricuspid valve between right atrium and ventricle, and the mitral valve between left atrium and ventricle. The aorta emerges from the left ventricle, the pulmonary artery branches from the right ventricle, and the major veins enter the atria. The heart wall layers are shown in cross-section including the epicardium, myocardium, and endocardium. Color differentiation shows oxygenated blood in bright red on the left side and deoxygenated blood in deep blue on the right side. The illustration is rendered in a scientific textbook style on a white background, with high anatomical accuracy and detailed internal structures clearly visible, designed as an educational medical diagram without any text or labels.
+Seed:         42
+Steps:        20
+Gen time:     382.1s

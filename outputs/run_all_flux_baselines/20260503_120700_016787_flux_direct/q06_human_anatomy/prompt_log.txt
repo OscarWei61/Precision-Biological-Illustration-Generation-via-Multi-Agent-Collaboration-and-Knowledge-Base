@@ -1,0 +1,18 @@
+Mode:        flux_direct
+Query:       Draw a labeled diagram of the human heart showing ventricles, atria and aorta
+Constraints (7):
+  - The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle
+  - The aorta carries oxygenated blood from the left ventricle to the body
+  - The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs
+  - The septum separates the left and right sides of the heart
+  - Valves prevent backflow of blood between chambers
+  - The heart's right side receives deoxygenated blood and pumps it to the lungs
+  - The heart's left side receives oxygenated blood and pumps it to the body
+
+--- Attempt 1 (text2img) ---
+Full prompt:  Draw a labeled diagram of the human heart showing ventricles, atria and aorta
+CLIP prompt:  anatomical heart diagram, left ventricle, right ventricle, atria, aorta, medical illustration, cross-section view, clean linework, educational, white background, no text labels
+T5 prompt:    An anatomical cross-section illustration of the human heart viewed from the anterior perspective, displaying the four chambers in their correct spatial positions with the right atrium positioned superiorly and laterally on the right side receiving blood from the superior and inferior vena cava, the right ventricle positioned inferiorly and anteriorly with thick muscular walls containing trabeculations, the left atrium positioned superiorly on the left side receiving oxygenated blood from the pulmonary veins, and the left ventricle positioned inferiorly and posteriorly with the thickest muscular wall suited for systemic circulation. The aorta is shown emerging from the left ventricle at the superior aspect curving upward and to the right as the ascending aorta before branching into the brachiocephalic, left common carotid, and left subclavian arteries. The pulmonary artery is visible branching from the right ventricle dividing into right and left pulmonary arteries. The four pulmonary veins are shown entering the left atrium, and the superior and inferior vena cava are shown entering the right atrium. The endocardium, myocardium, and epicardium layers are subtly differentiated by color shading. The valves including the tricuspid valve, pulmonary valve, mitral valve, and aortic valve are visible at their anatomical locations. Rendered as a medical textbook illustration with careful attention to anatomical accuracy, three-dimensional depth, white background, educational style, no text labels, professional medical illustration.
+Seed:         42
+Steps:        20
+Gen time:     393.3s

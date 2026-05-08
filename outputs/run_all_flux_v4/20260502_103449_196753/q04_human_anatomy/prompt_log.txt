@@ -1,0 +1,36 @@
+Query: Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve
+Constraints (7):
+  - The cornea is the transparent front part of the eye that refracts light
+  - The iris controls the size of the pupil
+  - The lens focuses light onto the retina
+  - The retina contains photoreceptor cells (rods and cones)
+  - The optic nerve transmits signals from the retina to the brain
+  - The fovea is the area of sharpest vision in the retina
+  - The vitreous gel fills the space between the lens and retina
+
+--- Attempt 1 (text2img) ---
+Seed:              42
+ControlNet scale:  0.70  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of a human eye, cornea with the transparent front part of the eye that refracts light, head with compound eyes, antennae, and mouthparts, retina with photoreceptor cells (rods and cones), fovea with the area of sharpest vision in the retina, The optic nerve transmits signals from the retina to the brain, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human eye, cornea, retina, photoreceptor cells, rods cones, fovea, optic nerve, transparent refracting lens, detailed anatomy, educational illustration, white background, biology textbook style, clean linework, no text
+T5 prompt:   A highly detailed scientific cross-section diagram of a complete human eye showing all anatomical structures in accurate biological proportions and spatial relationships. The transparent cornea forms the curved front surface that refracts incoming light rays into the eye. Behind the cornea lies the aqueous humor filling the anterior chamber, followed by the iris controlling pupil diameter, and the crystalline lens which focuses light onto the retina. The vitreous humor fills the large posterior chamber providing structural support. The retina lines the back inner wall containing millions of photoreceptor cells organized in distinct layers, with rod cells providing peripheral vision and night vision, and cone cells concentrated in the central region providing color vision and sharp detail recognition. The fovea centralis appears as a small pit in the retinal center marking the area of absolute sharpest vision with the highest concentration of cones. The optic nerve emerges from the back of the eye as a thick bundle of nerve fibers transmitting visual signals from retinal photoreceptors directly to the brain's visual cortex. The choroid layer beneath the retina supplies oxygen and nutrients through its rich vascular network. The sclera forms the tough white outer fibrous layer providing structural integrity. Cross-sectional view shows all layers in proper depth and anatomical arrangement. Educational scientific textbook illustration style, white background, no text labels, highly accurate biological rendering.
+Gen time:    524.1s
+
+--- Attempt 2 (img2img_cn0.50_str0.28) ---
+Seed:              42
+ControlNet scale:  0.50  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of a human eye, cornea with the transparent front part of the eye that refracts light, head with compound eyes, antennae, and mouthparts, retina with photoreceptor cells (rods and cones), fovea with the area of sharpest vision in the retina, The optic nerve transmits signals from the retina to the brain, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human eye, cornea, iris, pupil, lens, aqueous humor, vitreous humor, retina, photoreceptor cells, rods cones, fovea, ciliary body, choroid, optic nerve, sclera, detailed anatomy, educational, white background, biology textbook style, clean linework, no text
+T5 prompt:   A highly detailed scientific cross-section diagram of a complete human eye showing all anatomical structures in accurate biological proportions and spatial relationships. The transparent cornea forms the curved front surface refracting light. The iris controls pupil diameter, with aqueous humor filling the anterior chamber behind it. The crystalline lens focuses light. The ciliary body connects to the lens and regulates accommodation. The vitreous humor fills the large posterior chamber. The choroid layer supplies blood beneath the retina. The retina lines the back inner wall with distinct photoreceptor cell layers: rod cells for peripheral and night vision, cone cells concentrated in the central region for color vision and sharp detail. The fovea centralis appears as a distinct central depression marking the area of sharpest vision with highest cone concentration. The optic nerve emerges from the back of the eye.
+Strength:    0.28
+Gen time:    1112.4s
+
+--- Attempt 3 (img2img_cn0.50_str0.28) ---
+Seed:              42
+ControlNet scale:  0.50  (spatial_data=True)
+Full prompt: A highly detailed scientific cross-section diagram of a human eye, cornea with the transparent front part of the eye that refracts light, head with compound eyes, antennae, and mouthparts, retina with photoreceptor cells (rods and cones), fovea with the area of sharpest vision in the retina, The optic nerve transmits signals from the retina to the brain, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human eye, cornea, iris, pupil, lens, aqueous humor, vitreous humor, retina, macula, fovea, photoreceptor cells rods cones, ciliary body, choroid, optic nerve, sclera, detailed anatomy, educational, white background, biology textbook style, clean linework, no text, no labels
+T5 prompt:   A highly detailed scientific cross-section diagram of a complete human eye showing all anatomical structures in accurate biological proportions and spatial relationships. The transparent cornea forms the curved front surface refracting light. The iris controls pupil diameter, with aqueous humor filling the anterior chamber behind it. The crystalline lens focuses light. The ciliary body connects to the lens and regulates accommodation. The vitreous humor fills the large posterior chamber. The choroid layer supplies blood beneath the retina. The retina lines the back inner wall with distinct photoreceptor cell layers: rod cells for peripheral and night vision, cone cells concentrated in the central region for color vision and sharp detail. The macula appears as a specialized central region of heightened visual acuity. The fovea centralis is prominently visible as a distinct central depression at the macula's core, marked with subtle highlighting to show the area of sharpest vision with the highest
+Strength:    0.28
+Gen time:    1982.5s
+

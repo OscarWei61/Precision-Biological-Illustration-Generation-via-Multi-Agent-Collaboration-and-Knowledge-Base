@@ -1,0 +1,17 @@
+Mode:        flux_direct
+Query:       Draw a labeled diagram of a leaf showing blade, midrib, petiole and veins
+Constraints (6):
+  - A leaf has a flat blade (lamina) that captures sunlight
+  - The midrib is the central vein running through the leaf
+  - Lateral veins branch off the midrib and transport water and nutrients
+  - The petiole is the stalk that attaches the leaf to the stem
+  - Stipules are small leaf-like appendages at the base of the petiole
+  - The leaf margin is the edge of the blade
+
+--- Attempt 1 (text2img) ---
+Full prompt:  Draw a labeled diagram of a leaf showing blade, midrib, petiole and veins
+CLIP prompt:  leaf cross-section diagram, blade, midrib, petiole, veins, botanical illustration, educational, clean linework, white background, scientific diagram, no text labels
+T5 prompt:    An educational scientific diagram of a leaf structure showing all major anatomical components on a white background. The leaf blade forms the broad, flat photosynthetic surface with a smooth or slightly textured appearance. The midrib runs as a prominent central vein down the length of the blade, appearing as a slightly raised linear structure that provides structural support. The petiole extends from the base of the leaf blade as a slender stalk that connects the leaf to the stem, often appearing slightly cylindrical or flattened. Secondary veins branch laterally from the midrib in a pinnate or parallel pattern depending on leaf type, creating a network of vascular tissue that distributes water and nutrients throughout the blade. Tertiary veins form finer branching patterns connecting the secondary veins and completing the venation network. The entire leaf structure demonstrates the vascular bundles containing xylem and phloem tissues that transport fluids and sugars. The leaf margins are clearly defined, showing whether they are smooth, serrated, or lobed. The presentation should be a clean cross-sectional and surface view botanical illustration in a scientific textbook style with no background clutter, suitable for educational purposes in plant biology or botany curricula.
+Seed:         42
+Steps:        20
+Gen time:     403.6s

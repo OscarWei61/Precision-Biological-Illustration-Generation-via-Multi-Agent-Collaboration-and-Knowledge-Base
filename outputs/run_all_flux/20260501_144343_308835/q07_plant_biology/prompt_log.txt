@@ -1,0 +1,33 @@
+Query: Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil
+Constraints (7):
+  - A flower has petals that attract pollinators
+  - Sepals are leaf-like structures that protect the flower bud
+  - The stamen is the male reproductive organ consisting of anther and filament
+  - The anther produces pollen grains
+  - The pistil is the female reproductive organ consisting of stigma, style, and ovary
+  - The stigma traps pollen during pollination
+  - The ovary contains egg cells that develop into seeds after fertilization
+
+--- Attempt 1 (text2img) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the parts of a flower, Sepals are leaf-like structures that protect the flower bud, Stipules are small leaf-like appendages at the base of the petiole, stamen with the male reproductive organ consisting of anther and filament, pistil with the female reproductive organ consisting of stigma, style, and ovary, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: flower cross-section diagram, sepals, stamen, pistil, anther, filament, stigma, style, ovary, reproductive structures, botanical illustration, scientific educational, detailed linework, white background, biology textbook, clean technical drawing, no text
+T5 prompt:   A highly detailed scientific cross-section diagram showing the complete anatomical structure of a flower with all reproductive and protective components clearly visible. The sepals are depicted as leaf-like structures forming the outermost whorl that protects the developing flower bud. Stipules are shown as small leaf-like appendages positioned at the base of the petiole where the leaf stalk connects to the stem. The stamen is illustrated as the male reproductive organ composed of two distinct parts: the anther at the apex containing pollen sacs with developing pollen grains, and the filament as the slender stalk supporting the anther. The pistil is shown as the female reproductive organ with three integrated components: the stigma at the apex as the receptive surface for pollen, the style as the elongated tube connecting downward, and the ovary at the base containing ovules that will develop into seeds. A magnified cross-section of a plant cell is included showing the rigid cell wall made of cellulose as the outermost layer surrounding and supporting the cell membrane, with the cell membrane beneath as the selective barrier, and internal organelles visible within. The illustration uses accurate color differentiation to distinguish reproductive organs, protective structures, and cellular layers. Scientific educational style, detailed textbook diagram, white background, no text labels, accurate botanical biology illustration.
+Gen time:    399.7s
+
+--- Attempt 2 (img2img_str0.60) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the parts of a flower, Sepals are leaf-like structures that protect the flower bud, Stipules are small leaf-like appendages at the base of the petiole, stamen with the male reproductive organ consisting of anther and filament, pistil with the female reproductive organ consisting of stigma, style, and ovary, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: flower cross-section diagram, pistil, stigma, style, ovary, stamen, anther, filament, pollen grains, sepals, petals, reproductive structures, botanical illustration, scientific educational, detailed linework, white background, clean technical drawing, no text, no labels
+T5 prompt:   A highly detailed scientific cross-section diagram of flower anatomy showing all reproductive and protective structures without any text or labels. The sepals form the outermost protective whorl. Petals are positioned interior to sepals. The male stamen consists of the filament as a slender supporting stalk and the anther at its apex containing pollen sacs with visible pollen grains. The female pistil is illustrated with three distinct components: the stigma at the apex as the receptive surface, the style as the elongated connecting tube, and the ovary at the base containing developing ovules. All structures are clearly identified by their anatomical position and morphology rather than text.
+Strength:    0.6
+Gen time:    711.5s
+
+--- Attempt 3 (img2img_str0.50) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the parts of a flower, Sepals are leaf-like structures that protect the flower bud, Stipules are small leaf-like appendages at the base of the petiole, stamen with the male reproductive organ consisting of anther and filament, pistil with the female reproductive organ consisting of stigma, style, and ovary, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: flower cross-section diagram, pistil stigma style ovary, stamen filament anther, pollen grains, sepals petals, reproductive structures, botanical illustration, scientific educational, detailed linework, white background, clean technical drawing, unlabeled, no text labels
+T5 prompt:   A highly detailed scientific cross-section diagram of flower anatomy showing all reproductive and protective structures with absolutely no text labels or annotations. The sepals form the outermost protective whorl. Petals are positioned interior to sepals. The male stamen consists of the filament as a slender supporting stalk and the anther at its apex containing pollen sacs with visible pollen grains. The female pistil displays three anatomically distinct components: the stigma at the apex as the receptive surface, the style as the elongated connecting tube, and the ovary at the base. Ovules are present inside the ovary. All structures are clearly visible and distinguishable by anatomical position and morphology only.
+Strength:    0.5
+Gen time:    616.2s
+

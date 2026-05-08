@@ -1,0 +1,159 @@
+{
+  "query_id": "q10",
+  "domain": "zoology",
+  "query": "Draw a labeled diagram of an insect body showing head, thorax, abdomen and antennae",
+  "reference": "1191.png",
+  "wall_time_s": 1591.7,
+  "verifier_mode": "combined",
+  "params": {
+    "max_retries": 3,
+    "steps": 20,
+    "seed": 42
+  },
+  "backend": "flux",
+  "constraints": [
+    "An insect body is divided into three main parts: head, thorax, and abdomen",
+    "Insects have exactly 6 legs attached to the thorax",
+    "The head contains compound eyes, antennae, and mouthparts",
+    "Antennae are sensory organs used for smell and touch",
+    "Wings, when present, are attached to the thorax",
+    "The abdomen contains the digestive and reproductive organs"
+  ],
+  "retrieved": [
+    "An insect body is divided into three main parts: head, thorax, and abdomen",
+    "The head contains compound eyes, antennae, and mouthparts",
+    "Insects have exactly 6 legs attached to the thorax",
+    "Antennae are sensory organs used for smell and touch",
+    "The abdomen contains the digestive and reproductive organs",
+    "Wings, when present, are attached to the thorax",
+    "The stamen is the male reproductive organ consisting of anther and filament",
+    "The midrib is the central vein running through the leaf"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 374.7,
+      "sas": 0.2691,
+      "clip_score": 0.3012,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, stamen with the male reproductive organ consisting of anther and filament, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "insect cross-section diagram, head thorax abdomen, compound eyes, antennae, mouthparts, six legs, sensory organs, scientific illustration, educational diagram, biology textbook style, detailed anatomy, white background, no text, no labels",
+      "t5_prompt": "A detailed scientific cross-section illustration showing a complete insect anatomy with all major body regions clearly distinguished and their internal structures visible. The insect body is divided into three distinct main sections: the head at the anterior end containing a pair of large compound eyes positioned laterally with hundreds of individual ommatidia visible, a pair of segmented antennae arising from the head used for olfactory and tactile sensation, and specialized mouthparts adapted for feeding. The thorax forms the middle body region with three pairs of jointed legs, exactly six legs total, attached symmetrically to the three thoracic segments, each leg composed of coxa, trochanter, femur, tibia, and tarsus segments allowing for locomotion. The abdomen extends posteriorly from the thorax and contains the visceral organs and reproductive structures including the stamen with male reproductive organs composed of the anther producing pollen and the filament providing structural support. The cross-sectional view reveals internal anatomy including the neural ganglia, tracheal system for respiration, digestive tract, and hemocoel. All structures are rendered with precise biological accuracy showing proper spatial relationships between systems. The illustration uses clean white background with scientific textbook accuracy and educational clarity, rendered in anatomically correct proportions and detailed biological precision without any text labels or annotations.",
+      "image_file": "attempt_01_text2img_seed42.png",
+      "llm_score": 8.5,
+      "present_structures": [
+        "Head",
+        "Thorax",
+        "Abdomen",
+        "Antennae",
+        "Six legs",
+        "Wings",
+        "Compound eyes",
+        "Body segmentation",
+        "Internal abdominal structures (reproductive/digestive organs visible)"
+      ],
+      "missing_structures": [
+        "Mouthparts (not clearly visible)",
+        "Text labels/annotations (as per requirements, this is correct but note the query asked for 'labeled diagram')"
+      ],
+      "improvement_suggestions": "Add subtle visual distinction or shading to highlight the three body regions (head, thorax, abdomen) as separate sections. Consider showing mouthparts more clearly on the head region to demonstrate complete head anatomy.",
+      "refined_clip_for_next": "insect cross-section diagram, head thorax abdomen with distinct shading, compound eyes, antennae, mouthparts mandibles, six legs, wings, sensory organs, internal organs, scientific illustration, educational diagram, biology textbook style, detailed anatomy, white background, no text",
+      "refined_t5_for_next": "A detailed scientific cross-section illustration of complete insect anatomy with three distinctly shaded body regions. The head contains large compound eyes with visible ommatidia, segmented antennae for sensation, and clearly visible mouthparts including mandibles adapted for feeding. The thorax is the middle section with three pairs of jointed legs (six total), each composed of coxa, trochanter, femur, tibia, and tarsus segments, plus wings attached dorsally. The abdomen extends posteriorly containing visible internal organs including reproductive and digestive structures. Body segmentation is clearly shown throughout. Use subtle color shading or borders to visually distinguish the three main body regions from each other. Anatomically accurate, scientific diagram style, white background, no labels or text annotations.",
+      "refiner_changes": [
+        "Added 'mouthparts mandibles' to CLIP prompt with explicit keyword emphasis",
+        "Added sentence in T5 describing mouthparts and mandibles on head region",
+        "Added 'with distinct shading' to CLIP to address verifier suggestion for region differentiation",
+        "Added detailed shading instruction in T5: 'Use subtle color shading or borders to visually distinguish the three main body regions'",
+        "Clarified wings are attached dorsally to thorax",
+        "Restructured T5 to be concise while maintaining all required structures (now 130 words)",
+        "Removed redundant pollen/stamen language that was botanically inappropriate for insect anatomy",
+        "Confirmed 'no text, no labels' requirement per violation rules"
+      ]
+    },
+    {
+      "attempt": 2,
+      "seed": 42,
+      "mode": "img2img_str0.60",
+      "gen_time_s": 614.5,
+      "sas": 0.2659,
+      "clip_score": 0.3009,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, stamen with the male reproductive organ consisting of anther and filament, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "insect cross-section diagram, head thorax abdomen with distinct shading, compound eyes, antennae, mouthparts mandibles, six legs, wings, sensory organs, internal organs, scientific illustration, educational diagram, biology textbook style, detailed anatomy, white background, no text",
+      "t5_prompt": "A detailed scientific cross-section illustration of complete insect anatomy with three distinctly shaded body regions. The head contains large compound eyes with visible ommatidia, segmented antennae for sensation, and clearly visible mouthparts including mandibles adapted for feeding. The thorax is the middle section with three pairs of jointed legs (six total), each composed of coxa, trochanter, femur, tibia, and tarsus segments, plus wings attached dorsally. The abdomen extends posteriorly containing visible internal organs including reproductive and digestive structures. Body segmentation is clearly shown throughout. Use subtle color shading or borders to visually distinguish the three main body regions from each other. Anatomically accurate, scientific diagram style, white background, no labels or text annotations.",
+      "image_file": "attempt_02_img2img_str0.60_seed42.png",
+      "llm_score": 8.5,
+      "present_structures": [
+        "Head",
+        "Thorax",
+        "Abdomen",
+        "Antennae",
+        "Compound eyes",
+        "Six legs",
+        "Wings (elytra/wing covers)",
+        "Segmented body",
+        "Mouthparts",
+        "Dorsal coloration"
+      ],
+      "missing_structures": [
+        "Internal digestive system detail",
+        "Leg segmentation clarity (femur, tibia, tarsus)"
+      ],
+      "improvement_suggestions": "Add subtle internal anatomical details showing the digestive tract within the abdomen, and ensure leg segments are more distinctly articulated to show proper insect leg anatomy (coxa, trochanter, femur, tibia, tarsus).",
+      "refined_clip_for_next": "insect cross-section diagram, head thorax abdomen with distinct shading, compound eyes, antennae, mouthparts mandibles, six legs with femur tibia tarsus segments, wings, digestive system, internal organs, sensory organs, scientific illustration, educational diagram, biology textbook style, detailed anatomy, white background, no text",
+      "refined_t5_for_next": "A detailed scientific cross-section illustration of complete insect anatomy with three distinctly shaded body regions. The head contains large compound eyes with visible ommatidia, segmented antennae for sensation, and clearly visible mouthparts including mandibles adapted for feeding. The thorax is the middle section with three pairs of jointed legs (six total), each distinctly segmented showing coxa, trochanter, femur, tibia, and tarsus articulations, plus wings attached dorsally. The abdomen extends posteriorly containing visible internal organs including a clearly depicted digestive system tract, reproductive structures, and other viscera. Body segmentation is clearly shown throughout. Use subtle color shading or borders to visually distinguish the three main body regions. Anatomically accurate, scientific diagram style, white background, no labels or text.",
+      "refiner_changes": [
+        "Added 'digestive system' as keyword in CLIP prompt",
+        "Added leg segment names 'femur tibia tarsus' to CLIP prompt for emphasis on leg articulation",
+        "Expanded T5 to explicitly describe digestive system as 'a clearly depicted digestive system tract' within abdomen",
+        "Enhanced T5 leg description to emphasize 'distinctly segmented' with all five segments (coxa, trochanter, femur, tibia, tarsus) explicitly named",
+        "Maintained all present structures (head, thorax, abdomen, antennae, compound eyes, six legs, wings, mouthparts, dorsal coloration)"
+      ]
+    },
+    {
+      "attempt": 3,
+      "seed": 42,
+      "mode": "img2img_str0.50",
+      "gen_time_s": 540.7,
+      "sas": 0.2661,
+      "clip_score": 0.2989,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, stamen with the male reproductive organ consisting of anther and filament, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "insect cross-section diagram, head thorax abdomen with distinct shading, compound eyes, antennae, mouthparts mandibles, six legs with femur tibia tarsus segments, wings, digestive system, internal organs, sensory organs, scientific illustration, educational diagram, biology textbook style, detailed anatomy, white background, no text",
+      "t5_prompt": "A detailed scientific cross-section illustration of complete insect anatomy with three distinctly shaded body regions. The head contains large compound eyes with visible ommatidia, segmented antennae for sensation, and clearly visible mouthparts including mandibles adapted for feeding. The thorax is the middle section with three pairs of jointed legs (six total), each distinctly segmented showing coxa, trochanter, femur, tibia, and tarsus articulations, plus wings attached dorsally. The abdomen extends posteriorly containing visible internal organs including a clearly depicted digestive system tract, reproductive structures, and other viscera. Body segmentation is clearly shown throughout. Use subtle color shading or borders to visually distinguish the three main body regions. Anatomically accurate, scientific diagram style, white background, no labels or text.",
+      "image_file": "attempt_03_img2img_str0.50_seed42.png",
+      "llm_score": 7.5,
+      "present_structures": [
+        "Head",
+        "Thorax",
+        "Abdomen",
+        "Antennae",
+        "Six legs",
+        "Wings (elytra/hardened front wings)",
+        "Compound eyes",
+        "Body segmentation"
+      ],
+      "missing_structures": [
+        "Visible mouthparts",
+        "Clear distinction of thoracic segments",
+        "Hind wings visible beneath elytra"
+      ],
+      "improvement_suggestions": "Add visible mouthparts on the head region and ensure the three thoracic segments are distinctly separated to better illustrate insect segmentation. Consider showing the membranous hind wings peeking from beneath the hardened elytra for anatomical completeness."
+    }
+  ],
+  "best_clip": 0.3012,
+  "total_gen_time_s": 1529.9,
+  "attempts_used": 3,
+  "passed": true,
+  "fully_passed": false,
+  "final_missing": [
+    "Visible mouthparts",
+    "Clear distinction of thoracic segments",
+    "Hind wings visible beneath elytra"
+  ]
+}

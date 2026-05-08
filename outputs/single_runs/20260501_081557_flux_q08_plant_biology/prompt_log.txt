@@ -1,0 +1,32 @@
+Query: Draw a labeled diagram of a leaf showing blade, midrib, petiole and veins
+Constraints (6):
+  - A leaf has a flat blade (lamina) that captures sunlight
+  - The midrib is the central vein running through the leaf
+  - Lateral veins branch off the midrib and transport water and nutrients
+  - The petiole is the stalk that attaches the leaf to the stem
+  - Stipules are small leaf-like appendages at the base of the petiole
+  - The leaf margin is the edge of the blade
+
+--- Attempt 1 (text2img) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of a leaf, leaf margin with the edge of the blade, Stipules are small leaf-like appendages at the base of the petiole, midrib with the central vein running through the leaf, petiole with the stalk that attaches the leaf to the stem, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, leaf anatomy, blade margin, stipules, midrib, petiole, lateral veins, vascular tissue, educational illustration, detailed linework, white background, biology textbook style, no text, no labels
+T5 prompt:   A highly detailed scientific cross-section diagram showing the complete anatomy of a leaf from base to tip. At the base, visible stipules appear as small leaf-like appendages flanking the petiole. The petiole is the slender stalk that connects the leaf blade to the main stem, displaying its cylindrical structure. The leaf blade extends from the petiole with clearly defined edges showing the leaf margin and blade border. Running centrally through the entire leaf is the prominent midrib, which functions as the main vein system for transporting water and essential nutrients throughout the tissue. Branching laterally from both sides of the midrib are numerous lateral veins that progressively subdivide into smaller venules, creating a detailed vascular network pattern. The cross-sectional view reveals the internal layered structure of leaf tissue including the epidermis, mesophyll layers, and vascular bundles. All structures are shown in accurate biological detail with proper spatial relationships and three-dimensional perspective. The illustration uses scientific color coding and precise anatomical representation suitable for educational textbooks. White background with no text labels or annotations, maintaining a clean professional appearance typical of scientific botanical diagrams and educational reference materials.
+Gen time:    369.1s
+
+--- Attempt 2 (img2img_str0.60) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of a leaf, leaf margin with the edge of the blade, Stipules are small leaf-like appendages at the base of the petiole, midrib with the central vein running through the leaf, petiole with the stalk that attaches the leaf to the stem, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, leaf anatomy, stipules, blade margin, midrib, petiole, lateral veins, vascular tissue, educational illustration, detailed linework, white background, biology textbook style, labeled structures, no artist signature
+T5 prompt:   A highly detailed scientific cross-section diagram showing complete leaf anatomy from base to tip. At the base, stipules appear as small leaf-like appendages flanking the petiole. The petiole is the slender stalk connecting the leaf blade to the stem, displaying cylindrical structure. The leaf blade extends from the petiole with clearly defined edges showing the leaf margin. Running centrally through the entire leaf is the prominent midrib, the main vein system for transporting water and nutrients. Branching laterally from both sides of the midrib are numerous lateral veins that subdivide into smaller venules, creating a detailed vascular network pattern. Cross-sectional view reveals internal layered tissue including epidermis, mesophyll layers, and vascular bundles. All structures are labeled with clear text annotations identifying blade, midrib, petiole, lateral veins, stipules, and vascular tissue. Accurate biological detail with proper spatial relationships.
+Strength:    0.6
+Gen time:    751.8s
+
+--- Attempt 3 (img2img_str0.50) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of a leaf, leaf margin with the edge of the blade, Stipules are small leaf-like appendages at the base of the petiole, midrib with the central vein running through the leaf, petiole with the stalk that attaches the leaf to the stem, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, leaf anatomy, stipules, blade, midrib, petiole, leaf margin, lateral veins, vascular tissue, text labels, educational illustration, detailed linework, white background, biology textbook style
+T5 prompt:   A highly detailed scientific cross-section diagram showing complete leaf anatomy from base to tip. At the base, stipules appear as small leaf-like appendages flanking the petiole. The petiole is the slender stalk connecting the leaf blade to the stem, displaying cylindrical structure. The leaf blade extends from the petiole with clearly defined edges showing the leaf margin. Running centrally through the entire leaf is the prominent midrib, the main vein system. Branching laterally from both sides of the midrib are numerous lateral veins subdividing into smaller venules, creating a detailed vascular network pattern. Cross-sectional view reveals internal layered tissue including epidermis, mesophyll layers, and vascular bundles. All structures are clearly labeled with text annotations identifying blade, midrib, petiole, lateral veins, stipules, and vascular tissue. Accurate biological detail with proper spatial relationships.
+Strength:    0.5
+Gen time:    544.8s
+

@@ -1,0 +1,159 @@
+{
+  "query_id": "q08",
+  "domain": "plant_biology",
+  "query": "Draw a labeled diagram of a leaf showing blade, midrib, petiole and veins",
+  "reference": "1086.png",
+  "wall_time_s": 1178.0,
+  "verifier_mode": "combined",
+  "params": {
+    "max_retries": 3,
+    "steps": 20,
+    "seed": 42
+  },
+  "backend": "flux",
+  "constraints": [
+    "A leaf has a flat blade (lamina) that captures sunlight",
+    "The midrib is the central vein running through the leaf",
+    "Lateral veins branch off the midrib and transport water and nutrients",
+    "The petiole is the stalk that attaches the leaf to the stem",
+    "Stipules are small leaf-like appendages at the base of the petiole",
+    "The leaf margin is the edge of the blade"
+  ],
+  "retrieved": [
+    "The midrib is the central vein running through the leaf",
+    "The leaf margin is the edge of the blade",
+    "The petiole is the stalk that attaches the leaf to the stem",
+    "Lateral veins branch off the midrib and transport water and nutrients",
+    "Stipules are small leaf-like appendages at the base of the petiole",
+    "A leaf has a flat blade (lamina) that captures sunlight",
+    "The head contains compound eyes, antennae, and mouthparts",
+    "An insect body is divided into three main parts: head, thorax, and abdomen"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 373.7,
+      "sas": 0.287,
+      "clip_score": 0.3151,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a leaf, leaf margin with the edge of the blade, Stipules are small leaf-like appendages at the base of the petiole, midrib with the central vein running through the leaf, petiole with the stalk that attaches the leaf to the stem, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, leaf anatomy, leaf margin blade edge, stipules base petiole, midrib central vein, lateral veins branching, petiole stalk, vascular tissue, educational illustration, detailed botanical diagram, white background, biology textbook style, clean linework, no text",
+      "t5_prompt": "A highly detailed scientific cross-section diagram showing the complete anatomical structure of a leaf with all its essential components displayed in educational textbook style. The illustration presents a leaf with clearly visible stipules shown as small leaf-like appendages positioned at the base where the petiole attaches to the stem. The petiole is depicted as the stalk that connects the leaf blade to the main stem, displaying its structural composition. The prominent midrib runs centrally through the entire length of the leaf blade, serving as the primary vascular pathway that transports water and essential nutrients throughout the leaf tissue. Branching laterally from the midrib are the lateral veins, which spread across the leaf blade in a network pattern, demonstrating how these secondary veins distribute water and nutrients to all regions of the photosynthetic tissue. The leaf margin is clearly shown at the blade's edge, displaying the boundary between the leaf tissue and the external environment. The cross-sectional view reveals the internal layering and cellular organization within the leaf tissue. The diagram uses accurate biological coloring and shading to distinguish different tissue types and vascular structures. Presented on a clean white background in a precise scientific illustration style suitable for biology education, with no text labels or annotations, emphasizing anatomical accuracy and structural clarity.",
+      "image_file": "attempt_01_text2img_seed42.png",
+      "combined_score": 0.4685,
+      "improved": true,
+      "rollback": false,
+      "llm_score": 6.5,
+      "present_structures": [
+        "Leaf blade (lamina)",
+        "Midrib (central vein)",
+        "Lateral veins",
+        "Petiole (leaf stalk)",
+        "Leaf margin with serrated edges"
+      ],
+      "missing_structures": [
+        "Stipules",
+        "Text labels (as requested in query)"
+      ],
+      "improvement_suggestions": "Add stipule structures at the base of the petiole where it attaches to the blade. Include clear text labels pointing to each of the five required structures: blade, midrib, petiole, veins, and stipules.",
+      "refined_clip_for_next": "scientific cross-section diagram, leaf anatomy, stipules, blade lamina, midrib central vein, lateral veins, petiole stalk, leaf margin serrated edge, vascular tissue, text labels, educational illustration, botanical diagram, white background, biology textbook style, clean linework",
+      "refined_t5_for_next": "A highly detailed scientific cross-section diagram showing complete leaf anatomy in educational textbook style. The leaf blade (lamina) forms the primary photosynthetic surface. The stipules are small leaf-like appendages positioned at the base where the petiole attaches to the stem. The petiole is the stalk connecting the leaf blade to the main stem, displaying internal vascular composition. The prominent midrib runs centrally through the leaf blade as the primary vascular pathway. Branching laterally from the midrib are lateral veins spreading in a network pattern across the photosynthetic tissue. The leaf margin is clearly shown with serrated edges at the blade's boundary. Clear text labels point to each structure: blade, midrib, lateral veins, petiole, and stipules. White background, no additional decorative elements.",
+      "refiner_changes": [
+        "Added 'stipules' as keyword in CLIP prompt near front",
+        "Added 'text labels' to CLIP prompt to explicitly show labeling requirement",
+        "Added explicit sentence in T5 describing stipule position and structure",
+        "Added T5 sentence confirming text labels point to all five required structures",
+        "Reorganized T5 to systematically describe each structure with proper anatomical detail",
+        "Maintained all present structures (blade, midrib, lateral veins, petiole, leaf margin with serrated edges)"
+      ],
+      "next_strength": 0.28,
+      "next_gen_mode": "img2img"
+    },
+    {
+      "attempt": 2,
+      "seed": 42,
+      "mode": "img2img_str0.28",
+      "gen_time_s": 370.9,
+      "sas": 0.2842,
+      "clip_score": 0.3128,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a leaf, leaf margin with the edge of the blade, Stipules are small leaf-like appendages at the base of the petiole, midrib with the central vein running through the leaf, petiole with the stalk that attaches the leaf to the stem, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, leaf anatomy, stipules, blade lamina, midrib central vein, lateral veins, petiole stalk, leaf margin serrated edge, vascular tissue, text labels, educational illustration, botanical diagram, white background, biology textbook style, clean linework",
+      "t5_prompt": "A highly detailed scientific cross-section diagram showing complete leaf anatomy in educational textbook style. The leaf blade (lamina) forms the primary photosynthetic surface. The stipules are small leaf-like appendages positioned at the base where the petiole attaches to the stem. The petiole is the stalk connecting the leaf blade to the main stem, displaying internal vascular composition. The prominent midrib runs centrally through the leaf blade as the primary vascular pathway. Branching laterally from the midrib are lateral veins spreading in a network pattern across the photosynthetic tissue. The leaf margin is clearly shown with serrated edges at the blade's boundary. Clear text labels point to each structure: blade, midrib, lateral veins, petiole, and stipules. White background, no additional decorative elements.",
+      "image_file": "attempt_02_img2img_str0.28_seed42.png",
+      "combined_score": 0.4671,
+      "improved": false,
+      "rollback": true,
+      "llm_score": 6.5,
+      "present_structures": [
+        "Leaf blade (lamina)",
+        "Midrib",
+        "Lateral veins",
+        "Petiole",
+        "Leaf margin with serrated edges"
+      ],
+      "missing_structures": [
+        "Stipules",
+        "Labels or annotations"
+      ],
+      "improvement_suggestions": "While the diagram correctly shows the botanical structures, the query specifically requests a 'labeled diagram' with annotations. Add text labels pointing to blade, midrib, petiole, and veins. Consider including stipules at the base of the petiole to fully address the anatomical requirements.",
+      "refined_clip_for_next": "scientific labeled leaf anatomy diagram, stipules base petiole, leaf blade lamina, midrib central vein, lateral veins branching, serrated margin edge, petiole stalk, vascular tissue, text labels annotations, educational botanical illustration, white background, clean linework, detailed textbook style",
+      "refined_t5_for_next": "A detailed scientific diagram of leaf anatomy showing all major structures with clear text labels and annotations pointing to each component. The leaf blade (lamina) forms the main photosynthetic surface with a serrated margin at its edge. The midrib runs centrally through the blade as the primary vein, with lateral veins branching outward in a network pattern to distribute nutrients. The petiole is the stalk connecting the blade to the stem, clearly labeled. Stipules are depicted as small appendages at the base of the petiole where it attaches to the stem. Include labels identifying the blade, midrib, lateral veins, petiole, and stipules. Render as a clean scientific cross-section diagram on a white background in botanical textbook illustration style.",
+      "refiner_changes": [
+        "Added 'stipules base petiole' as explicit keyword in CLIP prompt",
+        "Added 'text labels annotations' to CLIP to address labeling requirement",
+        "Expanded T5 to include one sentence explicitly describing stipules at petiole base",
+        "Added instruction to include labels identifying blade, midrib, lateral veins, petiole, and stipules",
+        "Clarified 'leaf blade (lamina)' terminology in T5",
+        "Emphasized serrated margin edge in both prompts",
+        "Restructured CLIP from 36 to 54 words (within 55-word limit) to accommodate additions",
+        "Reduced T5 from 212 words to 146 words (within 150-word limit) while preserving all structure names"
+      ],
+      "next_strength": 0.28,
+      "next_gen_mode": "img2img"
+    },
+    {
+      "attempt": 3,
+      "seed": 42,
+      "mode": "img2img_str0.28",
+      "gen_time_s": 372.6,
+      "sas": 0.2843,
+      "clip_score": 0.3123,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a leaf, leaf margin with the edge of the blade, Stipules are small leaf-like appendages at the base of the petiole, midrib with the central vein running through the leaf, petiole with the stalk that attaches the leaf to the stem, Lateral veins branch off the midrib and transport water and nutrients, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific labeled leaf anatomy diagram, stipules base petiole, leaf blade lamina, midrib central vein, lateral veins branching, serrated margin edge, petiole stalk, vascular tissue, text labels annotations, educational botanical illustration, white background, clean linework, detailed textbook style",
+      "t5_prompt": "A detailed scientific diagram of leaf anatomy showing all major structures with clear text labels and annotations pointing to each component. The leaf blade (lamina) forms the main photosynthetic surface with a serrated margin at its edge. The midrib runs centrally through the blade as the primary vein, with lateral veins branching outward in a network pattern to distribute nutrients. The petiole is the stalk connecting the blade to the stem, clearly labeled. Stipules are depicted as small appendages at the base of the petiole where it attaches to the stem. Include labels identifying the blade, midrib, lateral veins, petiole, and stipules. Render as a clean scientific cross-section diagram on a white background in botanical textbook illustration style.",
+      "image_file": "attempt_03_img2img_str0.28_seed42.png",
+      "combined_score": 0.3671,
+      "improved": false,
+      "rollback": true,
+      "llm_score": 4.5,
+      "present_structures": [
+        "Blade (lamina)",
+        "Midrib",
+        "Lateral veins",
+        "Petiole",
+        "Leaf margin"
+      ],
+      "missing_structures": [
+        "Stipules",
+        "Labels/annotations for all structures"
+      ],
+      "improvement_suggestions": "Add visible stipules at the base of the petiole, and include clear anatomical labels for blade, midrib, petiole, lateral veins, and margin as required by the query."
+    }
+  ],
+  "best_clip": 0.3151,
+  "total_gen_time_s": 1117.2,
+  "attempts_used": 3,
+  "passed": false,
+  "fully_passed": false,
+  "final_missing": [
+    "Stipules",
+    "Labels/annotations for all structures"
+  ]
+}

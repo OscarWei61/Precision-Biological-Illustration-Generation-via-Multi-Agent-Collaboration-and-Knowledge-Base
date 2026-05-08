@@ -1,0 +1,17 @@
+Mode:        flux_rag_noretry
+Query:       Draw a labeled diagram of an insect body showing head, thorax, abdomen and antennae
+Constraints (6):
+  - An insect body is divided into three main parts: head, thorax, and abdomen
+  - Insects have exactly 6 legs attached to the thorax
+  - The head contains compound eyes, antennae, and mouthparts
+  - Antennae are sensory organs used for smell and touch
+  - Wings, when present, are attached to the thorax
+  - The abdomen contains the digestive and reproductive organs
+
+--- Attempt 1 (text2img) ---
+Full prompt:  A highly detailed scientific cross-section diagram of labeled diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, stamen with the male reproductive organ consisting of anther and filament, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt:  insect anatomy cross-section diagram, head thorax abdomen, compound eyes antennae mouthparts, six legs, stamen anther filament, scientific illustration, educational diagram, detailed linework, white background, biology textbook style, no labels
+T5 prompt:    A highly detailed scientific cross-section educational diagram showing a complete insect body structure rendered in textbook style on a white background. The illustration displays the three primary body divisions clearly: the head at the anterior end containing two large compound eyes positioned laterally, delicate segmented antennae extending upward from the head for sensory reception of smell and touch, and specialized mouthparts adapted for feeding. The thorax forms the central body section with exactly six jointed legs arranged in three pairs extending downward from the thoracic segments, each leg consisting of multiple articulated segments. The abdomen extends posteriorly as the largest body region containing internal organs and reproductive structures. The diagram includes a detailed cross-sectional view revealing the internal organization of reproductive anatomy with the stamen structure visible showing the male reproductive organs including the anther at the terminal end and the filament forming the supporting stalk structure below it. All body parts are rendered with accurate biological proportions and spatial relationships showing how each component connects and layers within the insect body. The illustration uses scientific accuracy appropriate for educational reference material with careful attention to anatomical detail, clear three-dimensional perspective, and natural coloration that distinguishes different body regions and organ systems. No text labels or annotations appear on the diagram, presenting only the detailed structural illustration.
+Seed:         42
+Steps:        20
+Gen time:     387.2s

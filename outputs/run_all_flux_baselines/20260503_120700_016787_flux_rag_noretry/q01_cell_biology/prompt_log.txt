@@ -1,0 +1,20 @@
+Mode:        flux_rag_noretry
+Query:       Draw a labeled diagram of a plant cell showing all major organelles
+Constraints (9):
+  - A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane
+  - The nucleus is the control center and contains the cell's DNA
+  - Chloroplasts are found only in plant cells and perform photosynthesis
+  - The central vacuole stores water and maintains turgor pressure
+  - Mitochondria are the powerhouse of the cell, producing ATP via respiration
+  - Ribosomes are small organelles that synthesize proteins
+  - The Golgi apparatus packages and ships proteins
+  - Rough ER has ribosomes and is involved in protein synthesis
+  - Smooth ER is involved in lipid synthesis and detoxification
+
+--- Attempt 1 (text2img) ---
+Full prompt:  A highly detailed scientific cross-section diagram of labeled diagram of a plant cell, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, Photosynthesis takes place in the chloroplasts of plant cells, Chloroplasts are found only in plant cells and perform photosynthesis, Mitochondria are the powerhouse of the cell, producing ATP via respiration, nucleus with the control center and contains the cell's DNA, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt:  scientific cross-section diagram, plant cell, cell wall, cell membrane, chloroplasts, mitochondria, nucleus, educational illustration, detailed linework, white background, biology textbook style, no text, no labels
+T5 prompt:    A highly detailed scientific cross-section illustration of a plant cell showing all major organelles and structures in accurate spatial arrangement. The rigid cellulose cell wall forms the outermost layer, displaying its characteristic gridded crystalline structure surrounding the flexible cell membrane beneath it. The large central vacuole dominates the interior, maintaining turgor pressure and occupying most of the cell volume, surrounded by the cytoplasm. Multiple chloroplasts are distributed throughout the cytoplasm, each showing internal thylakoid stacks arranged in grana where photosynthesis occurs, with visible starch granules inside. Numerous mitochondria with their characteristic double membranes and cristae are positioned throughout the cell, representing the powerhouse organelles that generate ATP through cellular respiration. The prominent nucleus is centrally located, containing the nucleolus and displaying the cell's genetic material DNA within chromatin. Additional organelles visible include the Golgi apparatus with its stacked cisternae, smooth and rough endoplasmic reticulum with ribosomes attached where applicable, small vesicles, peroxisomes, and the centrosome region. The diagram uses color coding to distinguish different structures and their functions. The composition is rendered in educational scientific textbook illustration style with clean line work, anatomically precise proportions, white background, and no text labels or annotations present.
+Seed:         42
+Steps:        20
+Gen time:     403.9s

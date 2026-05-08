@@ -1,0 +1,183 @@
+{
+  "query_id": "q03",
+  "domain": "neuroanatomy",
+  "query": "Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath",
+  "reference": "2925.png",
+  "wall_time_s": 1622.4,
+  "verifier_mode": "combined",
+  "controlnet_enabled": true,
+  "params": {
+    "max_retries": 3,
+    "steps": 20,
+    "seed": 42
+  },
+  "backend": "flux_v4_controlnet",
+  "constraints": [
+    "A neuron has a cell body (soma), dendrites, and an axon",
+    "Dendrites receive signals from other neurons",
+    "The axon transmits electrical signals away from the cell body",
+    "The myelin sheath insulates the axon and speeds signal transmission",
+    "Nodes of Ranvier are gaps in the myelin sheath",
+    "Axon terminals release neurotransmitters into the synapse",
+    "Schwann cells produce the myelin sheath in the peripheral nervous system"
+  ],
+  "retrieved": [
+    "A neuron has a cell body (soma), dendrites, and an axon",
+    "The myelin sheath insulates the axon and speeds signal transmission",
+    "Dendrites receive signals from other neurons",
+    "Schwann cells produce the myelin sheath in the peripheral nervous system",
+    "Axon terminals release neurotransmitters into the synapse",
+    "Nodes of Ranvier are gaps in the myelin sheath",
+    "The axon transmits electrical signals away from the cell body",
+    "The optic nerve transmits signals from the retina to the brain"
+  ],
+  "image_name": "2925.png",
+  "has_spatial_data": true,
+  "layout_regions": 9,
+  "attempts": [
+    {
+      "attempt": 1,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 494.8,
+      "sas": 0.2284,
+      "clip_score": 0.2111,
+      "passed": false,
+      "violations": [
+        "The axon transmits electrical signals away from the cell body"
+      ],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a neuron, neuron with a cell body (soma), dendrites, and an axon, Dendrites receive signals from other neurons, Nodes of Ranvier are gaps in the myelin sheath, The myelin sheath insulates the axon and speeds signal transmission, Schwann cells produce the myelin sheath in the peripheral nervous system, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, neuron cell body soma, dendrites, axon, myelin sheath, nodes of Ranvier, Schwann cells, educational illustration, detailed linework, white background, biology textbook style, no labels, accurate anatomical structure",
+      "t5_prompt": "A detailed scientific cross-section illustration of a complete neuron showing all major anatomical structures and their spatial relationships. The cell body or soma is depicted as a large central structure containing the nucleus and nucleolus in the interior. Multiple dendrites radiate outward from the soma as branching extensions that receive and process signals from other neurons, with increasingly smaller branches toward their terminals. A single axon extends from the soma, initially thick and gradually narrowing as it projects away from the cell body. The axon is wrapped in segments of myelin sheath produced by Schwann cells in the peripheral nervous system, with each segment of insulating myelin appearing as distinct wrapped layers around the axon. Between these myelin segments are visible gaps called Nodes of Ranvier where the axon membrane is exposed and bare, allowing for saltatory conduction of action potentials along the axon length. The myelin sheath layers are shown with clear cross-sectional detail demonstrating how they insulate the axon and increase the speed of neural signal transmission. The axon terminal at the far end shows synaptic structures ready to transmit signals to receiving neurons. The entire neuron is rendered in accurate anatomical proportion with proper spatial relationships between all structures. The illustration style is scientific, educational, and textbook-quality with detailed precision, rendered on a clean white background with no text labels or annotations.",
+      "image_file": "attempt_01_text2img_seed42.png",
+      "combined_score": 0.1892,
+      "improved": true,
+      "rollback": false,
+      "controlnet_scale": 0.7,
+      "has_spatial_data": true,
+      "llm_score": 1.5,
+      "present_structures": [],
+      "missing_structures": [
+        "cell body (soma)",
+        "dendrites",
+        "axon",
+        "myelin sheath",
+        "nodes of Ranvier",
+        "axon terminals",
+        "nucleus",
+        "any recognizable neuronal structures"
+      ],
+      "improvement_suggestions": "The image is nearly blank/not rendered. Regenerate with explicit instructions to show a clear neuron with distinct cell body in center, multiple branching dendrites extending inward, and a single axon with visible myelin segments separated by nodes of Ranvier, ending in terminal branches.",
+      "refined_clip_for_next": "neuron soma cell body nucleus, dendrites, axon, myelin sheath, nodes of Ranvier, axon terminals, Schwann cells, scientific cross-section diagram, detailed anatomical structure, educational illustration, white background, biology textbook style, no labels, accurate",
+      "refined_t5_for_next": "A detailed scientific cross-section illustration of a complete neuron showing all major anatomical structures. The soma (cell body) is depicted as a large central structure containing the nucleus. Multiple dendrites radiate outward from the soma as branching extensions that receive signals, with progressively smaller branches toward their terminals. A single axon extends from the soma and transmits electrical signals away from the cell body, initially thick then gradually narrowing. The axon is wrapped in segments of myelin sheath produced by Schwann cells, with each segment appearing as distinct wrapped insulating layers. Between myelin segments are visible gaps called Nodes of Ranvier where the bare axon membrane is exposed, enabling saltatory conduction. Axon terminals branch at the distal end. Ensure all structures are clearly visible and spatially distinct with high contrast against the white background.",
+      "refiner_changes": [
+        "Added 'nucleus' and 'axon terminals' to CLIP prompt as explicit keywords",
+        "Reordered CLIP to front-load all major structures (soma, dendrites, axon, myelin, nodes, terminals, nucleus)",
+        "Added emphasis in T5: 'transmits electrical signals away from the cell body' per violation requirement",
+        "Added explicit instruction in T5 to ensure clear visibility and spatial distinction to address blank rendering issue",
+        "Maintained all originally correct structures and style directives",
+        "T5 refined to 142 words (≤150), CLIP at 31 words (≤55)"
+      ],
+      "next_strength": null,
+      "next_gen_mode": "text2img",
+      "blueprint_updated": true,
+      "blueprint_file": "blueprint_att02.png"
+    },
+    {
+      "attempt": 2,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 528.9,
+      "sas": 0.2837,
+      "clip_score": 0.291,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a neuron, neuron with a cell body (soma), dendrites, and an axon, Dendrites receive signals from other neurons, Nodes of Ranvier are gaps in the myelin sheath, The myelin sheath insulates the axon and speeds signal transmission, Schwann cells produce the myelin sheath in the peripheral nervous system, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, neuron, soma, dendrites, axon, nodes of Ranvier, myelin sheath, Schwann cells, white background, educational illustration, detailed linework, biology textbook style, no text, no labels",
+      "t5_prompt": "A highly detailed scientific cross-section diagram of a neuron showing the complete cellular structure and its functional components. The cell body or soma is centered and contains the nucleus with visible nucleolus at its core. Extending from the soma are multiple dendrites, which are shorter, highly branched processes that taper as they extend outward, their role being to receive incoming signals from other neurons at their terminal branches. The single axon extends from the axon hillock region of the soma and projects outward as a long cylindrical projection. Along the axon, the myelin sheath is clearly visible as a series of segmented wrappings that insulate the axon and accelerate action potential propagation. Between these myelin segments are the Nodes of Ranvier, depicted as regular gaps where the axon membrane is exposed and uninsulated, these nodes being critical for rapid saltatory conduction of electrical signals. Schwann cells are shown wrapping around the axon segments in the peripheral nervous system, their cytoplasm forming the layers of the myelin sheath. The axon terminates in axon terminals with synaptic knobs at the end, ready to transmit signals to subsequent neurons. The entire structure is rendered in accurate biological textbook style with appropriate color coding for different cellular components, cross-sections showing internal myelin layers, scientific educational presentation on a clean white background, no text labels or annotations, maintaining precise anatomical accuracy and three-dimensional spatial relationships throughout.",
+      "image_file": "attempt_02_text2img_seed42.png",
+      "combined_score": 0.2419,
+      "improved": true,
+      "rollback": false,
+      "controlnet_scale": 0.65,
+      "has_spatial_data": true,
+      "llm_score": 2.0,
+      "present_structures": [
+        "Central body-like structure",
+        "Branching projections"
+      ],
+      "missing_structures": [
+        "Clearly defined cell body (soma)",
+        "Distinct dendrites",
+        "Single axon with clear directionality",
+        "Myelin sheath segments",
+        "Nodes of Ranvier",
+        "Axon terminals/synaptic knobs",
+        "Proper anatomical proportions"
+      ],
+      "improvement_suggestions": "The image appears to be a neuron-like structure but lacks the required anatomical detail and clarity. Request a detailed diagram showing a large cell body with multiple branching dendrites on one side, a single long axon extending from the opposite side with visible myelin sheath segments separated by nodes of Ranvier, and synaptic terminals at the axon ending.",
+      "refined_clip_for_next": "scientific cross-section diagram, neuron soma, dendrites, axon, axon terminals, synaptic knobs, myelin sheath segments, nodes of Ranvier, Schwann cells, white background, detailed linework, biology textbook style, no text, no labels",
+      "refined_t5_for_next": "A highly detailed scientific cross-section diagram of a complete neuron with proper anatomical proportions. The large soma (cell body) is centrally positioned containing a nucleus with visible nucleolus. Multiple dendrites branch extensively from the soma on one side, tapering as they extend outward to receive signals. A single axon projects from the opposite side of the soma from the axon hillock, extending as a long cylindrical process with clear directionality. The axon displays segmented myelin sheath wrappings that insulate it and enable saltatory conduction. Nodes of Ranvier are depicted as regular gaps between myelin segments where the axon membrane is exposed. At the axon's terminal end, synaptic knobs and axon terminals are shown as expanded knob-like structures. Schwann cells wrap around the myelin segments. White background, educational scientific illustration style.",
+      "refiner_changes": [
+        "Added 'axon terminals' and 'synaptic knobs' to CLIP prompt as explicit keywords",
+        "Expanded T5 prompt to include axon terminals/synaptic knobs description at axon ending",
+        "Emphasized 'large soma' and 'proper anatomical proportions' in T5 to address verifier feedback",
+        "Clarified axon directionality and positioning opposite to dendrites in T5",
+        "Maintained all original correctly-depicted structures (soma, dendrites, axon, myelin, nodes, Schwann cells)"
+      ],
+      "next_strength": null,
+      "next_gen_mode": "text2img",
+      "blueprint_updated": true,
+      "blueprint_file": "blueprint_att03.png"
+    },
+    {
+      "attempt": 3,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 537.4,
+      "sas": 0.2362,
+      "clip_score": 0.238,
+      "passed": false,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a neuron, neuron with a cell body (soma), dendrites, and an axon, Dendrites receive signals from other neurons, Nodes of Ranvier are gaps in the myelin sheath, The myelin sheath insulates the axon and speeds signal transmission, Schwann cells produce the myelin sheath in the peripheral nervous system, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, neuron, soma, dendrites, axon, myelin sheath, nodes of Ranvier, Schwann cells, white background, educational illustration, detailed linework, biology textbook style, no text, no labels",
+      "t5_prompt": "A highly detailed scientific cross-section illustration of a complete neuron showing all major anatomical structures and their biological functions. The cell body or soma is positioned centrally, containing the nucleus at its core with visible nucleolus, surrounded by cytoplasm filled with organelles including mitochondria, ribosomes, and rough endoplasmic reticulum that synthesize neurotransmitter proteins. Multiple dendrites branch outward from the soma like tree branches, featuring dendritic spines along their length where they receive synaptic signals from presynaptic terminals of other neurons. A single axon emerges from the axon hillock at the soma base, extending as a long projection that tapers into a uniform cylindrical shaft. The axon contains microtubules, neurofilaments, and mitochondria that provide energy for action potentials and axoplasmic transport. The axon is wrapped in a segmented myelin sheath composed of concentric layers of lipid-rich insulation that appears as alternating light and dark bands spiraling around the axon. These myelin segments are interrupted at regular intervals by Nodes of Ranvier, which are unmyelinated gaps in the sheath where the axon membrane is exposed and concentrates sodium channels for saltatory conduction. The myelin sheath is produced by Schwann cells in the peripheral nervous system, with each Schwann cell wrapping around a single axon segment between nodes. At the axon terminal, fine axon branches terminate in synaptic boutons or terminal buttons that contain synaptic vesicles with neurotransmitters ready for release. The entire structure is rendered in scientific textbook style with accurate proportions, neutral earth-tone and blue color coding, white background, no labels, no text, educational diagram format.",
+      "image_file": "attempt_03_text2img_seed42.png",
+      "combined_score": 0.1931,
+      "improved": false,
+      "rollback": true,
+      "controlnet_scale": 0.65,
+      "has_spatial_data": true,
+      "llm_score": 1.5,
+      "present_structures": [
+        "branching filament-like structures"
+      ],
+      "missing_structures": [
+        "cell body (soma)",
+        "dendrites",
+        "axon",
+        "myelin sheath",
+        "nodes of Ranvier",
+        "axon terminals",
+        "synaptic vesicles",
+        "clear neuronal morphology"
+      ],
+      "improvement_suggestions": "This appears to be a plant root or similar botanical structure, not a neuron. Please regenerate the image as a neuron diagram showing a prominent soma with multiple branching dendrites and a single axon with visible myelin sheath segments separated by nodes of Ranvier."
+    }
+  ],
+  "best_clip": 0.291,
+  "total_gen_time_s": 1561.1,
+  "attempts_used": 3,
+  "passed": false,
+  "fully_passed": false,
+  "final_missing": [
+    "cell body (soma)",
+    "dendrites",
+    "axon",
+    "myelin sheath",
+    "nodes of Ranvier",
+    "axon terminals",
+    "synaptic vesicles",
+    "clear neuronal morphology"
+  ]
+}

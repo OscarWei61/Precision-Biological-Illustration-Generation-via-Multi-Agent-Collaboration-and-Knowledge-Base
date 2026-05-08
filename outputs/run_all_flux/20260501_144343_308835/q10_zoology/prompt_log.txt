@@ -1,0 +1,32 @@
+Query: Draw a labeled diagram of an insect body showing head, thorax, abdomen and antennae
+Constraints (6):
+  - An insect body is divided into three main parts: head, thorax, and abdomen
+  - Insects have exactly 6 legs attached to the thorax
+  - The head contains compound eyes, antennae, and mouthparts
+  - Antennae are sensory organs used for smell and touch
+  - Wings, when present, are attached to the thorax
+  - The abdomen contains the digestive and reproductive organs
+
+--- Attempt 1 (text2img) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, stamen with the male reproductive organ consisting of anther and filament, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: insect cross-section diagram, head thorax abdomen, compound eyes, antennae, mouthparts, six legs, sensory organs, scientific illustration, educational diagram, biology textbook style, detailed anatomy, white background, no text, no labels
+T5 prompt:   A detailed scientific cross-section illustration showing a complete insect anatomy with all major body regions clearly distinguished and their internal structures visible. The insect body is divided into three distinct main sections: the head at the anterior end containing a pair of large compound eyes positioned laterally with hundreds of individual ommatidia visible, a pair of segmented antennae arising from the head used for olfactory and tactile sensation, and specialized mouthparts adapted for feeding. The thorax forms the middle body region with three pairs of jointed legs, exactly six legs total, attached symmetrically to the three thoracic segments, each leg composed of coxa, trochanter, femur, tibia, and tarsus segments allowing for locomotion. The abdomen extends posteriorly from the thorax and contains the visceral organs and reproductive structures including the stamen with male reproductive organs composed of the anther producing pollen and the filament providing structural support. The cross-sectional view reveals internal anatomy including the neural ganglia, tracheal system for respiration, digestive tract, and hemocoel. All structures are rendered with precise biological accuracy showing proper spatial relationships between systems. The illustration uses clean white background with scientific textbook accuracy and educational clarity, rendered in anatomically correct proportions and detailed biological precision without any text labels or annotations.
+Gen time:    374.7s
+
+--- Attempt 2 (img2img_str0.60) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, stamen with the male reproductive organ consisting of anther and filament, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: insect cross-section diagram, head thorax abdomen with distinct shading, compound eyes, antennae, mouthparts mandibles, six legs, wings, sensory organs, internal organs, scientific illustration, educational diagram, biology textbook style, detailed anatomy, white background, no text
+T5 prompt:   A detailed scientific cross-section illustration of complete insect anatomy with three distinctly shaded body regions. The head contains large compound eyes with visible ommatidia, segmented antennae for sensation, and clearly visible mouthparts including mandibles adapted for feeding. The thorax is the middle section with three pairs of jointed legs (six total), each composed of coxa, trochanter, femur, tibia, and tarsus segments, plus wings attached dorsally. The abdomen extends posteriorly containing visible internal organs including reproductive and digestive structures. Body segmentation is clearly shown throughout. Use subtle color shading or borders to visually distinguish the three main body regions from each other. Anatomically accurate, scientific diagram style, white background, no labels or text annotations.
+Strength:    0.6
+Gen time:    614.5s
+
+--- Attempt 3 (img2img_str0.50) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, stamen with the male reproductive organ consisting of anther and filament, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: insect cross-section diagram, head thorax abdomen with distinct shading, compound eyes, antennae, mouthparts mandibles, six legs with femur tibia tarsus segments, wings, digestive system, internal organs, sensory organs, scientific illustration, educational diagram, biology textbook style, detailed anatomy, white background, no text
+T5 prompt:   A detailed scientific cross-section illustration of complete insect anatomy with three distinctly shaded body regions. The head contains large compound eyes with visible ommatidia, segmented antennae for sensation, and clearly visible mouthparts including mandibles adapted for feeding. The thorax is the middle section with three pairs of jointed legs (six total), each distinctly segmented showing coxa, trochanter, femur, tibia, and tarsus articulations, plus wings attached dorsally. The abdomen extends posteriorly containing visible internal organs including a clearly depicted digestive system tract, reproductive structures, and other viscera. Body segmentation is clearly shown throughout. Use subtle color shading or borders to visually distinguish the three main body regions. Anatomically accurate, scientific diagram style, white background, no labels or text.
+Strength:    0.5
+Gen time:    540.7s
+

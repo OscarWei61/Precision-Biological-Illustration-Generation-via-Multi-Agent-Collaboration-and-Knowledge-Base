@@ -1,0 +1,36 @@
+{
+  "query_id": "q09",
+  "domain": "biochemistry",
+  "query": "Draw a diagram illustrating the process of photosynthesis with inputs and outputs",
+  "reference": "4088.png",
+  "wall_time_s": 408.5,
+  "verifier_mode": "combined",
+  "mode": "flux_direct",
+  "params": {
+    "steps": 20,
+    "seed": 42
+  },
+  "attempts_used": 1,
+  "best_clip": 0.3095,
+  "best_llm": 2.0,
+  "best_combined": 0.2548,
+  "passed": false,
+  "gen_time_s": 398.9,
+  "full_prompt": "Draw a diagram illustrating the process of photosynthesis with inputs and outputs",
+  "clip_prompt": "photosynthesis process diagram, chloroplast, light reactions, Calvin cycle, inputs outputs, water molecules, carbon dioxide, glucose, oxygen, arrow flow chart, educational illustration, scientific diagram, clean linework, white background, biology textbook style",
+  "t5_prompt": "Create a scientific educational diagram showing the complete photosynthesis process with all inputs and outputs. The illustration should display a plant leaf cross-section on a white background showing the internal structure including the cuticle, epidermis, mesophyll layers with palisade and spongy parenchyma cells, and vascular bundles. Include chloroplasts within the mesophyll cells depicted in bright green with visible thylakoid stacks and stroma regions. Show water molecules entering through the root system and being transported upward through xylem vessels as blue droplets or streams. Illustrate carbon dioxide gas entering through stomata on the leaf surface as small molecular representations or arrows. Display sunlight energy entering from above as yellow or gold rays striking the leaf surface. Within the chloroplast, show the light-dependent reactions occurring in the thylakoid membranes with electron transport chains and photosystem complexes represented by protein structures in blue and purple. Show the light-independent reactions occurring in the stroma with the Calvin cycle displayed as circular molecular pathways. Include glucose molecules being synthesized and accumulating as the primary output shown in yellow or orange. Display oxygen gas being released from the leaf through stomata as oxygen molecules shown in red. Use color coding throughout with green for chlorophyll, blue for water and proteins, yellow for light energy and glucose, and red for oxygen. Present this as a detailed anatomical cutaway diagram suitable for scientific textbook illustration with clear spatial relationships between all structures and processes.",
+  "missing": [
+    "Chloroplasts",
+    "Thylakoid membranes",
+    "Stroma",
+    "Chlorophyll molecules",
+    "Carbon dioxide (CO2) input",
+    "Water (H2O) input",
+    "Glucose (C6H12O6) output",
+    "Oxygen (O2) output",
+    "Light-dependent reactions",
+    "Calvin cycle/light-independent reactions",
+    "Chemical equation or process flow",
+    "Cellular structures at appropriate scale"
+  ]
+}

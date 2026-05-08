@@ -1,0 +1,33 @@
+Query: Draw a detailed cross-section of a mitochondria showing cristae and matrix
+Constraints (7):
+  - Mitochondria have an outer membrane and a folded inner membrane
+  - The inner membrane folds are called cristae, which increase surface area
+  - The space between outer and inner membrane is the intermembrane space
+  - The central fluid-filled region is called the matrix
+  - Mitochondrial DNA is located in the matrix
+  - ATP synthesis occurs along the inner membrane (cristae)
+  - Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers
+
+--- Attempt 1 (text2img) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of a mitochondria, Mitochondria with an outer membrane and a folded inner membrane, Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers, Mitochondrial DNA with located in the matrix, Mitochondria are the powerhouse of the cell, producing ATP via respiration, ATP synthesis occurs along the inner membrane (cristae), scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, mitochondria, outer membrane, inner membrane cristae, oval-shaped, matrix, mitochondrial DNA, ATP synthesis, educational illustration, detailed linework, white background, biology textbook style, no text, no labels
+T5 prompt:   A highly detailed scientific cross-section illustration of a mitochondrion showing its complete internal architecture on a white background. The mitochondrion displays its characteristic oval shape with precise proportions. The outer membrane forms a smooth continuous boundary around the entire organelle. The inner membrane is prominently folded into numerous cristae that extend inward into the matrix space, creating extensive surface area for energy production. The cristae are shown in their layered arrangement, demonstrating how they maximize the space within the organelle. The matrix fills the interior space surrounded by the inner membrane, depicted as a distinct compartment where mitochondrial DNA and enzymes reside. Mitochondrial DNA is visible as circular structures floating within the matrix region. The intermembrane space between the outer and inner membranes is clearly delineated as a narrow compartment. ATP synthesis machinery is represented along the cristae surfaces where electron transport chain complexes and ATP synthase operate during cellular respiration. The overall structure emphasizes the mitochondrion's role as the powerhouse of the cell, with color differentiation between the membranes and matrix to show functional compartmentalization. This is rendered in an accurate scientific educational textbook style with precise biological proportions and no text or labels, suitable for educational anatomy and cell biology reference.
+Gen time:    399.5s
+
+--- Attempt 2 (img2img_str0.60) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of a mitochondria, Mitochondria with an outer membrane and a folded inner membrane, Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers, Mitochondrial DNA with located in the matrix, Mitochondria are the powerhouse of the cell, producing ATP via respiration, ATP synthesis occurs along the inner membrane (cristae), scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: single mitochondrion cross-section, outer membrane, inner membrane cristae folds, intermembrane space, matrix, mitochondrial DNA, ATP synthase complexes, oval shape, scientific diagram, detailed linework, white background, no text, no labels
+T5 prompt:   A detailed scientific cross-section diagram of a single mitochondrion with a clear oval shape. The outer membrane forms a smooth continuous boundary. The inner membrane is prominently folded into numerous cristae that extend deeply inward as distinct ridge-like structures. The intermembrane space is clearly visible as a distinct narrow compartment between the outer and inner membranes. The central matrix region fills the interior, depicted as a separate compartment containing circular mitochondrial DNA structures. ATP synthase complexes are represented as visible structures along the cristae surfaces where energy production occurs. All compartments are visually distinguished with precise proportions and detailed linework on a white background.
+Strength:    0.6
+Gen time:    674.8s
+
+--- Attempt 3 (img2img_str0.50) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of a mitochondria, Mitochondria with an outer membrane and a folded inner membrane, Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers, Mitochondrial DNA with located in the matrix, Mitochondria are the powerhouse of the cell, producing ATP via respiration, ATP synthesis occurs along the inner membrane (cristae), scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: detailed longitudinal cross-section single mitochondrion, outer membrane, inner membrane, prominent cristae projections, intermembrane space, granular matrix interior, mitochondrial DNA, ATP synthase complexes, oval shape, scientific diagram, precise linework, white background
+T5 prompt:   A detailed longitudinal cross-section diagram of a single mitochondrion with accurate proportions. The outer membrane forms a smooth continuous boundary enclosing the entire organelle. The inner membrane is prominently folded into numerous cristae projections that extend deeply into the interior as distinct ridge-like structures. The intermembrane space is clearly visible as a narrow compartment between outer and inner membranes. The central matrix interior is depicted with granular texture, filling the space enclosed by the inner membrane. Mitochondrial DNA structures are shown as circular elements within the matrix. ATP synthase complexes are visible along the cristae surfaces. All structures use precise linework on a white background with no text or labels.
+Strength:    0.5
+Gen time:    530.8s
+

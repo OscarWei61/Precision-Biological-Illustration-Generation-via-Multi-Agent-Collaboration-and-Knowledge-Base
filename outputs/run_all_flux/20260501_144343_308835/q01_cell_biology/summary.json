@@ -1,0 +1,162 @@
+{
+  "query_id": "q01",
+  "domain": "cell_biology",
+  "query": "Draw a labeled diagram of a plant cell showing all major organelles",
+  "reference": "1071.png",
+  "wall_time_s": 1493.7,
+  "verifier_mode": "combined",
+  "params": {
+    "max_retries": 3,
+    "steps": 20,
+    "seed": 42
+  },
+  "backend": "flux",
+  "constraints": [
+    "A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane",
+    "The nucleus is the control center and contains the cell's DNA",
+    "Chloroplasts are found only in plant cells and perform photosynthesis",
+    "The central vacuole stores water and maintains turgor pressure",
+    "Mitochondria are the powerhouse of the cell, producing ATP via respiration",
+    "Ribosomes are small organelles that synthesize proteins",
+    "The Golgi apparatus packages and ships proteins",
+    "Rough ER has ribosomes and is involved in protein synthesis",
+    "Smooth ER is involved in lipid synthesis and detoxification"
+  ],
+  "retrieved": [
+    "A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane",
+    "Mitochondria have an outer membrane and a folded inner membrane",
+    "Chloroplasts are found only in plant cells and perform photosynthesis",
+    "The nucleus is the control center and contains the cell's DNA",
+    "Photosynthesis takes place in the chloroplasts of plant cells",
+    "Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers",
+    "Ribosomes are small organelles that synthesize proteins",
+    "Stipules are small leaf-like appendages at the base of the petiole"
+  ],
+  "attempts": [
+    {
+      "attempt": 1,
+      "seed": 42,
+      "mode": "text2img",
+      "gen_time_s": 358.9,
+      "sas": 0.2693,
+      "clip_score": 0.2915,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a plant cell, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, Photosynthesis takes place in the chloroplasts of plant cells, Chloroplasts are found only in plant cells and perform photosynthesis, nucleus with the control center and contains the cell's DNA, Stipules are small leaf-like appendages at the base of the petiole, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, plant cell, cell wall, cell membrane, chloroplasts, nucleus, educational illustration, detailed anatomy, white background, biology textbook style, clean linework, no text",
+      "t5_prompt": "A highly detailed scientific cross-section diagram showing the internal anatomy of a plant cell with all major organelles and structures precisely rendered. The rigid cellulose cell wall forms the outermost boundary, displaying its characteristic geometric lattice structure that provides structural support and rigidity to the plant cell. Directly beneath the cell wall lies the semi-permeable cell membrane which controls the passage of materials into and out of the cell. The nucleus occupies a prominent central position within the cell, containing the nucleolus and displaying the cell's genetic material organized as DNA, serving as the control center that regulates all cellular functions and gene expression. Numerous chloroplasts are distributed throughout the cytoplasm, each displaying their characteristic double membrane envelope with stacked internal thylakoid structures where photosynthesis occurs, containing chlorophyll pigments that appear green. The vacuole occupies a large central space, providing turgor pressure that maintains cell rigidity and storing water, nutrients, and pigments. Mitochondria are scattered throughout the cytoplasm, appearing as elongated structures with cristae visible in cross-section. The endoplasmic reticulum extends throughout the cytoplasm in rough and smooth varieties, with ribosomes attached to rough ER for protein synthesis. The Golgi apparatus appears as stacked membrane compartments involved in protein processing and packaging. Small vesicles and storage granules fill the remaining cytoplasmic space. The entire composition is rendered in educational scientific textbook style with accurate biological coloring, white background, no text labels, and three-dimensional cross-sectional perspective showing spatial relationships between all cellular components.",
+      "image_file": "attempt_01_text2img_seed42.png",
+      "llm_score": 7.5,
+      "present_structures": [
+        "Cell wall",
+        "Cell membrane",
+        "Nucleus",
+        "Nucleolus",
+        "Chloroplasts",
+        "Central vacuole",
+        "Mitochondria",
+        "Rough endoplasmic reticulum",
+        "Golgi apparatus"
+      ],
+      "missing_structures": [
+        "Smooth endoplasmic reticulum",
+        "Ribosomes (as distinct visible organelles)",
+        "Cytoplasm (not clearly differentiated)"
+      ],
+      "improvement_suggestions": "Add visible smooth endoplasmic reticulum as a distinct structure separate from rough ER, and include small ribosomes as distinct organelles. Consider using slightly different coloring or shading to better differentiate the cytoplasm from other structures.",
+      "refined_clip_for_next": "scientific cross-section diagram, plant cell, cell wall, cell membrane, nucleus, nucleolus, chloroplasts, mitochondria, rough endoplasmic reticulum, smooth endoplasmic reticulum, ribosomes, central vacuole, Golgi apparatus, cytoplasm, detailed anatomy, educational illustration, white background, biology textbook style, clean linework, no text, no labels",
+      "refined_t5_for_next": "A highly detailed scientific cross-section diagram showing the internal anatomy of a plant cell with all major organelles and structures precisely rendered. The rigid cellulose cell wall forms the outermost boundary with characteristic geometric lattice structure. The semi-permeable cell membrane lies directly beneath, controlling material passage. The nucleus occupies a prominent central position containing the nucleolus and DNA as the control center. Numerous chloroplasts with double membrane envelopes and stacked thylakoid structures are distributed throughout, displaying green chlorophyll pigments. The large central vacuole provides turgor pressure and stores water and nutrients. Mitochondria are visible as distinct double-membrane organelles. Rough endoplasmic reticulum studded with ribosomes appears as stacked cisternae, while smooth endoplasmic reticulum is depicted as tubular structures without ribosomes. Small ribosomes are shown as distinct visible organelles throughout the cytoplasm. The Golgi apparatus appears as stacked curved membranes. Cytoplasm is clearly differentiated with subtle shading.",
+      "refiner_changes": [
+        "Added smooth endoplasmic reticulum to CLIP as distinct keyword",
+        "Added ribosomes as distinct keyword in CLIP",
+        "Added cytoplasm as differentiated keyword in CLIP",
+        "Added explicit T5 sentence describing smooth ER as tubular structures without ribosomes, visually distinct from rough ER",
+        "Added explicit T5 sentence showing ribosomes as small distinct visible organelles",
+        "Added T5 instruction to differentiate cytoplasm with subtle shading for better visual clarity",
+        "Preserved all correctly depicted structures: cell wall, cell membrane, nucleus, nucleolus, chloroplasts, mitochondria, rough ER, Golgi apparatus, central vacuole"
+      ]
+    },
+    {
+      "attempt": 2,
+      "seed": 42,
+      "mode": "img2img_str0.60",
+      "gen_time_s": 565.1,
+      "sas": 0.2712,
+      "clip_score": 0.2876,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a plant cell, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, Photosynthesis takes place in the chloroplasts of plant cells, Chloroplasts are found only in plant cells and perform photosynthesis, nucleus with the control center and contains the cell's DNA, Stipules are small leaf-like appendages at the base of the petiole, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, plant cell, cell wall, cell membrane, nucleus, nucleolus, chloroplasts, mitochondria, rough endoplasmic reticulum, smooth endoplasmic reticulum, ribosomes, central vacuole, Golgi apparatus, cytoplasm, detailed anatomy, educational illustration, white background, biology textbook style, clean linework, no text, no labels",
+      "t5_prompt": "A highly detailed scientific cross-section diagram showing the internal anatomy of a plant cell with all major organelles and structures precisely rendered. The rigid cellulose cell wall forms the outermost boundary with characteristic geometric lattice structure. The semi-permeable cell membrane lies directly beneath, controlling material passage. The nucleus occupies a prominent central position containing the nucleolus and DNA as the control center. Numerous chloroplasts with double membrane envelopes and stacked thylakoid structures are distributed throughout, displaying green chlorophyll pigments. The large central vacuole provides turgor pressure and stores water and nutrients. Mitochondria are visible as distinct double-membrane organelles. Rough endoplasmic reticulum studded with ribosomes appears as stacked cisternae, while smooth endoplasmic reticulum is depicted as tubular structures without ribosomes. Small ribosomes are shown as distinct visible organelles throughout the cytoplasm. The Golgi apparatus appears as stacked curved membranes. Cytoplasm is clearly differentiated with subtle shading.",
+      "image_file": "attempt_02_img2img_str0.60_seed42.png",
+      "llm_score": 7.5,
+      "present_structures": [
+        "Cell wall",
+        "Cell membrane",
+        "Nucleus",
+        "Nucleolus",
+        "Chloroplasts",
+        "Central vacuole",
+        "Mitochondria",
+        "Golgi apparatus",
+        "Endoplasmic reticulum (rough and smooth)"
+      ],
+      "missing_structures": [
+        "Ribosomes (not distinctly visible)",
+        "Cytoplasm (not clearly differentiated)"
+      ],
+      "improvement_suggestions": "Add visible ribosomes as small dots, particularly on rough ER, and ensure cytoplasm is clearly distinguished from other organelles. Consider slightly more anatomical accuracy in mitochondrial cristae representation.",
+      "refined_clip_for_next": "scientific cross-section diagram, plant cell, cell wall, cell membrane, nucleus, nucleolus, chloroplasts, mitochondria, rough endoplasmic reticulum, smooth endoplasmic reticulum, ribosomes, central vacuole, Golgi apparatus, cytoplasm, mitochondrial cristae, detailed anatomy, educational illustration, white background, biology textbook style, clean linework, no text, no labels",
+      "refined_t5_for_next": "A highly detailed scientific cross-section diagram showing the internal anatomy of a plant cell with all major organelles and structures precisely rendered. The rigid cellulose cell wall forms the outermost boundary with characteristic geometric lattice structure. The semi-permeable cell membrane lies directly beneath, controlling material passage. The nucleus occupies a prominent central position containing the nucleolus and DNA as the control center. Numerous chloroplasts with double membrane envelopes and stacked thylakoid structures are distributed throughout, displaying green chlorophyll pigments. The large central vacuole provides turgor pressure and stores water and nutrients. Mitochondria are visible as distinct double-membrane organelles with clearly defined internal cristae folds. Rough endoplasmic reticulum studded with ribosomes appears as stacked cisternae, with small ribosomes shown as visible dots attached to the membrane surface and free-floating throughout the cytoplasm. Smooth endoplasmic reticulum is depicted as tubular structures without ribosomes. The Golgi apparatus appears as stacked curved membranes. Cytoplasm",
+      "refiner_changes": [
+        "Added 'ribosomes' to CLIP prompt as explicit keyword",
+        "Added 'mitochondrial cristae' to CLIP prompt for anatomical accuracy",
+        "Added 'cytoplasm' to CLIP prompt as explicit keyword",
+        "Enhanced T5 with emphasis on ribosomes as visible dots on rough ER and free-floating",
+        "Added mitochondrial cristae description in T5 for improved anatomical representation",
+        "Clarified cytoplasm differentiation in T5 conclusion"
+      ]
+    },
+    {
+      "attempt": 3,
+      "seed": 42,
+      "mode": "img2img_str0.50",
+      "gen_time_s": 523.1,
+      "sas": 0.2743,
+      "clip_score": 0.2971,
+      "passed": true,
+      "violations": [],
+      "full_prompt": "A highly detailed scientific cross-section diagram of labeled diagram of a plant cell, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, Photosynthesis takes place in the chloroplasts of plant cells, Chloroplasts are found only in plant cells and perform photosynthesis, nucleus with the control center and contains the cell's DNA, Stipules are small leaf-like appendages at the base of the petiole, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels",
+      "clip_prompt": "scientific cross-section diagram, plant cell, cell wall, cell membrane, nucleus, nucleolus, chloroplasts, mitochondria, rough endoplasmic reticulum, smooth endoplasmic reticulum, ribosomes, central vacuole, Golgi apparatus, cytoplasm, mitochondrial cristae, detailed anatomy, educational illustration, white background, biology textbook style, clean linework, no text, no labels",
+      "t5_prompt": "A highly detailed scientific cross-section diagram showing the internal anatomy of a plant cell with all major organelles and structures precisely rendered. The rigid cellulose cell wall forms the outermost boundary with characteristic geometric lattice structure. The semi-permeable cell membrane lies directly beneath, controlling material passage. The nucleus occupies a prominent central position containing the nucleolus and DNA as the control center. Numerous chloroplasts with double membrane envelopes and stacked thylakoid structures are distributed throughout, displaying green chlorophyll pigments. The large central vacuole provides turgor pressure and stores water and nutrients. Mitochondria are visible as distinct double-membrane organelles with clearly defined internal cristae folds. Rough endoplasmic reticulum studded with ribosomes appears as stacked cisternae, with small ribosomes shown as visible dots attached to the membrane surface and free-floating throughout the cytoplasm. Smooth endoplasmic reticulum is depicted as tubular structures without ribosomes. The Golgi apparatus appears as stacked curved membranes. Cytoplasm",
+      "image_file": "attempt_03_img2img_str0.50_seed42.png",
+      "llm_score": 7.5,
+      "present_structures": [
+        "Cell wall",
+        "Cell membrane",
+        "Nucleus",
+        "Nucleolus",
+        "Chloroplasts",
+        "Central vacuole",
+        "Mitochondria",
+        "Golgi apparatus",
+        "Rough endoplasmic reticulum",
+        "Smooth endoplasmic reticulum"
+      ],
+      "missing_structures": [
+        "Ribosomes (not distinctly visible as individual structures)",
+        "Plasmodesmata (plant cell-specific connections)"
+      ],
+      "improvement_suggestions": "Add smaller ribosomes as distinct structures attached to rough ER for clarity. Consider including a zoomed detail showing the cell wall's cellulose structure more explicitly."
+    }
+  ],
+  "best_clip": 0.2971,
+  "total_gen_time_s": 1447.1,
+  "attempts_used": 3,
+  "passed": true,
+  "fully_passed": false,
+  "final_missing": [
+    "Ribosomes (not distinctly visible as individual structures)",
+    "Plasmodesmata (plant cell-specific connections)"
+  ]
+}

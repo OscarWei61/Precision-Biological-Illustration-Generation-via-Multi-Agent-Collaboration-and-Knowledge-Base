@@ -1,0 +1,20 @@
+Mode:        flux_direct
+Query:       Draw a labeled diagram of a plant cell showing all major organelles
+Constraints (9):
+  - A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane
+  - The nucleus is the control center and contains the cell's DNA
+  - Chloroplasts are found only in plant cells and perform photosynthesis
+  - The central vacuole stores water and maintains turgor pressure
+  - Mitochondria are the powerhouse of the cell, producing ATP via respiration
+  - Ribosomes are small organelles that synthesize proteins
+  - The Golgi apparatus packages and ships proteins
+  - Rough ER has ribosomes and is involved in protein synthesis
+  - Smooth ER is involved in lipid synthesis and detoxification
+
+--- Attempt 1 (text2img) ---
+Full prompt:  Draw a labeled diagram of a plant cell showing all major organelles
+CLIP prompt:  plant cell diagram, nucleus, mitochondria, chloroplast, endoplasmic reticulum, golgi apparatus, cell wall, vacuole, educational illustration, scientific cross-section, clean linework, white background, biology textbook style, no text labels
+T5 prompt:    A detailed scientific illustration of a plant cell in cross-section showing all major organelles with accurate spatial relationships and biological structures. The cell is displayed against a white background in a clear educational diagram style. The cell wall forms the rigid outer boundary composed of cellulose fibers. Just inside the cell wall is the cell membrane, a thin lipid bilayer controlling substance transport. The large central vacuole occupies most of the cell interior, containing cell sap for turgor pressure and nutrient storage, surrounded by a distinct tonoplast membrane. The cytoplasm fills the space between the vacuole and cell membrane, appearing as a gel-like substance. The nucleus is positioned centrally, bounded by a double nuclear envelope with nuclear pores, containing the nucleolus where ribosomal RNA is synthesized and a network of chromatin. Mitochondria appear as elongated or rounded organelles with outer and inner membranes, cristae visible inside for cellular respiration. Chloroplasts are large, oval-shaped organelles containing stacked thylakoids arranged in grana and a stroma matrix for photosynthesis, with their own double membrane envelope. The endoplasmic reticulum extends throughout the cytoplasm, with rough endoplasmic reticulum studded with ribosomes for protein synthesis, and smooth endoplasmic reticulum without ribosomes for lipid synthesis. The Golgi apparatus appears as stacked cisternae for protein modification and packaging. Ribosomes are visible as small particles on rough ER and free in cytoplasm. Plasmodesmata connect through the cell wall to adjacent cells. The drawing uses scientific accuracy with clear three-dimensional perspective showing all organelles in their proper locations and proportions.
+Seed:         42
+Steps:        20
+Gen time:     356.1s

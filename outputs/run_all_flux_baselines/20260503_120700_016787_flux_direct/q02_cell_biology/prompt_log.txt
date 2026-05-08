@@ -1,0 +1,18 @@
+Mode:        flux_direct
+Query:       Draw a detailed cross-section of a mitochondria showing cristae and matrix
+Constraints (7):
+  - Mitochondria have an outer membrane and a folded inner membrane
+  - The inner membrane folds are called cristae, which increase surface area
+  - The space between outer and inner membrane is the intermembrane space
+  - The central fluid-filled region is called the matrix
+  - Mitochondrial DNA is located in the matrix
+  - ATP synthesis occurs along the inner membrane (cristae)
+  - Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers
+
+--- Attempt 1 (text2img) ---
+Full prompt:  Draw a detailed cross-section of a mitochondria showing cristae and matrix
+CLIP prompt:  scientific cross-section diagram, mitochondria, cristae folds, matrix, outer membrane, inner membrane, white background, biology textbook illustration, detailed linework, educational, clean style, no text, no labels
+T5 prompt:    A detailed scientific cross-section illustration of a mitochondrion showing its complete internal structure. The outer mitochondrial membrane forms a smooth continuous boundary on the exterior. Just inside lies the inner mitochondrial membrane which is highly folded and convoluted, creating numerous cristae that extend deep into the interior space. These cristae are finger-like projections and shelf-like folds that dramatically increase the surface area for oxidative phosphorylation. The space between the outer and inner membranes is the intermembrane space, shown as a thin defined region. The central cavity is filled with the mitochondrial matrix, a gel-like substance containing enzymes, mitochondrial DNA, ribosomes, and metabolites involved in the citric acid cycle and other metabolic pathways. The cristae membranes are colored distinctly different from the matrix to show the separation of oxidative phosphorylation machinery from the metabolic reactions occurring in the matrix. Small round structures representing ribosomes are scattered throughout the matrix. The mitochondrial DNA appears as circular strands within the matrix. The illustration uses a white background, employs scientific accuracy with educational clarity, shows cross-sectional depth with shading and layering, includes no text labels or annotations, and presents the mitochondrion in the style of a detailed textbook biology diagram with precise anatomical rendering.
+Seed:         42
+Steps:        20
+Gen time:     383.5s

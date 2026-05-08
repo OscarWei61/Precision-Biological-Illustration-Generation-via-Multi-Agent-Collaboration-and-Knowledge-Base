@@ -1,0 +1,34 @@
+Query: Draw a labeled diagram of the human digestive system
+Constraints (8):
+  - The digestive system begins at the mouth and ends at the anus
+  - The esophagus connects the mouth to the stomach
+  - The stomach uses acid and enzymes to break down food
+  - The liver produces bile to help digest fats
+  - The pancreas secretes digestive enzymes into the small intestine
+  - The small intestine absorbs nutrients
+  - The large intestine absorbs water and forms feces
+  - The appendix is a small pouch attached to the large intestine
+
+--- Attempt 1 (text2img) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the human digestive system, The digestive system begins at the mouth and ends at the anus, abdomen with the digestive and reproductive organs, The pancreas secretes digestive enzymes into the small intestine, The esophagus connects the mouth to the stomach, The stomach uses acid and enzymes to break down food, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human digestive system, mouth, esophagus, stomach, small intestine, pancreas, large intestine, anus, abdominal organs, detailed anatomy, educational illustration, white background, textbook style, clean linework, biological accuracy, no labels
+T5 prompt:   A comprehensive scientific cross-section illustration of the human digestive system showing the complete pathway from mouth through anus. The diagram displays the mouth opening into the pharynx, which narrows into the esophagus as a tubular structure descending through the thorax into the abdominal cavity. The esophagus connects to the stomach, a muscular J-shaped organ positioned in the upper left abdomen beneath the diaphragm. The stomach's walls show the three muscle layers arranged in different directions for churning and mixing food with gastric juices and hydrochloric acid. The stomach narrows at the pyloric sphincter where it transitions into the small intestine. The small intestine is depicted in three coiled sections: the duodenum receiving the common bile duct from the liver and gallbladder above, plus the pancreatic duct from the pancreas positioned behind the stomach delivering digestive enzymes and bicarbonate to neutralize stomach acid. The jejunum and ileum follow in looped coils showing their absorptive villi lining. The small intestine connects to the large intestine or colon, which ascends on the right side, crosses the abdomen horizontally, and descends on the left before terminating at the rectum and anal canal. The liver is visible above the stomach, the gallbladder tucked beneath it, and the pancreas positioned horizontally behind the stomach. The entire system is shown in anatomical position within the abdominal cavity. Scientific textbook style illustration with accurate biological coloring, white background, educational diagram format, no text labels, no annotations.
+Gen time:    371.3s
+
+--- Attempt 2 (img2img_str0.75) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the human digestive system, The digestive system begins at the mouth and ends at the anus, abdomen with the digestive and reproductive organs, The pancreas secretes digestive enzymes into the small intestine, The esophagus connects the mouth to the stomach, The stomach uses acid and enzymes to break down food, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human digestive system, mouth, pharynx, esophagus, stomach, duodenum, jejunum, ileum, pancreas, liver, large intestine, colon, appendix, anus, anatomical labels, detailed anatomy, educational illustration, white background, textbook style, clean linework, biological accuracy
+T5 prompt:   A comprehensive scientific cross-section illustration of the human digestive system showing the complete pathway from mouth through anus, with all major structures labeled. The diagram displays the mouth opening into the pharynx, which narrows into the esophagus as a tubular structure descending through the thorax into the abdominal cavity. The esophagus connects to the stomach, a muscular J-shaped organ positioned in the upper left abdomen beneath the diaphragm, with visible muscle layers. The stomach narrows at the pyloric sphincter into the small intestine, depicted in three sections: duodenum receiving the common bile duct from the liver and gallbladder, followed by the jejunum and ileum in coiled loops. The pancreas is positioned behind the stomach, delivering digestive enzymes via the pancreatic duct. The small intestine connects to the large intestine (colon) at the ileocecal junction, where the appendix appears as a small pouch. The colon ascends, crosses, and descends through the
+Strength:    0.75
+Gen time:    753.8s
+
+--- Attempt 3 (img2img_str0.75) ---
+Seed:        42
+Full prompt: A highly detailed scientific cross-section diagram of labeled diagram of the human digestive system, The digestive system begins at the mouth and ends at the anus, abdomen with the digestive and reproductive organs, The pancreas secretes digestive enzymes into the small intestine, The esophagus connects the mouth to the stomach, The stomach uses acid and enzymes to break down food, scientific educational illustration, detailed diagram, white background, accurate biology textbook style, no text, no labels
+CLIP prompt: scientific cross-section diagram, human digestive system, mouth, pharynx, esophagus, stomach, pancreas, small intestine, large intestine, appendix, rectum, anus, abdominal organs, detailed anatomy, educational illustration, white background, textbook style, clean linework, biological accuracy, no labels
+T5 prompt:   A comprehensive scientific cross-section illustration of the human digestive system showing the complete pathway from mouth through anus. The diagram displays the mouth opening into the pharynx, which narrows into the esophagus as a tubular structure descending through the thorax into the abdominal cavity. The esophagus connects to the stomach, a muscular J-shaped organ positioned in the upper left abdomen beneath the diaphragm. The stomach narrows at the pyloric sphincter where it transitions into the small intestine. The small intestine is depicted in three coiled sections: the duodenum receiving the common bile duct from the liver and gallbladder above, plus the pancreatic duct from the pancreas positioned behind the stomach, delivering digestive enzymes and bicarbonate. The pancreas is clearly shown connecting to the duodenum. The jejunum and ileum follow in looped coils. The small intestine connects to the large intestine at the ileocecal junction, where the appendix is visible as
+Strength:    0.75
+Gen time:    756.7s
+

@@ -1,0 +1,19 @@
+Mode:        flux_direct
+Query:       Draw a labeled diagram of the human digestive system
+Constraints (8):
+  - The digestive system begins at the mouth and ends at the anus
+  - The esophagus connects the mouth to the stomach
+  - The stomach uses acid and enzymes to break down food
+  - The liver produces bile to help digest fats
+  - The pancreas secretes digestive enzymes into the small intestine
+  - The small intestine absorbs nutrients
+  - The large intestine absorbs water and forms feces
+  - The appendix is a small pouch attached to the large intestine
+
+--- Attempt 1 (text2img) ---
+Full prompt:  Draw a labeled diagram of the human digestive system
+CLIP prompt:  scientific anatomical diagram, human digestive system, esophagus, stomach, small intestine, large intestine, liver, pancreas, educational illustration, cross-section view, clean linework, white background, biology textbook style, medical diagram, no text labels
+T5 prompt:    A comprehensive anatomical illustration of the human digestive system shown in frontal view against a white background. Starting from the top, show the oral cavity with the tongue, teeth, and salivary glands, then the pharynx leading to the esophagus which descends through the thorax. The esophagus connects to the stomach positioned in the upper left abdominal region, showing its curved shape with the cardia, fundus, body, and pylorus regions. From the stomach, depict the small intestine consisting of the duodenum, jejunum, and ileum with their characteristic loops and folds, occupying the central and lower abdominal cavity. Show the large intestine or colon surrounding the small intestine, including the ascending colon on the right side, transverse colon across the top, descending colon on the left, and sigmoid colon leading to the rectum and anal canal. Include the accessory organs: the liver positioned in the upper right abdomen with a dark red-brown color, the gallbladder nestled beneath the liver shown in green, and the pancreas in pale yellow located behind the stomach. Show the appendix attached to the junction of small and large intestine. Include the mesentery supporting and suspending the intestines. Depict the path of food movement through peristalsis. Use color differentiation: stomach in lighter pink, small intestine in tan, large intestine in darker brown, liver in deep red-brown, pancreas in pale yellow, and gallbladder in green. Present as an educational scientific diagram with clear anatomical accuracy, textbook illustration style, no labels or text visible.
+Seed:         42
+Steps:        20
+Gen time:     396.6s
