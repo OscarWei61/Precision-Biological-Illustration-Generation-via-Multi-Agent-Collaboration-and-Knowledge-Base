@@ -1,0 +1,102 @@
+[
+  {
+    "id": "q01",
+    "domain": "cell_biology",
+    "query": "Draw a labeled diagram of a plant cell showing all major organelles",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/zimage_config1/q01.png",
+    "clip_score": 0.2105,
+    "clip_delta_vs_sd": -0.1011,
+    "generation_time_s": 420.9,
+    "config": "zimage_config1"
+  },
+  {
+    "id": "q02",
+    "domain": "cell_biology",
+    "query": "Draw a detailed cross-section of a mitochondria showing cristae and matrix",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/zimage_config1/q02.png",
+    "clip_score": 0.2379,
+    "clip_delta_vs_sd": 0.0082,
+    "generation_time_s": 439.6,
+    "config": "zimage_config1"
+  },
+  {
+    "id": "q03",
+    "domain": "neuroanatomy",
+    "query": "Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/zimage_config1/q03.png",
+    "clip_score": 0.2311,
+    "clip_delta_vs_sd": -0.0474,
+    "generation_time_s": 430.9,
+    "config": "zimage_config1"
+  },
+  {
+    "id": "q04",
+    "domain": "human_anatomy",
+    "query": "Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/zimage_config1/q04.png",
+    "clip_score": 0.2444,
+    "clip_delta_vs_sd": -0.0273,
+    "generation_time_s": 445.9,
+    "config": "zimage_config1"
+  },
+  {
+    "id": "q05",
+    "domain": "human_anatomy",
+    "query": "Draw a labeled diagram of the human digestive system",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/zimage_config1/q05.png",
+    "clip_score": 0.2626,
+    "clip_delta_vs_sd": 0.007,
+    "generation_time_s": 461.7,
+    "config": "zimage_config1"
+  },
+  {
+    "id": "q06",
+    "domain": "human_anatomy",
+    "query": "Draw a labeled diagram of the human heart showing ventricles, atria and aorta",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/zimage_config1/q06.png",
+    "clip_score": 0.2988,
+    "clip_delta_vs_sd": 0.003,
+    "generation_time_s": 384.4,
+    "config": "zimage_config1"
+  },
+  {
+    "id": "q07",
+    "domain": "plant_biology",
+    "query": "Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/zimage_config1/q07.png",
+    "clip_score": 0.2243,
+    "clip_delta_vs_sd": -0.0848,
+    "generation_time_s": 175.6,
+    "config": "zimage_config1"
+  },
+  {
+    "id": "q08",
+    "domain": "plant_biology",
+    "query": "Draw a labeled diagram of a leaf showing blade, midrib, petiole and veins",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/zimage_config1/q08.png",
+    "clip_score": 0.2525,
+    "clip_delta_vs_sd": -0.0424,
+    "generation_time_s": 215.4,
+    "config": "zimage_config1"
+  },
+  {
+    "id": "q09",
+    "domain": "biochemistry",
+    "query": "Draw a diagram illustrating the process of photosynthesis with inputs and outputs",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/zimage_config1/q09.png",
+    "clip_score": 0.251,
+    "clip_delta_vs_sd": -0.0213,
+    "generation_time_s": 326.9,
+    "config": "zimage_config1"
+  },
+  {
+    "id": "q10",
+    "domain": "zoology",
+    "query": "Draw a labeled diagram of an insect body showing head, thorax, abdomen and antennae",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/zimage_config1/q10.png",
+    "clip_score": 0.2457,
+    "clip_delta_vs_sd": -0.0092,
+    "generation_time_s": 180.3,
+    "config": "zimage_config1"
+  }
+]

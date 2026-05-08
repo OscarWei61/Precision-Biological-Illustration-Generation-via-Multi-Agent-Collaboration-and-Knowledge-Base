@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q01",
+    "image": "1071.png",
+    "query": "Draw a labeled diagram of a plant cell showing all major organelles",
+    "domain": "cell_biology"
+  },
+  {
+    "id": "q02",
+    "image": "3288.png",
+    "query": "Draw a detailed cross-section of a mitochondria showing cristae and matrix",
+    "domain": "cell_biology"
+  },
+  {
+    "id": "q03",
+    "image": "2925.png",
+    "query": "Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath",
+    "domain": "neuroanatomy"
+  },
+  {
+    "id": "q04",
+    "image": "2857.png",
+    "query": "Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve",
+    "domain": "human_anatomy"
+  },
+  {
+    "id": "q05",
+    "image": "1385.png",
+    "query": "Draw a labeled diagram of the human digestive system",
+    "domain": "human_anatomy"
+  },
+  {
+    "id": "q06",
+    "image": "1382.png",
+    "query": "Draw a labeled diagram of the human heart showing ventricles, atria and aorta",
+    "domain": "human_anatomy"
+  },
+  {
+    "id": "q07",
+    "image": "1014.png",
+    "query": "Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil",
+    "domain": "plant_biology"
+  },
+  {
+    "id": "q08",
+    "image": "1086.png",
+    "query": "Draw a labeled diagram of a leaf showing blade, midrib, petiole and veins",
+    "domain": "plant_biology"
+  },
+  {
+    "id": "q09",
+    "image": "4088.png",
+    "query": "Draw a diagram illustrating the process of photosynthesis with inputs and outputs",
+    "domain": "biochemistry"
+  },
+  {
+    "id": "q10",
+    "image": "1191.png",
+    "query": "Draw a labeled diagram of an insect body showing head, thorax, abdomen and antennae",
+    "domain": "zoology"
+  }
+]

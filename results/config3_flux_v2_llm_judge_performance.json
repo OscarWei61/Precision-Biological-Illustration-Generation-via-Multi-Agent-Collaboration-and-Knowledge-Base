@@ -1,0 +1,296 @@
+{
+  "version": "v2_llm_judge",
+  "run_timestamp": "2026-04-29T11:03:19",
+  "run_duration_s": 13560.0,
+  "max_retries_config": 3,
+  "max_img2img_loops": 2,
+  "pass_thresholds": {
+    "clip_sas": 0.2,
+    "llm_score": 6.0
+  },
+  "aggregate": {
+    "n_queries": 10,
+    "mean_clip": 0.2983,
+    "mean_sas": 0.2725,
+    "mean_llm_score": 5.4,
+    "min_clip": 0.2491,
+    "max_clip": 0.3218,
+    "min_llm": 0.0,
+    "max_llm": 8.5,
+    "queries_clip_passed": 10,
+    "queries_llm_passed": 1,
+    "queries_both_passed": 1,
+    "pass_rate_combined": 0.1
+  },
+  "retry_performance": {
+    "total_img2img_retries": 16,
+    "queries_needing_retry": 8,
+    "mean_attempts_per_query": 2.6,
+    "max_attempts_used": 3
+  },
+  "timing": {
+    "total_run_s": 13560.0,
+    "mean_gen_time_s": 1322.1,
+    "min_gen_time_s": 380.7,
+    "max_gen_time_s": 1730.3,
+    "total_gen_time_s": 13221.1
+  },
+  "per_query": [
+    {
+      "id": "q01",
+      "attempts": 3,
+      "img2img_retries": 2,
+      "final_passed": false,
+      "sas_per_attempt": [
+        0.2701,
+        0.2716,
+        0.27
+      ],
+      "llm_per_attempt": [
+        6.5,
+        2.0,
+        2.0
+      ],
+      "clip_per_attempt": [
+        0.28564324975013733,
+        0.2888100743293762,
+        0.28466877341270447
+      ],
+      "time_per_attempt": [
+        363.7,
+        584.2,
+        526.4
+      ]
+    },
+    {
+      "id": "q02",
+      "attempts": 3,
+      "img2img_retries": 2,
+      "final_passed": false,
+      "sas_per_attempt": [
+        0.2526,
+        0.2517,
+        0.2527
+      ],
+      "llm_per_attempt": [
+        0.5,
+        1.5,
+        0.5
+      ],
+      "clip_per_attempt": [
+        0.24448713660240173,
+        0.24905022978782654,
+        0.24723374843597412
+      ],
+      "time_per_attempt": [
+        401.1,
+        616.5,
+        567.2
+      ]
+    },
+    {
+      "id": "q03",
+      "attempts": 1,
+      "img2img_retries": 0,
+      "final_passed": true,
+      "sas_per_attempt": [
+        0.2894
+      ],
+      "llm_per_attempt": [
+        8.2
+      ],
+      "clip_per_attempt": [
+        0.31689849495887756
+      ],
+      "time_per_attempt": [
+        391.8
+      ]
+    },
+    {
+      "id": "q04",
+      "attempts": 3,
+      "img2img_retries": 2,
+      "final_passed": false,
+      "sas_per_attempt": [
+        0.2799,
+        0.28,
+        0.2803
+      ],
+      "llm_per_attempt": [
+        6.5,
+        6.5,
+        6.5
+      ],
+      "clip_per_attempt": [
+        0.2901080548763275,
+        0.29503756761550903,
+        0.3212489187717438
+      ],
+      "time_per_attempt": [
+        385.3,
+        609.6,
+        735.4
+      ]
+    },
+    {
+      "id": "q05",
+      "attempts": 3,
+      "img2img_retries": 2,
+      "final_passed": false,
+      "sas_per_attempt": [
+        0.2931,
+        0.2927,
+        0.2931
+      ],
+      "llm_per_attempt": [
+        4.5,
+        4.5,
+        5.5
+      ],
+      "clip_per_attempt": [
+        0.29388725757598877,
+        0.29634150862693787,
+        0.29619520902633667
+      ],
+      "time_per_attempt": [
+        395.1,
+        611.7,
+        506.1
+      ]
+    },
+    {
+      "id": "q06",
+      "attempts": 3,
+      "img2img_retries": 2,
+      "final_passed": false,
+      "sas_per_attempt": [
+        0.2811,
+        0.2804,
+        0.2805
+      ],
+      "llm_per_attempt": [
+        6.5,
+        5.5,
+        5.5
+      ],
+      "clip_per_attempt": [
+        0.30656319856643677,
+        0.30532604455947876,
+        0.3055616617202759
+      ],
+      "time_per_attempt": [
+        386.0,
+        615.3,
+        523.9
+      ]
+    },
+    {
+      "id": "q07",
+      "attempts": 3,
+      "img2img_retries": 2,
+      "final_passed": false,
+      "sas_per_attempt": [
+        0.2603,
+        0.2601,
+        0.2603
+      ],
+      "llm_per_attempt": [
+        6.5,
+        3.5,
+        2.5
+      ],
+      "clip_per_attempt": [
+        0.32180628180503845,
+        0.32754647731781006,
+        0.32314884662628174
+      ],
+      "time_per_attempt": [
+        400.3,
+        619.6,
+        508.4
+      ]
+    },
+    {
+      "id": "q08",
+      "attempts": 1,
+      "img2img_retries": 0,
+      "final_passed": true,
+      "sas_per_attempt": [
+        0.2757
+      ],
+      "llm_per_attempt": [
+        7.5
+      ],
+      "clip_per_attempt": [
+        0.32057899236679077
+      ],
+      "time_per_attempt": [
+        380.7
+      ]
+    },
+    {
+      "id": "q09",
+      "attempts": 3,
+      "img2img_retries": 2,
+      "final_passed": false,
+      "sas_per_attempt": [
+        0.2607,
+        0.2603,
+        0.2591
+      ],
+      "llm_per_attempt": [
+        4.5,
+        4.5,
+        6.5
+      ],
+      "clip_per_attempt": [
+        0.27502548694610596,
+        0.27847161889076233,
+        0.27533644437789917
+      ],
+      "time_per_attempt": [
+        395.3,
+        618.7,
+        547.5
+      ]
+    },
+    {
+      "id": "q10",
+      "attempts": 3,
+      "img2img_retries": 2,
+      "final_passed": true,
+      "sas_per_attempt": [
+        0.2576,
+        0.2586,
+        0.2643
+      ],
+      "llm_per_attempt": [
+        6.5,
+        6.5,
+        7.5
+      ],
+      "clip_per_attempt": [
+        0.2892981767654419,
+        0.2908764183521271,
+        0.28990668058395386
+      ],
+      "time_per_attempt": [
+        399.2,
+        606.7,
+        525.5
+      ]
+    }
+  ],
+  "baselines": {
+    "c1_mean_clip": 0.2774,
+    "c3_sd_mean_clip": 0.2842,
+    "flux_mean_clip": 0.2983,
+    "delta_vs_c1": 0.0209,
+    "delta_vs_c3_sd": 0.0142
+  },
+  "output_files": {
+    "results": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/results/config3_flux_v2_llm_judge_results.json",
+    "verify_log": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/results/config3_flux_v2_llm_judge_verify_log.json",
+    "images_dir": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config3_flux_v2_llm_judge"
+  }
+}

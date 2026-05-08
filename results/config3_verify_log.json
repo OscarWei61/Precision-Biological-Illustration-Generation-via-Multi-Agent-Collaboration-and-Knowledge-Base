@@ -1,0 +1,674 @@
+[
+  {
+    "id": "q01",
+    "constraints": [
+      "A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane",
+      "The nucleus is the control center and contains the cell's DNA",
+      "Chloroplasts are found only in plant cells and perform photosynthesis",
+      "The central vacuole stores water and maintains turgor pressure",
+      "Mitochondria are the powerhouse of the cell, producing ATP via respiration",
+      "Ribosomes are small organelles that synthesize proteins",
+      "The Golgi apparatus packages and ships proteins",
+      "Rough ER has ribosomes and is involved in protein synthesis",
+      "Smooth ER is involved in lipid synthesis and detoxification"
+    ],
+    "per_constraint": [
+      [
+        "A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane",
+        "plant cell rigid cell wall cellulose",
+        0.2779,
+        true
+      ],
+      [
+        "The nucleus is the control center and contains the cell's DNA",
+        "nucleus control center contains cell DNA",
+        0.2109,
+        false
+      ],
+      [
+        "Chloroplasts are found only in plant cells and perform photosynthesis",
+        "Chloroplasts plant cells perform photosynthesis",
+        0.2712,
+        true
+      ],
+      [
+        "The central vacuole stores water and maintains turgor pressure",
+        "central vacuole stores water maintains turgor",
+        0.2546,
+        true
+      ],
+      [
+        "Mitochondria are the powerhouse of the cell, producing ATP via respiration",
+        "Mitochondria powerhouse cell producing ATP via",
+        0.2503,
+        true
+      ],
+      [
+        "Ribosomes are small organelles that synthesize proteins",
+        "Ribosomes small organelles synthesize proteins",
+        0.2266,
+        true
+      ],
+      [
+        "The Golgi apparatus packages and ships proteins",
+        "Golgi apparatus packages ships proteins",
+        0.2147,
+        false
+      ],
+      [
+        "Rough ER has ribosomes and is involved in protein synthesis",
+        "Rough ribosomes involved protein synthesis",
+        0.2157,
+        false
+      ],
+      [
+        "Smooth ER is involved in lipid synthesis and detoxification",
+        "Smooth involved lipid synthesis detoxification",
+        0.2574,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "seed": 42,
+        "sas": 0.2421,
+        "clip_score": 0.24575713276863098,
+        "violations": [
+          "The nucleus is the control center and contains the cell's DNA",
+          "The Golgi apparatus packages and ships proteins",
+          "Rough ER has ribosomes and is involved in protein synthesis"
+        ],
+        "prompt_len": 541
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "constraints": [
+      "Mitochondria have an outer membrane and a folded inner membrane",
+      "The inner membrane folds are called cristae, which increase surface area",
+      "The space between outer and inner membrane is the intermembrane space",
+      "The central fluid-filled region is called the matrix",
+      "Mitochondrial DNA is located in the matrix",
+      "ATP synthesis occurs along the inner membrane (cristae)",
+      "Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers"
+    ],
+    "per_constraint": [
+      [
+        "Mitochondria have an outer membrane and a folded inner membrane",
+        "Mitochondria outer membrane folded inner membrane",
+        0.292,
+        true
+      ],
+      [
+        "The inner membrane folds are called cristae, which increase surface area",
+        "inner membrane folds cristae increase surface",
+        0.2535,
+        true
+      ],
+      [
+        "The space between outer and inner membrane is the intermembrane space",
+        "space outer inner membrane intermembrane space",
+        0.2598,
+        true
+      ],
+      [
+        "The central fluid-filled region is called the matrix",
+        "central fluid-filled region matrix",
+        0.247,
+        true
+      ],
+      [
+        "Mitochondrial DNA is located in the matrix",
+        "Mitochondrial DNA matrix",
+        0.2777,
+        true
+      ],
+      [
+        "ATP synthesis occurs along the inner membrane (cristae)",
+        "ATP synthesis occurs inner membrane cristae",
+        0.262,
+        true
+      ],
+      [
+        "Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers",
+        "Mitochondria oval-shaped diameter 5-10 micrometers",
+        0.2749,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "seed": 42,
+        "sas": 0.2667,
+        "clip_score": 0.32164138555526733,
+        "violations": [],
+        "prompt_len": 517
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "constraints": [
+      "A neuron has a cell body (soma), dendrites, and an axon",
+      "Dendrites receive signals from other neurons",
+      "The axon transmits electrical signals away from the cell body",
+      "The myelin sheath insulates the axon and speeds signal transmission",
+      "Nodes of Ranvier are gaps in the myelin sheath",
+      "Axon terminals release neurotransmitters into the synapse",
+      "Schwann cells produce the myelin sheath in the peripheral nervous system"
+    ],
+    "per_constraint": [
+      [
+        "A neuron has a cell body (soma), dendrites, and an axon",
+        "neuron cell body soma dendrites axon",
+        0.2754,
+        true
+      ],
+      [
+        "Dendrites receive signals from other neurons",
+        "Dendrites receive signals other neurons",
+        0.251,
+        true
+      ],
+      [
+        "The axon transmits electrical signals away from the cell body",
+        "axon transmits electrical signals away cell",
+        0.2299,
+        true
+      ],
+      [
+        "The myelin sheath insulates the axon and speeds signal transmission",
+        "myelin sheath insulates axon speeds signal",
+        0.2414,
+        true
+      ],
+      [
+        "Nodes of Ranvier are gaps in the myelin sheath",
+        "Nodes Ranvier gaps myelin sheath",
+        0.2614,
+        true
+      ],
+      [
+        "Axon terminals release neurotransmitters into the synapse",
+        "Axon terminals release neurotransmitters synapse",
+        0.2354,
+        true
+      ],
+      [
+        "Schwann cells produce the myelin sheath in the peripheral nervous system",
+        "Schwann cells produce myelin sheath peripheral",
+        0.2438,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "seed": 42,
+        "sas": 0.2483,
+        "clip_score": 0.27705252170562744,
+        "violations": [],
+        "prompt_len": 498
+      }
+    ]
+  },
+  {
+    "id": "q04",
+    "constraints": [
+      "The cornea is the transparent front part of the eye that refracts light",
+      "The iris controls the size of the pupil",
+      "The lens focuses light onto the retina",
+      "The retina contains photoreceptor cells (rods and cones)",
+      "The optic nerve transmits signals from the retina to the brain",
+      "The fovea is the area of sharpest vision in the retina",
+      "The vitreous gel fills the space between the lens and retina"
+    ],
+    "per_constraint": [
+      [
+        "The cornea is the transparent front part of the eye that refracts light",
+        "cornea transparent front part eye refracts",
+        0.252,
+        true
+      ],
+      [
+        "The iris controls the size of the pupil",
+        "iris controls size pupil",
+        0.2449,
+        true
+      ],
+      [
+        "The lens focuses light onto the retina",
+        "lens focuses light onto retina",
+        0.2317,
+        true
+      ],
+      [
+        "The retina contains photoreceptor cells (rods and cones)",
+        "retina contains photoreceptor cells rods cones",
+        0.2708,
+        true
+      ],
+      [
+        "The optic nerve transmits signals from the retina to the brain",
+        "optic nerve transmits signals retina brain",
+        0.2633,
+        true
+      ],
+      [
+        "The fovea is the area of sharpest vision in the retina",
+        "fovea area sharpest vision retina",
+        0.2597,
+        true
+      ],
+      [
+        "The vitreous gel fills the space between the lens and retina",
+        "vitreous gel fills space lens retina",
+        0.2516,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "seed": 42,
+        "sas": 0.2534,
+        "clip_score": 0.2916538715362549,
+        "violations": [],
+        "prompt_len": 487
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "constraints": [
+      "The digestive system begins at the mouth and ends at the anus",
+      "The esophagus connects the mouth to the stomach",
+      "The stomach uses acid and enzymes to break down food",
+      "The liver produces bile to help digest fats",
+      "The pancreas secretes digestive enzymes into the small intestine",
+      "The small intestine absorbs nutrients",
+      "The large intestine absorbs water and forms feces",
+      "The appendix is a small pouch attached to the large intestine"
+    ],
+    "per_constraint": [
+      [
+        "The digestive system begins at the mouth and ends at the anus",
+        "digestive system begins mouth ends anus",
+        0.2895,
+        true
+      ],
+      [
+        "The esophagus connects the mouth to the stomach",
+        "esophagus connects mouth stomach",
+        0.2789,
+        true
+      ],
+      [
+        "The stomach uses acid and enzymes to break down food",
+        "stomach uses acid enzymes break food",
+        0.262,
+        true
+      ],
+      [
+        "The liver produces bile to help digest fats",
+        "liver produces bile help digest fats",
+        0.2659,
+        true
+      ],
+      [
+        "The pancreas secretes digestive enzymes into the small intestine",
+        "pancreas secretes digestive enzymes small intestine",
+        0.2926,
+        true
+      ],
+      [
+        "The small intestine absorbs nutrients",
+        "small intestine absorbs nutrients",
+        0.2817,
+        true
+      ],
+      [
+        "The large intestine absorbs water and forms feces",
+        "large intestine absorbs water forms feces",
+        0.2756,
+        true
+      ],
+      [
+        "The appendix is a small pouch attached to the large intestine",
+        "appendix small pouch attached large intestine",
+        0.2809,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "seed": 42,
+        "sas": 0.2784,
+        "clip_score": 0.3051767349243164,
+        "violations": [],
+        "prompt_len": 496
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "constraints": [
+      "The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle",
+      "The aorta carries oxygenated blood from the left ventricle to the body",
+      "The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs",
+      "The septum separates the left and right sides of the heart",
+      "Valves prevent backflow of blood between chambers",
+      "The heart's right side receives deoxygenated blood and pumps it to the lungs",
+      "The heart's left side receives oxygenated blood and pumps it to the body"
+    ],
+    "per_constraint": [
+      [
+        "The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle",
+        "heart four chambers right atrium left",
+        0.3117,
+        true
+      ],
+      [
+        "The aorta carries oxygenated blood from the left ventricle to the body",
+        "aorta carries oxygenated blood left ventricle",
+        0.304,
+        true
+      ],
+      [
+        "The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs",
+        "pulmonary arteries carry deoxygenated blood right",
+        0.2892,
+        true
+      ],
+      [
+        "The septum separates the left and right sides of the heart",
+        "septum separates left right sides heart",
+        0.2522,
+        true
+      ],
+      [
+        "Valves prevent backflow of blood between chambers",
+        "Valves prevent backflow blood chambers",
+        0.2385,
+        true
+      ],
+      [
+        "The heart's right side receives deoxygenated blood and pumps it to the lungs",
+        "heart right side receives deoxygenated blood",
+        0.301,
+        true
+      ],
+      [
+        "The heart's left side receives oxygenated blood and pumps it to the body",
+        "heart left side receives oxygenated blood",
+        0.2927,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "seed": 42,
+        "sas": 0.2842,
+        "clip_score": 0.3130856454372406,
+        "violations": [],
+        "prompt_len": 571
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "constraints": [
+      "A flower has petals that attract pollinators",
+      "Sepals are leaf-like structures that protect the flower bud",
+      "The stamen is the male reproductive organ consisting of anther and filament",
+      "The anther produces pollen grains",
+      "The pistil is the female reproductive organ consisting of stigma, style, and ovary",
+      "The stigma traps pollen during pollination",
+      "The ovary contains egg cells that develop into seeds after fertilization"
+    ],
+    "per_constraint": [
+      [
+        "A flower has petals that attract pollinators",
+        "flower petals attract pollinators",
+        0.1948,
+        false
+      ],
+      [
+        "Sepals are leaf-like structures that protect the flower bud",
+        "Sepals leaf-like structures protect flower bud",
+        0.2538,
+        true
+      ],
+      [
+        "The stamen is the male reproductive organ consisting of anther and filament",
+        "stamen male reproductive organ consisting anther",
+        0.2315,
+        true
+      ],
+      [
+        "The anther produces pollen grains",
+        "anther produces pollen grains",
+        0.2396,
+        true
+      ],
+      [
+        "The pistil is the female reproductive organ consisting of stigma, style, and ovary",
+        "pistil female reproductive organ consisting stigma",
+        0.216,
+        false
+      ],
+      [
+        "The stigma traps pollen during pollination",
+        "stigma traps pollen pollination",
+        0.199,
+        false
+      ],
+      [
+        "The ovary contains egg cells that develop into seeds after fertilization",
+        "ovary contains egg cells develop seeds",
+        0.2168,
+        false
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "seed": 42,
+        "sas": 0.2216,
+        "clip_score": 0.23130567371845245,
+        "violations": [
+          "A flower has petals that attract pollinators",
+          "The pistil is the female reproductive organ consisting of stigma, style, and ovary",
+          "The stigma traps pollen during pollination",
+          "The ovary contains egg cells that develop into seeds after fertilization"
+        ],
+        "prompt_len": 576
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "constraints": [
+      "A leaf has a flat blade (lamina) that captures sunlight",
+      "The midrib is the central vein running through the leaf",
+      "Lateral veins branch off the midrib and transport water and nutrients",
+      "The petiole is the stalk that attaches the leaf to the stem",
+      "Stipules are small leaf-like appendages at the base of the petiole",
+      "The leaf margin is the edge of the blade"
+    ],
+    "per_constraint": [
+      [
+        "A leaf has a flat blade (lamina) that captures sunlight",
+        "leaf flat blade lamina captures sunlight",
+        0.2528,
+        true
+      ],
+      [
+        "The midrib is the central vein running through the leaf",
+        "midrib central vein running leaf",
+        0.2863,
+        true
+      ],
+      [
+        "Lateral veins branch off the midrib and transport water and nutrients",
+        "Lateral veins branch off midrib transport",
+        0.2392,
+        true
+      ],
+      [
+        "The petiole is the stalk that attaches the leaf to the stem",
+        "petiole stalk attaches leaf stem",
+        0.2517,
+        true
+      ],
+      [
+        "Stipules are small leaf-like appendages at the base of the petiole",
+        "Stipules small leaf-like appendages base petiole",
+        0.2566,
+        true
+      ],
+      [
+        "The leaf margin is the edge of the blade",
+        "leaf margin edge blade",
+        0.2424,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "seed": 42,
+        "sas": 0.2548,
+        "clip_score": 0.2867122292518616,
+        "violations": [],
+        "prompt_len": 470
+      }
+    ]
+  },
+  {
+    "id": "q09",
+    "constraints": [
+      "Photosynthesis takes place in the chloroplasts of plant cells",
+      "The inputs of photosynthesis are carbon dioxide (CO2), water (H2O), and sunlight",
+      "The outputs of photosynthesis are glucose (C6H12O6) and oxygen (O2)",
+      "Chlorophyll molecules in the leaves absorb radiant energy from sunlight",
+      "The light-dependent reactions occur in the thylakoid membranes",
+      "The Calvin cycle (light-independent reactions) occurs in the stroma"
+    ],
+    "per_constraint": [
+      [
+        "Photosynthesis takes place in the chloroplasts of plant cells",
+        "Photosynthesis takes place chloroplasts plant cells",
+        0.23,
+        true
+      ],
+      [
+        "The inputs of photosynthesis are carbon dioxide (CO2), water (H2O), and sunlight",
+        "inputs photosynthesis carbon dioxide CO2 water",
+        0.2206,
+        true
+      ],
+      [
+        "The outputs of photosynthesis are glucose (C6H12O6) and oxygen (O2)",
+        "outputs photosynthesis glucose C6H12O6 oxygen",
+        0.2245,
+        true
+      ],
+      [
+        "Chlorophyll molecules in the leaves absorb radiant energy from sunlight",
+        "Chlorophyll molecules leaves absorb radiant energy",
+        0.2368,
+        true
+      ],
+      [
+        "The light-dependent reactions occur in the thylakoid membranes",
+        "light-dependent reactions occur thylakoid membranes",
+        0.22,
+        false
+      ],
+      [
+        "The Calvin cycle (light-independent reactions) occurs in the stroma",
+        "Calvin cycle light-independent reactions occurs stroma",
+        0.2144,
+        false
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "seed": 42,
+        "sas": 0.2244,
+        "clip_score": 0.25250235199928284,
+        "violations": [
+          "The light-dependent reactions occur in the thylakoid membranes",
+          "The Calvin cycle (light-independent reactions) occurs in the stroma"
+        ],
+        "prompt_len": 590
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "constraints": [
+      "An insect body is divided into three main parts: head, thorax, and abdomen",
+      "Insects have exactly 6 legs attached to the thorax",
+      "The head contains compound eyes, antennae, and mouthparts",
+      "Antennae are sensory organs used for smell and touch",
+      "Wings, when present, are attached to the thorax",
+      "The abdomen contains the digestive and reproductive organs"
+    ],
+    "per_constraint": [
+      [
+        "An insect body is divided into three main parts: head, thorax, and abdomen",
+        "insect body divided three main parts",
+        0.307,
+        true
+      ],
+      [
+        "Insects have exactly 6 legs attached to the thorax",
+        "Insects exactly legs attached thorax",
+        0.247,
+        true
+      ],
+      [
+        "The head contains compound eyes, antennae, and mouthparts",
+        "head contains compound eyes antennae mouthparts",
+        0.2781,
+        true
+      ],
+      [
+        "Antennae are sensory organs used for smell and touch",
+        "Antennae sensory organs smell touch",
+        0.2537,
+        true
+      ],
+      [
+        "Wings, when present, are attached to the thorax",
+        "Wings present attached thorax",
+        0.25,
+        true
+      ],
+      [
+        "The abdomen contains the digestive and reproductive organs",
+        "abdomen contains digestive reproductive organs",
+        0.2763,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "seed": 42,
+        "sas": 0.2687,
+        "clip_score": 0.316521018743515,
+        "violations": [],
+        "prompt_len": 484
+      }
+    ]
+  }
+]

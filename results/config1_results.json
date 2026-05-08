@@ -1,0 +1,92 @@
+[
+  {
+    "id": "q01",
+    "domain": "cell_biology",
+    "query": "Draw a labeled diagram of a plant cell showing all major organelles",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config1/q01.png",
+    "clip_score": 0.3116,
+    "generation_time_s": 30.4,
+    "config": "config1_baseline"
+  },
+  {
+    "id": "q02",
+    "domain": "cell_biology",
+    "query": "Draw a detailed cross-section of a mitochondria showing cristae and matrix",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config1/q02.png",
+    "clip_score": 0.2297,
+    "generation_time_s": 30.5,
+    "config": "config1_baseline"
+  },
+  {
+    "id": "q03",
+    "domain": "neuroanatomy",
+    "query": "Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config1/q03.png",
+    "clip_score": 0.2785,
+    "generation_time_s": 30.3,
+    "config": "config1_baseline"
+  },
+  {
+    "id": "q04",
+    "domain": "human_anatomy",
+    "query": "Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config1/q04.png",
+    "clip_score": 0.2717,
+    "generation_time_s": 30.0,
+    "config": "config1_baseline"
+  },
+  {
+    "id": "q05",
+    "domain": "human_anatomy",
+    "query": "Draw a labeled diagram of the human digestive system",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config1/q05.png",
+    "clip_score": 0.2556,
+    "generation_time_s": 29.9,
+    "config": "config1_baseline"
+  },
+  {
+    "id": "q06",
+    "domain": "human_anatomy",
+    "query": "Draw a labeled diagram of the human heart showing ventricles, atria and aorta",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config1/q06.png",
+    "clip_score": 0.2958,
+    "generation_time_s": 30.2,
+    "config": "config1_baseline"
+  },
+  {
+    "id": "q07",
+    "domain": "plant_biology",
+    "query": "Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config1/q07.png",
+    "clip_score": 0.3091,
+    "generation_time_s": 30.8,
+    "config": "config1_baseline"
+  },
+  {
+    "id": "q08",
+    "domain": "plant_biology",
+    "query": "Draw a labeled diagram of a leaf showing blade, midrib, petiole and veins",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config1/q08.png",
+    "clip_score": 0.2949,
+    "generation_time_s": 30.5,
+    "config": "config1_baseline"
+  },
+  {
+    "id": "q09",
+    "domain": "biochemistry",
+    "query": "Draw a diagram illustrating the process of photosynthesis with inputs and outputs",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config1/q09.png",
+    "clip_score": 0.2723,
+    "generation_time_s": 30.2,
+    "config": "config1_baseline"
+  },
+  {
+    "id": "q10",
+    "domain": "zoology",
+    "query": "Draw a labeled diagram of an insect body showing head, thorax, abdomen and antennae",
+    "image_file": "/Users/oscarwei/Desktop/Github/ECE 598 - Final Project/outputs/config1/q10.png",
+    "clip_score": 0.2549,
+    "generation_time_s": 30.0,
+    "config": "config1_baseline"
+  }
+]

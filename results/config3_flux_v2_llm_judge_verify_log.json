@@ -1,0 +1,1230 @@
+[
+  {
+    "version": "v2_llm_judge",
+    "id": "q01",
+    "constraints": [
+      "A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane",
+      "The nucleus is the control center and contains the cell's DNA",
+      "Chloroplasts are found only in plant cells and perform photosynthesis",
+      "The central vacuole stores water and maintains turgor pressure",
+      "Mitochondria are the powerhouse of the cell, producing ATP via respiration",
+      "Ribosomes are small organelles that synthesize proteins",
+      "The Golgi apparatus packages and ships proteins",
+      "Rough ER has ribosomes and is involved in protein synthesis",
+      "Smooth ER is involved in lipid synthesis and detoxification"
+    ],
+    "per_constraint": [
+      [
+        "A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane",
+        "plant cell rigid cell wall cellulose",
+        0.2847,
+        true
+      ],
+      [
+        "The nucleus is the control center and contains the cell's DNA",
+        "nucleus control center contains cell DNA",
+        0.2751,
+        true
+      ],
+      [
+        "Chloroplasts are found only in plant cells and perform photosynthesis",
+        "Chloroplasts plant cells perform photosynthesis",
+        0.2882,
+        true
+      ],
+      [
+        "The central vacuole stores water and maintains turgor pressure",
+        "central vacuole stores water maintains turgor",
+        0.2697,
+        true
+      ],
+      [
+        "Mitochondria are the powerhouse of the cell, producing ATP via respiration",
+        "Mitochondria powerhouse cell producing ATP via",
+        0.2766,
+        true
+      ],
+      [
+        "Ribosomes are small organelles that synthesize proteins",
+        "Ribosomes small organelles synthesize proteins",
+        0.2613,
+        true
+      ],
+      [
+        "The Golgi apparatus packages and ships proteins",
+        "Golgi apparatus packages ships proteins",
+        0.2666,
+        true
+      ],
+      [
+        "Rough ER has ribosomes and is involved in protein synthesis",
+        "Rough ribosomes involved protein synthesis",
+        0.2594,
+        true
+      ],
+      [
+        "Smooth ER is involved in lipid synthesis and detoxification",
+        "Smooth involved lipid synthesis detoxification",
+        0.2496,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "mode": "text2img",
+        "seed": 42,
+        "sas": 0.2701,
+        "clip_passed": true,
+        "llm_score": 6.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.28564324975013733,
+        "violations": [],
+        "missing_structures": [
+          "Golgi apparatus (no clear label or depiction)",
+          "Smooth ER (not clearly distinguished)",
+          "Ribosomes (not visible or labeled)",
+          "Clear cytoplasm delineation",
+          "Nucleolus (within nucleus)"
+        ],
+        "improvement_suggestions": "Add explicit labels for Golgi apparatus, distinguish between rough and smooth ER with different visual representations, and include ribosomes as small dots on the rough ER. Consider using clearer, more standard abbreviations (e.g., 'NM' for nuclear membrane, 'V' for vacuole) and add a nucleolus within the nucleus.",
+        "clip_prompt": "scientific cross-section diagram, plant cell, cell wall, cell membrane, chloroplasts, nucleus, mitochondria, cristae, photosynthesis, educational illustration, labeled parts, white background, biology textbook, detailed anatomical, clean linework",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of a plant cell rendered in educational textbook style on a white background, showing the rigid cellulose cell wall as the outermost layer surrounding the entire cell structure, followed by the semipermeable cell membrane directly beneath it, the large central nucleus positioned in the middle of the cell containing the cell's genetic material and DNA serving as the control center for all cellular functions, numerous chloroplasts distributed throughout the cytoplasm with their characteristic double membrane envelopes and internal thylakoid stacks arranged in grana where photosynthesis occurs, multiple mitochondria with their distinctive outer membrane and extensively folded cristae inner membrane where cellular respiration and ATP production take place, the cytoplasm filling the space between organelles, a large central vacuole occupying significant volume for water storage and maintaining turgor pressure, ribosomes scattered throughout for protein synthesis, the endoplasmic reticulum network extending through the cytoplasm, the Golgi apparatus for protein processing and packaging, and all structures clearly labeled with anatomical callout lines and text markers identifying each component, rendered with accurate biological proportions and cellular organization typical of a plant cell, with distinct color coding for each organelle type to enhance educational clarity and understanding of plant cell structure and function.",
+        "gen_time_s": 363.7
+      },
+      {
+        "attempt": 2,
+        "mode": "img2img(str=0.60)",
+        "seed": 42,
+        "sas": 0.2716,
+        "clip_passed": true,
+        "llm_score": 2.0,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.2888100743293762,
+        "violations": [],
+        "missing_structures": [
+          "Chloroplasts",
+          "Central vacuole",
+          "Golgi apparatus",
+          "Rough endoplasmic reticulum",
+          "Smooth endoplasmic reticulum",
+          "Ribosomes",
+          "Nucleolus"
+        ],
+        "improvement_suggestions": "This appears to be an animal cell cross-section (possibly a blood cell or embryonic tissue), not a plant cell. Request a plant cell diagram with specific inclusion of chloroplasts, a large central vacuole occupying 50-90% of cell volume, and labeled ER and Golgi systems. Clarify that all nine major organelles must be distinctly visible and labeled.",
+        "clip_prompt": "scientific cross-section diagram, plant cell, cell wall, cell membrane, chloroplasts, nucleus, nucleolus, mitochondria, Golgi apparatus, rough ER, smooth ER, ribosomes, vacuole, labeled anatomical parts, detailed linework, educational illustration, biology textbook style, white background",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of a plant cell rendered in textbook style on a white background. The diagram shows a complete plant cell with all major organelles labeled and anatomically accurate. The outermost structure is a rigid cellulose cell wall depicted with a structured lattice pattern surrounding the entire cell, providing structural support. Just inside the cell wall is the cell membrane, a phospholipid bilayer shown as a thin line separating the interior cytoplasm from the external environment. The nucleus dominates the center-upper portion of the cell, enclosed by a double nuclear membrane labeled NM, containing chromatin material dispersed throughout the nucleoplasm. Within the nucleus, a distinct nucleolus is visible as a dense spherical structure responsible for ribosomal RNA synthesis. Surrounding the nucleus throughout the cytoplasm are numerous mitochondria depicted with an outer membrane and characteristic folded inner membrane cristae, labeled as the powerhouse of the cell responsible for cellular respiration and ATP production. Multiple chloroplasts are visible as oval structures containing internal thylakoid stacks and grana, colored green to indicate their photosynthetic function, found exclusively in plant cells. The rough endoplasmic reticulum is shown as flattened cisternae covered with numerous small dots representing ribosomes attached for protein synthesis. The smooth endoplasmic reticulum appears as smooth membrane tubules without ribosomal attachment, involved in lipid synthesis. The Golgi apparatus is depicted as stacked cisternal sacs near the nucleus, functioning in protein modification and packaging. A large central vacuole labeled V occupies substantial space in the cell, surrounded by a tonoplast membrane, maintaining turgor pressure and storing water and nutrients. Additional ribosomes are shown as small particles throughout the cytoplasm for free protein synthesis. All structures are clearly labeled with lines pointing to their respective locations, rendered in a clear educational scientific illustration style.",
+        "gen_time_s": 584.2
+      },
+      {
+        "attempt": 3,
+        "mode": "img2img(str=0.50)",
+        "seed": 42,
+        "sas": 0.27,
+        "clip_passed": true,
+        "llm_score": 2.0,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.28466877341270447,
+        "violations": [],
+        "missing_structures": [
+          "Ribosomes",
+          "Golgi apparatus",
+          "Rough endoplasmic reticulum",
+          "Smooth endoplasmic reticulum",
+          "Clear labeling of organelles"
+        ],
+        "improvement_suggestions": "This appears to be a cross-sectional diagram of a seed or embryo rather than a plant cell. Use a request for a diagram showing a single plant cell in cross-section with all organelles clearly visible, properly labeled with standard organelle names (nucleus, chloroplast, vacuole, mitochondria, ER, Golgi apparatus, ribosomes), and include a size scale to indicate appropriate cellular dimensions.",
+        "clip_prompt": "plant cell cross-section, chloroplasts, large central vacuole, cell wall, cell membrane, nucleus, mitochondria, endoplasmic reticulum, Golgi apparatus, ribosomes, labeled diagram, educational illustration, white background, biology textbook style, detailed scientific drawing",
+        "t5_prompt": "Create a highly detailed scientific cross-section diagram of a plant cell showing all nine major organelles in distinct anatomical detail on a white background with clear black labels. The plant cell features a rigid outer cell wall made of cellulose fibers providing structural support, beneath which lies the selectively permeable cell membrane controlling substance transport. The large central vacuole occupies seventy to ninety percent of the cell's total volume and contains cell sap with dissolved nutrients and waste products, maintaining cell turgor pressure and rigidity. Multiple chloroplasts are distributed throughout the cytoplasm, each containing stacked thylakoid membranes called grana where photosynthesis occurs, with visible inner stroma and outer envelope membranes colored green. The nucleus is positioned centrally or peripherally, showing the nuclear envelope with nuclear pores, nucleoplasm, and a dark nucleolus where ribosomal RNA is synthesized, containing the cell's DNA organized as chromatin. Mitochondria are visible with distinctive outer smooth membranes and inner membranes folded into cristae, functioning as the powerhouse for cellular respiration and energy production. The endoplasmic reticulum appears as extensive membrane networks, with rough endoplasmic reticulum studded with ribosomes for protein synthesis and smooth endoplasmic reticulum lacking ribosomes for lipid synthesis. The Golgi apparatus displays its characteristic stacked cisternae functioning to process, package and transport proteins and lipids. Ribosomes appear as small dense structures throughout the cytoplasm. The cytoplasm itself is shown as the clear gel matrix containing all organelles. This is an educational textbook-style labeled diagram with accurate plant cell biology and realistic proportions.",
+        "gen_time_s": 526.4
+      }
+    ]
+  },
+  {
+    "version": "v2_llm_judge",
+    "id": "q02",
+    "constraints": [
+      "Mitochondria have an outer membrane and a folded inner membrane",
+      "The inner membrane folds are called cristae, which increase surface area",
+      "The space between outer and inner membrane is the intermembrane space",
+      "The central fluid-filled region is called the matrix",
+      "Mitochondrial DNA is located in the matrix",
+      "ATP synthesis occurs along the inner membrane (cristae)",
+      "Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers"
+    ],
+    "per_constraint": [
+      [
+        "Mitochondria have an outer membrane and a folded inner membrane",
+        "Mitochondria outer membrane folded inner membrane",
+        0.2752,
+        true
+      ],
+      [
+        "The inner membrane folds are called cristae, which increase surface area",
+        "inner membrane folds cristae increase surface",
+        0.2477,
+        true
+      ],
+      [
+        "The space between outer and inner membrane is the intermembrane space",
+        "space outer inner membrane intermembrane space",
+        0.2747,
+        true
+      ],
+      [
+        "The central fluid-filled region is called the matrix",
+        "central fluid-filled region matrix",
+        0.2178,
+        false
+      ],
+      [
+        "Mitochondrial DNA is located in the matrix",
+        "Mitochondrial DNA matrix",
+        0.2287,
+        true
+      ],
+      [
+        "ATP synthesis occurs along the inner membrane (cristae)",
+        "ATP synthesis occurs inner membrane cristae",
+        0.2587,
+        true
+      ],
+      [
+        "Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers",
+        "Mitochondria oval-shaped diameter 5-10 micrometers",
+        0.259,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "mode": "text2img",
+        "seed": 42,
+        "sas": 0.2526,
+        "clip_passed": true,
+        "llm_score": 0.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.24448713660240173,
+        "violations": [
+          "The central fluid-filled region is called the matrix"
+        ],
+        "missing_structures": [
+          "Outer membrane",
+          "Inner membrane",
+          "Cristae",
+          "Matrix",
+          "Intermembrane space",
+          "Mitochondrial DNA",
+          "ATP synthase complexes",
+          "Oval/elliptical mitochondrial shape",
+          "Electron transport chain components"
+        ],
+        "improvement_suggestions": "The image shows a flatworm/planarian cross-section, not a mitochondria. Please regenerate with a clear request for a mitochondrial cross-section showing the double membrane system, prominently featured cristae folding into the matrix, labeled intermembrane space, and ATP synthase complexes on the inner membrane at high magnification (suitable for TEM-style diagram).",
+        "clip_prompt": "scientific cross-section diagram, mitochondria, outer membrane, inner membrane cristae, matrix, mitochondrial DNA, ATP synthesis, oval-shaped organelle, educational illustration, labeled anatomical parts, biology textbook style, white background, detailed, accurate",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of a mitochondrion showing the complete internal and external anatomy. The illustration depicts an oval-shaped organelle with a smooth outer mitochondrial membrane surrounding the entire structure. The inner mitochondrial membrane is prominently displayed with multiple deep folds called cristae that extend into the central matrix space, dramatically increasing the surface area for ATP synthesis. The matrix fills the innermost region and contains circular mitochondrial DNA molecules distributed throughout. Electron transport chain complexes are embedded along the cristae inner membrane where oxidative phosphorylation and ATP synthesis occur. The intermembrane space between the outer and inner membranes is clearly defined. All major anatomical structures are labeled with clear text indicators pointing to their locations: outer membrane, inner membrane, cristae, matrix, mitochondrial DNA, and ATP synthase complexes. The diagram uses a white background with professional scientific color coding to distinguish different membrane systems and structures. The style is that of an accurate educational biology textbook illustration with precise anatomical proportions reflecting the typical oval shape and 0.5-10 micrometer scale of actual mitochondria. The illustration emphasizes the mitochondrion's role as the powerhouse of the cell by visually demonstrating where cellular respiration and ATP energy production occur through the intricate membrane architecture.",
+        "gen_time_s": 401.1
+      },
+      {
+        "attempt": 2,
+        "mode": "img2img(str=0.60)",
+        "seed": 42,
+        "sas": 0.2517,
+        "clip_passed": true,
+        "llm_score": 1.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.24905022978782654,
+        "violations": [
+          "The central fluid-filled region is called the matrix"
+        ],
+        "missing_structures": [
+          "Mitochondria cross-section",
+          "Outer membrane",
+          "Inner membrane",
+          "Cristae",
+          "Matrix",
+          "Intermembrane space",
+          "Mitochondrial DNA",
+          "ATP synthase",
+          "Oval/circular mitochondrial shape",
+          "Scale appropriate to micrometers"
+        ],
+        "improvement_suggestions": "This image shows a complete organism cross-section (appears to be a flatworm or similar), not a mitochondrial cross-section. Request a detailed subcellular diagram showing a single mitochondrion in longitudinal or cross-section view with clearly labeled outer membrane, inner membrane with visible cristae folds, matrix interior, and intermembrane space with appropriate microscopic scale.",
+        "clip_prompt": "scientific cross-section diagram, mitochondria, double membrane, cristae folds, matrix, intermembrane space, ATP synthase, TEM-style illustration, high magnification, labeled anatomical parts, white background, detailed biology textbook, educational diagram, clean linework",
+        "t5_prompt": "A detailed scientific cross-section diagram of a single mitochondrion shown at high transmission electron microscopy magnification, displaying the complete double membrane system with the outer mitochondrial membrane as a smooth continuous boundary and the inner mitochondrial membrane forming numerous prominent cristae that fold deeply into the central matrix space, the intermembrane space clearly labeled as the thin region between the outer and inner membranes, multiple ATP synthase protein complexes depicted as small molecular structures embedded along the inner membrane surface, the matrix shown as the fluid-filled central region containing mitochondrial DNA and enzyme complexes, cristae structures prominently featured with their characteristic shelf-like or tubular folds that increase surface area for oxidative phosphorylation, the outer membrane appearing smooth and continuous while the inner membrane is highly convoluted with extensive folding patterns, all anatomical structures accurately colored and clearly labeled with lines pointing to each component, educational textbook style illustration with scientific accuracy, white background, suitable for biology education materials, showing the mitochondrion as the powerhouse of the cell responsible for ATP energy production through cellular respiration.",
+        "gen_time_s": 616.5
+      },
+      {
+        "attempt": 3,
+        "mode": "img2img(str=0.50)",
+        "seed": 42,
+        "sas": 0.2527,
+        "clip_passed": true,
+        "llm_score": 0.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.24723374843597412,
+        "violations": [],
+        "missing_structures": [
+          "Mitochondria cross-section",
+          "Cristae (inner membrane folds)",
+          "Matrix (central fluid region)",
+          "Intermembrane space",
+          "Mitochondrial DNA",
+          "ATP synthase complexes",
+          "Outer membrane (explicitly labeled)",
+          "Inner membrane (explicitly labeled)",
+          "Mitochondrial scale/size reference"
+        ],
+        "improvement_suggestions": "This image is an organism cross-section diagram (flatworm/planarian), not a mitochondrial diagram. Please generate a detailed cross-section of a single mitochondrion showing the outer membrane, inner membrane with cristae, intermembrane space, matrix, and mtDNA, scaled to show microstructure.",
+        "clip_prompt": "scientific cross-section diagram mitochondrion, outer membrane, inner membrane with cristae folds, matrix, intermembrane space, labeled anatomical parts, educational illustration, detailed linework, white background, biology textbook style, microscopic scale",
+        "t5_prompt": "A detailed scientific cross-section diagram of a single mitochondrion shown in longitudinal section view against a white background. The diagram illustrates the complete subcellular structure with precise anatomical labeling. The outer mitochondrial membrane forms a smooth continuous boundary enclosing the entire organelle. The inner mitochondrial membrane is prominently displayed with numerous infoldings called cristae that extend into the interior space, dramatically increasing surface area for ATP production. These cristae are clearly visible as parallel ridge-like projections throughout the organelle's interior. The intermembrane space is the narrow region between the outer and inner membranes, distinctly labeled and shown in a lighter shade. The central matrix fills the interior space enclosed by the inner membrane and appears as a fluid-filled compartment in a contrasting color. Mitochondrial DNA is depicted as circular strands located within the matrix region. The overall organelle exhibits the characteristic oval or bean-shaped morphology with dimensions shown to represent the 0.5 to 10 micrometer scale. Each anatomical component is clearly labeled with lines pointing to its location: outer membrane, inner membrane, cristae, intermembrane space, matrix, and mitochondrial DNA. This educational textbook-style illustration uses color coding to distinguish different structural layers and emphasizes the organelle's critical role as the powerhouse of the cell, responsible for producing ATP through cellular respiration. Scientific, accurate, highly detailed diagram.",
+        "gen_time_s": 567.2
+      }
+    ]
+  },
+  {
+    "version": "v2_llm_judge",
+    "id": "q03",
+    "constraints": [
+      "A neuron has a cell body (soma), dendrites, and an axon",
+      "Dendrites receive signals from other neurons",
+      "The axon transmits electrical signals away from the cell body",
+      "The myelin sheath insulates the axon and speeds signal transmission",
+      "Nodes of Ranvier are gaps in the myelin sheath",
+      "Axon terminals release neurotransmitters into the synapse",
+      "Schwann cells produce the myelin sheath in the peripheral nervous system"
+    ],
+    "per_constraint": [
+      [
+        "A neuron has a cell body (soma), dendrites, and an axon",
+        "neuron cell body soma dendrites axon",
+        0.318,
+        true
+      ],
+      [
+        "Dendrites receive signals from other neurons",
+        "Dendrites receive signals other neurons",
+        0.3018,
+        true
+      ],
+      [
+        "The axon transmits electrical signals away from the cell body",
+        "axon transmits electrical signals away cell",
+        0.273,
+        true
+      ],
+      [
+        "The myelin sheath insulates the axon and speeds signal transmission",
+        "myelin sheath insulates axon speeds signal",
+        0.2822,
+        true
+      ],
+      [
+        "Nodes of Ranvier are gaps in the myelin sheath",
+        "Nodes Ranvier gaps myelin sheath",
+        0.2861,
+        true
+      ],
+      [
+        "Axon terminals release neurotransmitters into the synapse",
+        "Axon terminals release neurotransmitters synapse",
+        0.2773,
+        true
+      ],
+      [
+        "Schwann cells produce the myelin sheath in the peripheral nervous system",
+        "Schwann cells produce myelin sheath peripheral",
+        0.2877,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "mode": "text2img",
+        "seed": 42,
+        "sas": 0.2894,
+        "clip_passed": true,
+        "llm_score": 8.2,
+        "llm_passed": true,
+        "passed_combined": true,
+        "clip_score": 0.31689849495887756,
+        "violations": [],
+        "missing_structures": [
+          "Synaptic cleft",
+          "Neurotransmitter vesicles",
+          "Mitochondria"
+        ],
+        "improvement_suggestions": "Add labels for synaptic vesicles at the axon terminal and clarify the synaptic cleft region to better illustrate neurotransmitter transmission. Consider including mitochondria in the soma to show cellular energy production.",
+        "clip_prompt": "scientific neuron cross-section diagram, soma, dendrites, axon, myelin sheath, axon terminals, synapse, Schwann cells, neurotransmitters, labeled anatomical parts, educational illustration, detailed linework, white background, biology textbook style, accurate scientific diagram",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of a complete neuron showing all major anatomical structures and their biological functions. The illustration displays the cell body or soma in the center containing the nucleus and nucleolus, with multiple branching dendrites extending outward from the soma to receive chemical signals from other neurons at their dendritic spines. The single axon emerges from the axon hillock at the base of the soma and extends as a long projection covered by a white lipid-based myelin sheath that wraps around the axon in segments produced by Schwann cells in the peripheral nervous system. The myelin sheath is interrupted at regular intervals by gaps called nodes of Ranvier where the axon membrane is exposed, allowing for saltatory conduction and rapid propagation of action potentials along the axon. At the terminal end of the axon, the axon terminal branches into synaptic knobs or terminal buttons that form synapses with adjacent neurons. These synaptic terminals contain synaptic vesicles filled with neurotransmitter molecules ready for release into the synaptic cleft, the narrow space between the sending and receiving neurons. The illustration includes detailed anatomical labels positioned adjacent to each structure with leader lines, uses a clean white background for clarity, employs color coding to distinguish different cellular components, and maintains accurate scientific proportions and relationships following standard textbook biology conventions for educational anatomical diagrams.",
+        "gen_time_s": 391.8
+      }
+    ]
+  },
+  {
+    "version": "v2_llm_judge",
+    "id": "q04",
+    "constraints": [
+      "The cornea is the transparent front part of the eye that refracts light",
+      "The iris controls the size of the pupil",
+      "The lens focuses light onto the retina",
+      "The retina contains photoreceptor cells (rods and cones)",
+      "The optic nerve transmits signals from the retina to the brain",
+      "The fovea is the area of sharpest vision in the retina",
+      "The vitreous gel fills the space between the lens and retina"
+    ],
+    "per_constraint": [
+      [
+        "The cornea is the transparent front part of the eye that refracts light",
+        "cornea transparent front part eye refracts",
+        0.2868,
+        true
+      ],
+      [
+        "The iris controls the size of the pupil",
+        "iris controls size pupil",
+        0.286,
+        true
+      ],
+      [
+        "The lens focuses light onto the retina",
+        "lens focuses light onto retina",
+        0.2825,
+        true
+      ],
+      [
+        "The retina contains photoreceptor cells (rods and cones)",
+        "retina contains photoreceptor cells rods cones",
+        0.2839,
+        true
+      ],
+      [
+        "The optic nerve transmits signals from the retina to the brain",
+        "optic nerve transmits signals retina brain",
+        0.2632,
+        true
+      ],
+      [
+        "The fovea is the area of sharpest vision in the retina",
+        "fovea area sharpest vision retina",
+        0.2784,
+        true
+      ],
+      [
+        "The vitreous gel fills the space between the lens and retina",
+        "vitreous gel fills space lens retina",
+        0.2816,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "mode": "text2img",
+        "seed": 42,
+        "sas": 0.2799,
+        "clip_passed": true,
+        "llm_score": 6.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.2901080548763275,
+        "violations": [],
+        "missing_structures": [
+          "vitreous gel (not labeled or clearly shown)",
+          "fovea (not visible or labeled)",
+          "pupil (not distinctly labeled)",
+          "aqueous humor",
+          "ciliary body",
+          "choroid layer",
+          "photoreceptor cells (rods and cones)",
+          "internal eye chamber divisions"
+        ],
+        "improvement_suggestions": "Add specific labels for vitreous gel, fovea, and pupil. Include visible internal layering of the retina and clearly delineate the different chambers of the eye with labels for aqueous humor and ciliary body.",
+        "clip_prompt": "scientific cross-section diagram, human eye, cornea, retina, photoreceptor cells, rods and cones, fovea, optic nerve, detailed anatomical illustration, educational, white background, labeled parts, biology textbook style, accurate medical diagram",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of a human eye showing all major anatomical structures and their functions. The cornea is depicted as the transparent front portion of the eye that refracts incoming light rays. Behind the cornea lies the aqueous humor filling the anterior chamber. The iris controls pupil size for light regulation, surrounding the central pupil opening. The crystalline lens sits behind the iris, providing accommodation for focusing light onto the retina at varying distances. The vitreous humor fills the large posterior chamber, maintaining eye shape and light transmission. The retina lines the back interior wall, containing photoreceptor cells organized into rods distributed throughout for peripheral and low-light vision, and cones concentrated in the central region for color vision and detail. The fovea is highlighted as the small central depression in the retina representing the area of sharpest visual acuity where cone cells are most densely packed. The optic disc marks where the optic nerve exits the eye, transmitting neural signals from photoreceptors through bipolar and ganglion cells to the brain for visual processing. The choroid layer supplies blood to the retina. The sclera forms the tough white outer fibrous layer providing structural support. The macula surrounds the fovea as the region of high visual sensitivity. Labels indicate each anatomical part positioned at their corresponding locations. Educational scientific textbook style illustration with clean white background, accurate biological detail, precise anatomical relationships, and professional medical diagram presentation.",
+        "gen_time_s": 385.3
+      },
+      {
+        "attempt": 2,
+        "mode": "img2img(str=0.60)",
+        "seed": 42,
+        "sas": 0.28,
+        "clip_passed": true,
+        "llm_score": 6.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.29503756761550903,
+        "violations": [],
+        "missing_structures": [
+          "fovea",
+          "photoreceptor cells (rods and cones)",
+          "ciliary body",
+          "aqueous humor",
+          "choroid layer"
+        ],
+        "improvement_suggestions": "Request explicit labeling of the fovea centralis and include detailed histological representation of photoreceptor cells within the retina. Add labels for aqueous humor chamber and ciliary body to complete the anatomical accuracy.",
+        "clip_prompt": "scientific cross-section diagram, human eye, cornea, retina, photoreceptor cells, rods cones, fovea, optic nerve, vitreous gel, pupil, aqueous humor, ciliary body, detailed anatomical illustration, educational textbook, white background, labeled parts, clean linework, medical diagram",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of a human eye displayed against a white background in educational textbook style. The illustration shows the transparent cornea at the front of the eye that refracts incoming light rays. Behind the cornea is the lens which further focuses light onto the retina. The pupil is clearly labeled as the dark circular opening that controls light entry. The aqueous humor fills the anterior chamber between the cornea and iris, while the vitreous gel occupies the large posterior chamber behind the lens. The ciliary body is visible along the side of the eye, showing its role in accommodation and aqueous humor production. The retina lines the back interior wall with its multiple layers clearly delineated, displaying the photoreceptor cells including rods and cones that detect light. The fovea is prominently labeled at the center of the retina as the area of sharpest vision containing the highest concentration of cone cells. The optic nerve is shown extending from the optic disc at the back of the eye, transmitting visual signals from the retina to the brain. The sclera forms the white outer fibrous layer, while the choroid is visible between the sclera and retina providing blood supply. All anatomical structures are clearly labeled with leader lines and text. The cross-section reveals the layered anatomy with accurate biological proportions and color-coded tissues to distinguish different structures. This is a scientifically accurate, detailed diagram suitable for medical or biology education.",
+        "gen_time_s": 609.6
+      },
+      {
+        "attempt": 3,
+        "mode": "img2img(str=0.50)",
+        "seed": 42,
+        "sas": 0.2803,
+        "clip_passed": true,
+        "llm_score": 6.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.3212489187717438,
+        "violations": [],
+        "missing_structures": [
+          "Fovea (area of sharpest vision)",
+          "Photoreceptor cells (rods and cones)",
+          "Aqueous humor",
+          "Ciliary body",
+          "Choroid layer",
+          "Labels for structures"
+        ],
+        "improvement_suggestions": "Add explicit labels for all major structures and include the fovea as a distinct marked region on the retina. Include the aqueous humor chamber between cornea and lens, and show the ciliary body to demonstrate accommodation mechanisms.",
+        "clip_prompt": "scientific cross-section diagram, human eye, cornea, retina, photoreceptor cells, rods cones, fovea centralis, optic nerve, aqueous humor, ciliary body, anatomical labels, detailed histology, educational illustration, white background, biology textbook style, accurate medical diagram",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of the human eye showing all major anatomical structures on a white background in educational textbook style. The transparent cornea is displayed at the front of the eye, demonstrating its role in refracting incoming light rays toward the lens. Behind the cornea lies the aqueous humor chamber, the clear fluid-filled space that maintains eye pressure and nourishes internal structures. The lens is shown suspended by the ciliary body, which contains ciliary muscles that adjust lens shape for accommodation and focusing at different distances. The retina forms the light-sensitive layer lining the inner posterior wall of the eye, depicted with detailed histological representation showing multiple cell layers. The photoreceptor cells are illustrated in detail, including both rods which function in low-light vision and cones which enable color vision and visual acuity. The fovea centralis is prominently labeled and shown as the small depression in the retinal center containing the highest concentration of cone cells, representing the area of sharpest vision and greatest visual acuity. The optic nerve is illustrated as it transmits neural signals from the retina to the brain via the optic disc. The vitreous humor fills the large central chamber behind the lens. The sclera forms the white outer protective layer. The iris and pupil are shown controlling light entry. All anatomical parts are clearly labeled with leader lines and text, demonstrating accurate biological structure and spatial relationships in a scientific diagram format suitable for educational and medical textbooks.",
+        "gen_time_s": 735.4
+      }
+    ]
+  },
+  {
+    "version": "v2_llm_judge",
+    "id": "q05",
+    "constraints": [
+      "The digestive system begins at the mouth and ends at the anus",
+      "The esophagus connects the mouth to the stomach",
+      "The stomach uses acid and enzymes to break down food",
+      "The liver produces bile to help digest fats",
+      "The pancreas secretes digestive enzymes into the small intestine",
+      "The small intestine absorbs nutrients",
+      "The large intestine absorbs water and forms feces",
+      "The appendix is a small pouch attached to the large intestine"
+    ],
+    "per_constraint": [
+      [
+        "The digestive system begins at the mouth and ends at the anus",
+        "digestive system begins mouth ends anus",
+        0.2875,
+        true
+      ],
+      [
+        "The esophagus connects the mouth to the stomach",
+        "esophagus connects mouth stomach",
+        0.2877,
+        true
+      ],
+      [
+        "The stomach uses acid and enzymes to break down food",
+        "stomach uses acid enzymes break food",
+        0.2704,
+        true
+      ],
+      [
+        "The liver produces bile to help digest fats",
+        "liver produces bile help digest fats",
+        0.2828,
+        true
+      ],
+      [
+        "The pancreas secretes digestive enzymes into the small intestine",
+        "pancreas secretes digestive enzymes small intestine",
+        0.3069,
+        true
+      ],
+      [
+        "The small intestine absorbs nutrients",
+        "small intestine absorbs nutrients",
+        0.3028,
+        true
+      ],
+      [
+        "The large intestine absorbs water and forms feces",
+        "large intestine absorbs water forms feces",
+        0.2963,
+        true
+      ],
+      [
+        "The appendix is a small pouch attached to the large intestine",
+        "appendix small pouch attached large intestine",
+        0.3102,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "mode": "text2img",
+        "seed": 42,
+        "sas": 0.2931,
+        "clip_passed": true,
+        "llm_score": 4.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.29388725757598877,
+        "violations": [],
+        "missing_structures": [
+          "Pancreas",
+          "Appendix",
+          "Anus",
+          "Anatomical labels on structures",
+          "Salivary glands",
+          "Pharynx",
+          "Duodenum specification"
+        ],
+        "improvement_suggestions": "Add clear anatomical labels for each organ (mouth, esophagus, stomach, liver, pancreas, small intestine, large intestine, appendix, rectum). Include the pancreas as a distinct labeled structure and show the appendix as a small pouch attached to the junction of small and large intestine.",
+        "clip_prompt": "scientific cross-section diagram, human digestive system, mouth, esophagus, stomach, small intestine, pancreas, anus, anatomical labels, educational illustration, detailed anatomy, white background, biology textbook style, accurate medical diagram",
+        "t5_prompt": "A highly detailed scientific cross-section anatomical diagram showing the complete human digestive system from superior to inferior orientation on a white background in textbook style. The diagram begins at the oral cavity with the mouth, tongue, and salivary glands positioned at the top, then shows the pharynx transitioning into the esophagus, which is a muscular tube extending downward through the thorax. The esophagus connects directly to the stomach, a large J-shaped muscular organ that lies in the left upper quadrant of the abdomen. The stomach's structure includes the cardia, fundus, body, and pylorus regions, with thick muscular walls for churning and gastric glands secreting hydrochloric acid and pepsin for food breakdown. From the stomach, the pyloric sphincter controls passage into the small intestine, which consists of three sequential regions: the duodenum in the upper right abdomen where the pancreas attaches via the pancreatic duct, the jejunum in the middle coils, and the ileum in the lower loops. The pancreas is shown as an elongated glandular organ secreting digestive enzymes into the duodenum. The liver is positioned in the upper right quadrant, with the gallbladder attached, releasing bile through the bile duct into the duodenum to aid fat digestion. The large intestine frames the small intestine's periphery, showing the cecum, ascending colon, transverse colon, descending colon, sigmoid colon, and rectum, ending at the anus. The mesentery supporting structures are depicted connecting organs. Color coding highlights different organs and structures. All anatomical parts are clearly labeled with lines indicating exact locations. This is an educational, scientifically accurate diagram suitable for medical textbooks.",
+        "gen_time_s": 395.1
+      },
+      {
+        "attempt": 2,
+        "mode": "img2img(str=0.60)",
+        "seed": 42,
+        "sas": 0.2927,
+        "clip_passed": true,
+        "llm_score": 4.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.29634150862693787,
+        "violations": [],
+        "missing_structures": [
+          "Pancreas (not visible or distinguished)",
+          "Appendix (not labeled or clearly shown)",
+          "Pharynx",
+          "Anatomical labels/annotations",
+          "Bile duct pathway"
+        ],
+        "improvement_suggestions": "Add clear labels for each organ with leader lines and include the pancreas positioned behind the stomach with its duct visible. Specifically label the appendix as a small pouch at the junction of small and large intestine, and add text annotations describing each organ's function.",
+        "clip_prompt": "scientific cross-section diagram, human digestive system, mouth, esophagus, stomach, liver, pancreas, small intestine, large intestine, appendix, rectum, anatomical labels, white background, educational illustration, biology textbook style, detailed anatomical structures, accurate medical diagram",
+        "t5_prompt": "A highly detailed scientific cross-section anatomical diagram of the complete human digestive system displayed against a clean white background in textbook illustration style. The diagram shows the entire digestive tract from the mouth at the top through to the anus at the bottom, rendered with accurate biological proportions and crystal clear labeling. The mouth is shown with teeth and tongue, connecting downward through the pharynx to the esophagus, which is a muscular tube that transports food downward through the chest cavity. The esophagus terminates at the gastroesophageal junction where it connects to the stomach, which is depicted as a J-shaped organ with thick muscular walls containing gastric glands that secrete hydrochloric acid and pepsinogen enzymes for breaking down protein and food bolus. Adjacent to the stomach on the left side is the pancreas, clearly labeled as a distinct pale pink glandular organ that sits behind the stomach and secretes digestive enzymes including amylase, lipase, and protease into the small intestine via the pancreatic duct. The liver is shown in the upper right portion, a large reddish-brown organ connected to the gallbladder which stores and concentrates bile. The small intestine extends from the pyloric sphincter of the stomach in three distinct sections: the duodenum receiving bile and pancreatic secretions, the jejunum for nutrient absorption, and the ileum completing the small intestine. The large intestine or colon forms a frame around the small intestine, ascending on the right side, crossing horizontally as the transverse colon, and descending on the left side. The appendix is shown as a small tubular pouch attached to the junction between the ileum and the cecum at the beginning of the large intestine. The rectum forms the final straight portion of the large intestine leading to the anus. Every organ is clearly labeled with anatomical text markers, showing the sequential flow of food and digestive processes, with color differentiation between organs, scientific educational diagram style, medically accurate proportions and relationships.",
+        "gen_time_s": 611.7
+      },
+      {
+        "attempt": 3,
+        "mode": "img2img(str=0.50)",
+        "seed": 42,
+        "sas": 0.2931,
+        "clip_passed": true,
+        "llm_score": 5.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.29619520902633667,
+        "violations": [],
+        "missing_structures": [
+          "Pancreas",
+          "Appendix",
+          "Anatomical labels/text annotations",
+          "Salivary glands",
+          "Pharynx"
+        ],
+        "improvement_suggestions": "Add visible labels and annotations for all major structures, and ensure the pancreas is clearly depicted and labeled below the stomach. Include the appendix as a distinct small pouch branching from the junction of the small and large intestines.",
+        "clip_prompt": "scientific cross-section diagram, human digestive system, mouth, esophagus, stomach, small intestine, large intestine, pancreas, appendix, labeled anatomical parts, leader lines, white background, educational illustration, detailed linework, biology textbook style, accurate anatomy",
+        "t5_prompt": "A comprehensive scientific cross-section diagram of the human digestive system displayed on a white background in detailed textbook illustration style. The diagram shows the complete digestive tract from the mouth at the top through to the anus at the bottom, with all major organs clearly visible and accurately positioned. The mouth opens into the pharynx and connects downward to the esophagus, a muscular tube that transports food through the thorax. Below this is the stomach, a large J-shaped organ with thick muscular walls that secrete gastric acids and enzymes for chemical breakdown and mechanical churning of food. The small intestine extends from the stomach's pyloric sphincter in three distinct regions: the duodenum receiving secretions from the pancreas and liver, followed by the jejunum and ileum for nutrient absorption. The pancreas is positioned behind the stomach with its pancreatic duct clearly visible entering the duodenum, labeled to show its role in secreting digestive enzymes and bicarbonate. The liver occupies the upper right abdomen with the gallbladder attached, both shown with ducts entering the duodenum. The large intestine frames the small intestine, with the appendix prominently labeled as a small pouch structure at the ileocecal junction where the small and large intestine meet. The colon sections are labeled as ascending, transverse, descending, and sigmoid portions. The rectum leads to the anus. Each organ includes clear anatomical labels with leader lines pointing to specific structures. Functional annotations describe each organ's role in digestion, absorption, and waste processing. The illustration uses color coding with appropriate anatomical coloring while maintaining scientific accuracy and educational clarity in a professional diagram style.",
+        "gen_time_s": 506.1
+      }
+    ]
+  },
+  {
+    "version": "v2_llm_judge",
+    "id": "q06",
+    "constraints": [
+      "The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle",
+      "The aorta carries oxygenated blood from the left ventricle to the body",
+      "The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs",
+      "The septum separates the left and right sides of the heart",
+      "Valves prevent backflow of blood between chambers",
+      "The heart's right side receives deoxygenated blood and pumps it to the lungs",
+      "The heart's left side receives oxygenated blood and pumps it to the body"
+    ],
+    "per_constraint": [
+      [
+        "The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle",
+        "heart four chambers right atrium left",
+        0.3017,
+        true
+      ],
+      [
+        "The aorta carries oxygenated blood from the left ventricle to the body",
+        "aorta carries oxygenated blood left ventricle",
+        0.2986,
+        true
+      ],
+      [
+        "The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs",
+        "pulmonary arteries carry deoxygenated blood right",
+        0.2968,
+        true
+      ],
+      [
+        "The septum separates the left and right sides of the heart",
+        "septum separates left right sides heart",
+        0.251,
+        true
+      ],
+      [
+        "Valves prevent backflow of blood between chambers",
+        "Valves prevent backflow blood chambers",
+        0.2486,
+        true
+      ],
+      [
+        "The heart's right side receives deoxygenated blood and pumps it to the lungs",
+        "heart right side receives deoxygenated blood",
+        0.2895,
+        true
+      ],
+      [
+        "The heart's left side receives oxygenated blood and pumps it to the body",
+        "heart left side receives oxygenated blood",
+        0.2815,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "mode": "text2img",
+        "seed": 42,
+        "sas": 0.2811,
+        "clip_passed": true,
+        "llm_score": 6.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.30656319856643677,
+        "violations": [],
+        "missing_structures": [
+          "Anatomical labels/text identifying each structure",
+          "Septum",
+          "Valves (tricuspid, mitral, pulmonary, aortic)",
+          "Superior vena cava",
+          "Inferior vena cava",
+          "Pulmonary veins",
+          "Clear chamber delineation with labels"
+        ],
+        "improvement_suggestions": "Add specific text labels for each chamber (RA, LA, RV, LV), major blood vessels, and internal structures like the septum and valves. Include arrows indicating blood flow direction through the heart chambers and to/from the lungs and body.",
+        "clip_prompt": "scientific cross-section diagram, human heart, four chambers, right atrium, left atrium, right ventricle, left ventricle, septum, aorta, oxygenated blood, deoxygenated blood, labeled anatomical parts, educational illustration, white background, detailed biology textbook style, accurate medical diagram",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of the human heart displaying all four chambers in anatomical precision. The right atrium sits in the upper right position receiving deoxygenated blood from the superior and inferior vena cava. The left atrium occupies the upper left chamber receiving oxygenated blood from the pulmonary veins. Below these, the right ventricle is positioned on the right side with thick muscular walls that pump blood to the lungs via the pulmonary artery. The left ventricle sits on the left side with significantly thicker myocardial walls, pumping oxygenated blood throughout the body via the aorta. The interventricular septum clearly divides and separates the left and right sides of the heart, showing the thickness difference between left and right ventricular walls. The aorta emerges from the left ventricle at the top carrying oxygen-rich blood to the systemic circulation. The pulmonary artery branches from the right ventricle directing blood to the lungs for oxygenation. The vena cava vessels enter the right atrium, and pulmonary veins enter the left atrium showing complete blood flow pathways. The heart valves including the mitral valve, tricuspid valve, aortic valve, and pulmonary valve are indicated at their respective positions. All anatomical structures are clearly labeled with precise text markers. The illustration uses color coding with red indicating oxygenated blood and blue indicating deoxygenated blood. Clean white background with black outlines and educational scientific diagram style suitable for medical textbooks and anatomical reference materials.",
+        "gen_time_s": 386.0
+      },
+      {
+        "attempt": 2,
+        "mode": "img2img(str=0.60)",
+        "seed": 42,
+        "sas": 0.2804,
+        "clip_passed": true,
+        "llm_score": 5.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.30532604455947876,
+        "violations": [],
+        "missing_structures": [
+          "Anatomical labels/text identification",
+          "Septum (clearly marked)",
+          "Valve locations (mitral, tricuspid, aortic, pulmonary)",
+          "Pulmonary veins",
+          "Color coding differentiation (oxygenated vs deoxygenated blood)",
+          "Clear chamber boundaries/divisions"
+        ],
+        "improvement_suggestions": "Add clear anatomical labels for all four chambers, aorta, pulmonary arteries, and major veins directly on the diagram. Include the cardiac septum as a distinct structure and mark the locations of the four valves to fully demonstrate blood flow prevention and chamber separation.",
+        "clip_prompt": "scientific cross-section diagram, human heart, four chambers, right atrium, left atrium, right ventricle, left ventricle, septum, aorta, blood flow arrows, valves, educational illustration, labeled anatomy, white background, biology textbook style, detailed linework",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of the human heart displayed in anatomical frontal view on a white background showing all four chambers with clear internal structures and labeled anatomical parts in textbook style. The right atrium positioned on the right side of the diagram receives deoxygenated blood from the superior and inferior vena cava, shown with labels RA. The right ventricle located below the right atrium pumps deoxygenated blood to the lungs via the pulmonary artery, labeled RV. The left atrium positioned on the left side receives oxygenated blood from the pulmonary veins, labeled LA. The left ventricle positioned below the left atrium pumps oxygenated blood to the body through the aorta, labeled LV. The interventricular septum clearly visible dividing the left and right ventricles into separate chambers. The interatrial septum separating the right and left atria. Major blood vessels labeled including the aorta emerging from the left ventricle, the pulmonary artery from the right ventricle, the superior vena cava and inferior vena cava entering the right atrium, and the four pulmonary veins entering the left atrium. Internal cardiac valves depicted including the tricuspid valve between right atrium and right ventricle, the pulmonary valve at the pulmonary artery opening, the mitral valve between left atrium and left ventricle, and the aortic valve at the aorta opening. Color coding with blue representing deoxygenated blood pathways and red representing oxygenated blood pathways. Multiple directional arrows showing blood flow through each chamber and to the lungs and systemic circulation. Myocardium muscle tissue clearly visible. Educational scientific illustration with anatomical accuracy and detailed labeling for teaching purposes.",
+        "gen_time_s": 615.3
+      },
+      {
+        "attempt": 3,
+        "mode": "img2img(str=0.50)",
+        "seed": 42,
+        "sas": 0.2805,
+        "clip_passed": true,
+        "llm_score": 5.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.3055616617202759,
+        "violations": [],
+        "missing_structures": [
+          "Anatomical labels/text annotations",
+          "Septum (clearly labeled)",
+          "Valve structures",
+          "Superior vena cava",
+          "Inferior vena cava",
+          "Pulmonary veins",
+          "Clear chamber boundaries with labels"
+        ],
+        "improvement_suggestions": "Add clear text labels identifying each chamber (RA, LA, RV, LV), major vessels (aorta, pulmonary arteries, vena cava, pulmonary veins), and the interventricular septum. Include valve locations or representations to meet the complete anatomical requirements for an educational diagram.",
+        "clip_prompt": "scientific cross-section diagram, human heart, four chambers, atria, ventricles, cardiac septum, aorta, pulmonary arteries, vena cava, valves, oxygenated blood flow, labeled anatomy, educational illustration, detailed linework, white background, biology textbook style",
+        "t5_prompt": "A highly detailed scientific cross-sectional anatomical diagram of the human heart displayed on a white background in textbook illustration style. The diagram shows all four chambers clearly labeled: the right atrium positioned in the upper right receiving deoxygenated blood from the body, the left atrium positioned in the upper left receiving oxygenated blood from the lungs, the right ventricle in the lower right with thick muscular walls for pumping blood to the lungs, and the left ventricle in the lower left with even thicker muscular walls for pumping oxygenated blood throughout the entire body. The cardiac septum is prominently displayed as a distinct vertical muscular wall separating the left and right sides of the heart, with clear anatomical labels indicating its position and function in preventing blood mixing between the chambers. The four cardiac valves are marked and labeled at their specific locations: the tricuspid valve between the right atrium and right ventricle, the pulmonary valve at the exit of the right ventricle, the mitral valve between the left atrium and left ventricle, and the aortic valve at the exit of the left ventricle. The aorta is shown emerging from the left ventricle carrying oxygenated blood to the body with clear directional arrows indicating blood flow. The pulmonary arteries are labeled branching from the right ventricle toward the lungs. Major veins are indicated including the superior vena cava and inferior vena cava delivering deoxygenated blood to the right atrium, and the pulmonary veins returning oxygenated blood to the left atrium. All structures are color-coded with red representing oxygenated blood and blue representing deoxygenated blood. The diagram includes detailed anatomical labels positioned directly on relevant structures with clear leader lines, showing blood flow pathways through each chamber and valve, demonstrating the complete circulatory mechanism of the heart in an educational scientific illustration format.",
+        "gen_time_s": 523.9
+      }
+    ]
+  },
+  {
+    "version": "v2_llm_judge",
+    "id": "q07",
+    "constraints": [
+      "A flower has petals that attract pollinators",
+      "Sepals are leaf-like structures that protect the flower bud",
+      "The stamen is the male reproductive organ consisting of anther and filament",
+      "The anther produces pollen grains",
+      "The pistil is the female reproductive organ consisting of stigma, style, and ovary",
+      "The stigma traps pollen during pollination",
+      "The ovary contains egg cells that develop into seeds after fertilization"
+    ],
+    "per_constraint": [
+      [
+        "A flower has petals that attract pollinators",
+        "flower petals attract pollinators",
+        0.2626,
+        true
+      ],
+      [
+        "Sepals are leaf-like structures that protect the flower bud",
+        "Sepals leaf-like structures protect flower bud",
+        0.2667,
+        true
+      ],
+      [
+        "The stamen is the male reproductive organ consisting of anther and filament",
+        "stamen male reproductive organ consisting anther",
+        0.2947,
+        true
+      ],
+      [
+        "The anther produces pollen grains",
+        "anther produces pollen grains",
+        0.2416,
+        true
+      ],
+      [
+        "The pistil is the female reproductive organ consisting of stigma, style, and ovary",
+        "pistil female reproductive organ consisting stigma",
+        0.2719,
+        true
+      ],
+      [
+        "The stigma traps pollen during pollination",
+        "stigma traps pollen pollination",
+        0.2559,
+        true
+      ],
+      [
+        "The ovary contains egg cells that develop into seeds after fertilization",
+        "ovary contains egg cells develop seeds",
+        0.229,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "mode": "text2img",
+        "seed": 42,
+        "sas": 0.2603,
+        "clip_passed": true,
+        "llm_score": 6.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.32180628180503845,
+        "violations": [],
+        "missing_structures": [
+          "Pollen grains (on anther)",
+          "Egg cells (in ovary)",
+          "Clear distinction of receptacle",
+          "Ovule"
+        ],
+        "improvement_suggestions": "Add labels identifying pollen grains on the anthers and ovules within the ovary to better illustrate pollination and fertilization processes. Include a magnified inset showing pollen grain structure and internal ovary anatomy with developing seeds.",
+        "clip_prompt": "scientific cross-section diagram, flower anatomy, sepals, stamen, anther, filament, pistil, stigma, style, ovary, plant cell, cell wall, educational illustration, labeled parts, biology textbook, white background, detailed anatomical diagram",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of a complete flower anatomy showing all reproductive and vegetative structures on a clean white background. The illustration displays the outer protective sepals as leaf-like green structures that envelop the flower bud. Small stipules are shown as appendages at the base of the petiole where the stem connects. The stamen components are prominently featured with the anther positioned at the top containing pollen sacs, supported by a thin elongated filament below it representing the male reproductive organ. The pistil occupies the central position with the stigma at the apex designed to receive pollen, the style as an elongated tube connecting downward, and the ovary at the base containing ovules which develop into seeds. Petals are illustrated in their characteristic arrangement surrounding the reproductive organs. A detailed inset diagram shows plant cell structure with a rigid cellulose cell wall forming the outer boundary, the cell membrane directly beneath it, cytoplasm, nucleus, mitochondria, chloroplasts, and other organelles clearly labeled and color-coded. Cross-sectional views reveal internal tissue layers including epidermis, ground tissue, and vascular bundles. All anatomical parts are precisely labeled with leader lines and text callouts. The diagram employs scientific accuracy with proper proportions and biological function emphasized through accurate representation. The style is that of a professional scientific textbook illustration with meticulous detail, accurate coloring, clear hierarchical labeling, and educational clarity suitable for botanical study and biology education.",
+        "gen_time_s": 400.3
+      },
+      {
+        "attempt": 2,
+        "mode": "img2img(str=0.60)",
+        "seed": 42,
+        "sas": 0.2601,
+        "clip_passed": true,
+        "llm_score": 3.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.32754647731781006,
+        "violations": [],
+        "missing_structures": [
+          "Sepals",
+          "Pistil",
+          "Stigma",
+          "Style",
+          "Ovary",
+          "Filament",
+          "Clear anther label",
+          "Pollen identification"
+        ],
+        "improvement_suggestions": "The diagram shows flower parts but uses anatomically inconsistent labels (e.g., 'Bo Paldar', 'Simmlar arke') in what appears to be a non-English language, making verification difficult. Request a clearly labeled diagram with standard English botanical terms identifying sepals at the flower base, pistil components (stigma, style, ovary) in the center, and stamen parts (anther and filament) surrounding the pistil.",
+        "clip_prompt": "detailed flower cross-section diagram, sepals, stamens, pistil, anther, filament, stigma, style, ovary, pollen grains, ovules, plant cell wall, magnified inset, pollination, educational illustration, scientific anatomy, labeled parts, textbook style, white background",
+        "t5_prompt": "A comprehensive scientific cross-section diagram of a complete flower structure on a white background in textbook style. The illustration shows a vertical longitudinal section through the flower's center axis. At the base, the receptacle supports all floral parts. The sepals form a protective whorl around the outer edge, depicted as green leaf-like structures that enclose the developing flower bud. Small stipules appear at the base of the petiole where the flower attaches to the stem. The corolla displays delicate petals arranged in a circular pattern, showing their role in pollination attraction with detailed venation and color gradation. The stamen layer shows multiple male reproductive organs with elongated filaments supporting the anthers at their tips, with visible pollen grains densely covering the anther surface depicted in yellow or orange coloring. The pistil occupies the central flower axis with the stigma at the apex designed to receive pollen, the elongated style connecting downward, and the ovary chamber at the base containing multiple developing ovules arranged on the placenta. The diagram includes detailed anatomical labels pointing to each structure. A magnified circular inset in the corner displays pollen grain structure showing the thick exine wall, thin intine layer, and cytoplasm with nucleus inside individual pollen cells. A second detailed inset shows internal ovary anatomy with cross-sectional view of the ovary chamber containing numerous ovules at various developmental stages with integuments and nucellus tissues visible. The entire illustration uses scientific color coding, precise anatomical proportions, and educational diagram styling with clear label indicators and leader lines connecting to each biological structure demonstrating reproductive function and fertilization processes.",
+        "gen_time_s": 619.6
+      },
+      {
+        "attempt": 3,
+        "mode": "img2img(str=0.50)",
+        "seed": 42,
+        "sas": 0.2603,
+        "clip_passed": true,
+        "llm_score": 2.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.32314884662628174,
+        "violations": [],
+        "missing_structures": [
+          "Filament (not labeled)",
+          "Anther (not clearly labeled)",
+          "Pollen (not shown/labeled)",
+          "Pistil (as unified structure)",
+          "Clear reproductive organ distinction",
+          "Proper English botanical terminology"
+        ],
+        "improvement_suggestions": "Replace the non-English labels with standard botanical terms (e.g., 'Corolla' should be 'Petals', 'Stamen' for anther+filament, 'Pistil' for stigma+style+ovary). Add labels for filament and clarify that the anther produces pollen.",
+        "clip_prompt": "scientific cross-section flower diagram, sepals, stamens, pistil, anther, filament, stigma, style, ovary, plant cell wall, cellulose, educational illustration, detailed anatomy, white background, labeled parts, biology textbook style",
+        "t5_prompt": "A detailed scientific cross-section diagram of flower anatomy showing all major reproductive and protective structures on a white background. At the base of the flower, depict the sepals as green leaf-like protective structures that enclose the flower bud. Show the stipules as small leaf-like appendages positioned at the base of the petiole where it attaches to the stem. In the center of the flower, illustrate the pistil which is the female reproductive organ, clearly labeled with its three main parts: the stigma at the apex which receives pollen, the elongated style in the middle, and the ovary at the base containing developing ovules. Surrounding the pistil, show multiple stamens which are the male reproductive organs, each consisting of a thin filament supporting an anther at its tip where pollen is produced and stored. Include a magnified inset showing plant cell structure with the rigid cellulose cell wall surrounding the cell membrane to demonstrate the biological basis of plant tissues. Use color coding with green for sepals and stipules, yellow or cream for stamens and pollen, and pink or purple for the pistil. Position all anatomical labels clearly using standard English botanical terminology. Style as an educational scientific textbook illustration with precise anatomical accuracy, clean lines, and professional scientific diagram conventions. Include cross-sectional views showing internal ovary structure with ovules arranged inside. Show the spatial relationships of all floral whorls and their functions in reproduction and flower protection.",
+        "gen_time_s": 508.4
+      }
+    ]
+  },
+  {
+    "version": "v2_llm_judge",
+    "id": "q08",
+    "constraints": [
+      "A leaf has a flat blade (lamina) that captures sunlight",
+      "The midrib is the central vein running through the leaf",
+      "Lateral veins branch off the midrib and transport water and nutrients",
+      "The petiole is the stalk that attaches the leaf to the stem",
+      "Stipules are small leaf-like appendages at the base of the petiole",
+      "The leaf margin is the edge of the blade"
+    ],
+    "per_constraint": [
+      [
+        "A leaf has a flat blade (lamina) that captures sunlight",
+        "leaf flat blade lamina captures sunlight",
+        0.2617,
+        true
+      ],
+      [
+        "The midrib is the central vein running through the leaf",
+        "midrib central vein running leaf",
+        0.3034,
+        true
+      ],
+      [
+        "Lateral veins branch off the midrib and transport water and nutrients",
+        "Lateral veins branch off midrib transport",
+        0.2511,
+        true
+      ],
+      [
+        "The petiole is the stalk that attaches the leaf to the stem",
+        "petiole stalk attaches leaf stem",
+        0.2874,
+        true
+      ],
+      [
+        "Stipules are small leaf-like appendages at the base of the petiole",
+        "Stipules small leaf-like appendages base petiole",
+        0.283,
+        true
+      ],
+      [
+        "The leaf margin is the edge of the blade",
+        "leaf margin edge blade",
+        0.2677,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "mode": "text2img",
+        "seed": 42,
+        "sas": 0.2757,
+        "clip_passed": true,
+        "llm_score": 7.5,
+        "llm_passed": true,
+        "passed_combined": true,
+        "clip_score": 0.32057899236679077,
+        "violations": [],
+        "missing_structures": [
+          "Leaf margin label",
+          "Clear distinction/label for lamina",
+          "Upper/lower epidermis labels",
+          "Axil region clearly marked"
+        ],
+        "improvement_suggestions": "Add explicit labels for 'leaf margin' or 'lamina edge' and consider including epidermis or cuticle labels to show the protective layers. Include a scale bar for educational reference.",
+        "clip_prompt": "scientific cross-section leaf diagram, midrib, central vein, lamina, petiole, stipules, leaf margin, detailed anatomy, educational illustration, labeled parts, white background, biology textbook style, accurate botanical structure",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of a leaf showing all major anatomical structures and their spatial relationships. The illustration depicts the flat blade or lamina of the leaf which is the primary photosynthetic surface that captures sunlight. Running through the center of the leaf is the prominent midrib, which contains the central vein that transports water, minerals, and sugars throughout the leaf tissue. The midrib serves as the main structural support for the entire leaf blade. The leaf margin forms the outer edge of the blade with its characteristic outline and boundary. At the base of the leaf where it connects to the stem is the petiole, which is the stalk-like structure that attaches the leaf to the main stem and allows for leaf positioning and movement. At the very base of the petiole are the stipules, which are small leaf-like appendages that typically occur in pairs and provide protection to developing leaves. The diagram should show the cross-sectional view revealing the internal layering of tissues including the upper epidermis, palisade mesophyll cells, spongy mesophyll with intercellular spaces for gas exchange, lower epidermis with stomata, and the vascular bundle within the midrib. All anatomical parts should be clearly labeled with lines pointing to their respective structures. The background should be white with black outlines and anatomical labels. This should be rendered in a scientific, educational, textbook illustration style with accurate biological representation and appropriate color coding to distinguish different tissue types and structures.",
+        "gen_time_s": 380.7
+      }
+    ]
+  },
+  {
+    "version": "v2_llm_judge",
+    "id": "q09",
+    "constraints": [
+      "Photosynthesis takes place in the chloroplasts of plant cells",
+      "The inputs of photosynthesis are carbon dioxide (CO2), water (H2O), and sunlight",
+      "The outputs of photosynthesis are glucose (C6H12O6) and oxygen (O2)",
+      "Chlorophyll molecules in the leaves absorb radiant energy from sunlight",
+      "The light-dependent reactions occur in the thylakoid membranes",
+      "The Calvin cycle (light-independent reactions) occurs in the stroma"
+    ],
+    "per_constraint": [
+      [
+        "Photosynthesis takes place in the chloroplasts of plant cells",
+        "Photosynthesis takes place chloroplasts plant cells",
+        0.2826,
+        true
+      ],
+      [
+        "The inputs of photosynthesis are carbon dioxide (CO2), water (H2O), and sunlight",
+        "inputs photosynthesis carbon dioxide CO2 water",
+        0.2507,
+        true
+      ],
+      [
+        "The outputs of photosynthesis are glucose (C6H12O6) and oxygen (O2)",
+        "outputs photosynthesis glucose C6H12O6 oxygen",
+        0.2632,
+        true
+      ],
+      [
+        "Chlorophyll molecules in the leaves absorb radiant energy from sunlight",
+        "Chlorophyll molecules leaves absorb radiant energy",
+        0.2442,
+        true
+      ],
+      [
+        "The light-dependent reactions occur in the thylakoid membranes",
+        "light-dependent reactions occur thylakoid membranes",
+        0.2639,
+        true
+      ],
+      [
+        "The Calvin cycle (light-independent reactions) occurs in the stroma",
+        "Calvin cycle light-independent reactions occurs stroma",
+        0.2498,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "mode": "text2img",
+        "seed": 42,
+        "sas": 0.2607,
+        "clip_passed": true,
+        "llm_score": 4.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.27502548694610596,
+        "violations": [],
+        "missing_structures": [
+          "Carbon dioxide (CO2) input label",
+          "Water (H2O) input label",
+          "Glucose (C6H12O6) output label",
+          "Oxygen (O2) output label",
+          "Sunlight/light energy input indication",
+          "Chlorophyll molecules",
+          "Light-dependent reactions label",
+          "Calvin cycle/Light-independent reactions label",
+          "Process arrows showing inputs and outputs"
+        ],
+        "improvement_suggestions": "Add labeled arrows indicating photosynthesis inputs (sunlight, CO2, H2O) entering the chloroplast and outputs (glucose, O2) exiting. Label the thylakoid membranes as the site of light-dependent reactions and the stroma region as the site of the Calvin cycle to directly show where each process occurs.",
+        "clip_prompt": "scientific cross-section diagram, chloroplast, thylakoid, stroma, photosynthesis process, light reactions, Calvin cycle, CO2, H2O, glucose, oxygen, labeled anatomical parts, educational illustration, detailed linework, white background, biology textbook style, accurate scientific diagram",
+        "t5_prompt": "A comprehensive scientific cross-section diagram of photosynthesis showing a plant cell with multiple detailed layers and labeled anatomical structures. The illustration displays a chloroplast in cross-section with its distinct membrane-bound compartments clearly visible. The outer chloroplast envelope consists of two lipid bilayers surrounding the inner compartments. The stroma fills the interior space where the Calvin cycle occurs, shown as the light-independent reactions taking place among scattered enzymes and molecular structures. Within the stroma, illustrate the thylakoid system organized into stacked structures called grana, with individual thylakoid discs arranged in columns. The thylakoid membrane contains embedded chlorophyll molecules shown in green, photosystem complexes, electron transport chains, and ATP synthase machinery responsible for light-dependent reactions. Label the light-dependent reactions occurring at the thylakoid membrane where photons are absorbed and water molecules are split, releasing electrons and producing oxygen as a byproduct. Show the inputs of photosynthesis including carbon dioxide molecules entering the stroma, water molecules at the thylakoid membrane, and sunlight rays entering from above. Display the outputs with oxygen molecules being released and glucose molecules being synthesized in the Calvin cycle. Include detailed labels for all major components: thylakoid membrane, granum, stroma, inner and outer chloroplast envelope, grana stacks, and the electron transport chain. Create this as a scientific educational textbook-style diagram with white background, precise anatomical accuracy, clear labeling, and professional scientific illustration style.",
+        "gen_time_s": 395.3
+      },
+      {
+        "attempt": 2,
+        "mode": "img2img(str=0.60)",
+        "seed": 42,
+        "sas": 0.2603,
+        "clip_passed": true,
+        "llm_score": 4.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.27847161889076233,
+        "violations": [],
+        "missing_structures": [
+          "Carbon dioxide (CO2) input explicitly shown",
+          "Water (H2O) input explicitly shown",
+          "Glucose (C6H12O6) output explicitly shown",
+          "Oxygen (O2) output explicitly shown",
+          "Sunlight/light energy input clearly indicated",
+          "Light-dependent reactions labeled",
+          "Calvin cycle labeled",
+          "Chlorophyll molecules",
+          "Electron transport chain",
+          "ATP and NADPH production"
+        ],
+        "improvement_suggestions": "Add clear input/output labels showing CO2 entering via stomata, H2O from roots, sunlight arrows, and products glucose and O2 with their chemical formulas. Explicitly label the light-dependent reactions in thylakoids and Calvin cycle in stroma with arrows showing the flow of energy and molecules between them.",
+        "clip_prompt": "scientific cross-section diagram, chloroplast, thylakoid membranes, stroma, Calvin cycle, light-dependent reactions, labeled arrows, CO2 H2O sunlight inputs, glucose O2 outputs, photosynthesis process, educational illustration, detailed anatomy, white background, biology textbook style, clean linework",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of photosynthesis occurring within a plant cell chloroplast, rendered in educational textbook style on a white background. The illustration shows a large chloroplast organelle with a double membrane envelope, containing stacked thylakoid structures organized into grana, and a fluid stroma region filling the interior space. Labeled arrows indicate the three inputs entering from outside: sunlight radiation arrows pointing downward, carbon dioxide CO2 molecules entering through the leaf surface, and water H2O molecules drawn upward from the roots. The thylakoid membranes are clearly labeled and highlighted in blue-green to show the location of light-dependent reactions where photons are absorbed and water is split into hydrogen ions, electrons, and oxygen. Within the thylakoid membranes, label photosystem II, the electron transport chain, photosystem I, and ATP synthase complexes. The stroma region surrounding the thylakoids is labeled in a lighter color and identified as the site of the Calvin cycle light-independent reactions, showing the circular pathway of carbon fixation, reduction, and regeneration of ribulose bisphosphate. Labeled arrows indicate the outputs exiting the chloroplast: oxygen O2 molecules released as a byproduct, and glucose C6H12O6 molecules being synthesized and exported. Include chlorophyll pigments shown in green within the thylakoid membranes, and label key molecules including NADPH, ATP, ADP, and CO2 throughout the pathways. Add descriptive labels explaining that photosynthesis converts light energy into chemical energy stored in glucose bonds, with all anatomical structures clearly outlined and color-coded for maximum educational clarity.",
+        "gen_time_s": 618.7
+      },
+      {
+        "attempt": 3,
+        "mode": "img2img(str=0.50)",
+        "seed": 42,
+        "sas": 0.2591,
+        "clip_passed": true,
+        "llm_score": 6.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.27533644437789917,
+        "violations": [],
+        "missing_structures": [
+          "Carbon dioxide (CO2) input labeled",
+          "Water (H2O) input labeled",
+          "Glucose (C6H12O6) output labeled",
+          "Oxygen (O2) output labeled",
+          "Chlorophyll explicitly labeled",
+          "Light-dependent reactions labeled",
+          "Calvin cycle clearly labeled",
+          "Chemical equations or process arrows showing inputs/outputs"
+        ],
+        "improvement_suggestions": "Add explicit labels for CO2 and H2O inputs with directional arrows, and clearly label glucose and oxygen as outputs with their chemical formulas. Include process labels for 'Light-dependent reactions' in thylakoid membranes and 'Calvin Cycle' in the stroma with arrows showing the metabolic pathway and energy flow.",
+        "clip_prompt": "scientific cross-section diagram, chloroplast, thylakoids, stroma, Calvin cycle, light-dependent reactions, CO2 input, H2O, glucose output, O2, sunlight arrows, stomata, labeled chemical formulas, energy flow diagram, educational illustration, white background, biology textbook, detailed linework",
+        "t5_prompt": "A detailed scientific cross-section diagram of a plant cell chloroplast illustrating the complete photosynthesis process on a white background with clear educational labeling. Show the chloroplast structure with the outer membrane and inner membrane layers clearly delineated. Depict the thylakoid stacks arranged in grana within the chloroplast lumen, where light-dependent reactions occur. Label the thylakoid membrane as the site of photosystem II and photosystem I complexes that capture photons and initiate electron transport chains. Show water molecules being split at the oxygen-evolving complex on the thylakoid membrane, releasing oxygen gas as a byproduct. Illustrate ATP synthase embedded in the thylakoid membrane generating ATP from ADP. Display the stroma as the fluid-filled space surrounding the grana where the Calvin cycle light-independent reactions take place. Show the complete Calvin cycle with its three main stages: carbon fixation by RuBisCO enzyme fixing CO2, reduction phase with ATP and NADPH consumption, and regeneration of ribulose bisphosphate. Include arrows showing sunlight entering from above striking the thylakoid membranes. Add input arrows showing carbon dioxide entering through stomata on the leaf surface, water molecules transported from the roots through the vascular system entering the chloroplast, and sunlight photons as directional arrows. Display output arrows showing glucose molecules being synthesized in the stroma with chemical formula C6H12O6 labeled, and oxygen gas molecules being released through stomata with formula O2 labeled. Include energy flow arrows showing electron transport, ATP and NADPH movement from light reactions to Calvin cycle reactions. Label all major structures including chloroplast envelope, thylakoid membrane, granum, stroma, light-harvesting complexes, electron carriers, and enzymes involved in each reaction phase with clear text labels positioned adjacent to their corresponding structures.",
+        "gen_time_s": 547.5
+      }
+    ]
+  },
+  {
+    "version": "v2_llm_judge",
+    "id": "q10",
+    "constraints": [
+      "An insect body is divided into three main parts: head, thorax, and abdomen",
+      "Insects have exactly 6 legs attached to the thorax",
+      "The head contains compound eyes, antennae, and mouthparts",
+      "Antennae are sensory organs used for smell and touch",
+      "Wings, when present, are attached to the thorax",
+      "The abdomen contains the digestive and reproductive organs"
+    ],
+    "per_constraint": [
+      [
+        "An insect body is divided into three main parts: head, thorax, and abdomen",
+        "insect body divided three main parts",
+        0.3009,
+        true
+      ],
+      [
+        "Insects have exactly 6 legs attached to the thorax",
+        "Insects exactly legs attached thorax",
+        0.2842,
+        true
+      ],
+      [
+        "The head contains compound eyes, antennae, and mouthparts",
+        "head contains compound eyes antennae mouthparts",
+        0.2516,
+        true
+      ],
+      [
+        "Antennae are sensory organs used for smell and touch",
+        "Antennae sensory organs smell touch",
+        0.248,
+        true
+      ],
+      [
+        "Wings, when present, are attached to the thorax",
+        "Wings present attached thorax",
+        0.2738,
+        true
+      ],
+      [
+        "The abdomen contains the digestive and reproductive organs",
+        "abdomen contains digestive reproductive organs",
+        0.2275,
+        true
+      ]
+    ],
+    "retry_history": [
+      {
+        "attempt": 1,
+        "mode": "text2img",
+        "seed": 42,
+        "sas": 0.2576,
+        "clip_passed": true,
+        "llm_score": 6.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.2892981767654419,
+        "violations": [],
+        "missing_structures": [
+          "Compound eyes (labeled)",
+          "Mouthparts (labeled)",
+          "Clear segmentation labels",
+          "Internal anatomy details (digestive/reproductive organs)"
+        ],
+        "improvement_suggestions": "Add specific labels for compound eyes, mouthparts, and clearly demarcate the three body regions with boundary lines. Include annotations identifying the internal abdomen structures (digestive and reproductive systems) to better illustrate the anatomical organization requested.",
+        "clip_prompt": "scientific cross-section diagram, insect anatomy, head thorax abdomen, compound eyes, antennae, mouthparts, six legs, sensory organs, digestive organs, reproductive organs, labeled anatomical diagram, educational illustration, biology textbook, white background, detailed linework, accurate scientific style",
+        "t5_prompt": "A detailed scientific cross-section anatomical diagram of an insect body showing all major structural divisions and internal organs rendered in educational textbook style on a white background. The insect body is divided into three distinct main sections: the head at the anterior end containing a pair of large compound eyes positioned laterally, two segmented antennae extending from the top of the head serving as sensory organs for detecting smell and tactile stimuli, and specialized mouthparts including mandibles and maxillae for feeding. The thorax forms the middle body section with three pairs of jointed legs, totaling exactly six legs, attached symmetrically to the three thoracic segments, each leg composed of multiple segments including the coxa, trochanter, femur, tibia, and tarsus. The abdomen extends posteriorly as the largest body section containing visible segmentation, housing the digestive system with crop, gizzard, midgut and hindgut, and reproductive organs including ovaries or testes depending on sex. The entire exoskeleton is shown with chitinous cuticle layers. All anatomical parts are clearly labeled with lines pointing to their precise locations. The diagram uses color-coding for different organ systems and maintains scientific accuracy throughout, presented as a professional scientific illustration suitable for educational biology textbooks with precise proportions and detailed biological accuracy.",
+        "gen_time_s": 399.2
+      },
+      {
+        "attempt": 2,
+        "mode": "img2img(str=0.60)",
+        "seed": 42,
+        "sas": 0.2586,
+        "clip_passed": true,
+        "llm_score": 6.5,
+        "llm_passed": false,
+        "passed_combined": false,
+        "clip_score": 0.2908764183521271,
+        "violations": [],
+        "missing_structures": [
+          "Compound eyes (not clearly labeled)",
+          "Mouthparts (not visible or labeled)",
+          "Clear anatomical labels on diagram",
+          "Visible wing segmentation/detail"
+        ],
+        "improvement_suggestions": "Add clear text labels identifying head, thorax, and abdomen regions. Include labeled callouts for compound eyes, mouthparts, and distinguish between fore/hind wings to enhance educational value as a teaching diagram.",
+        "clip_prompt": "scientific cross-section diagram, insect anatomy, head thorax abdomen, compound eyes, antennae, mouthparts, six legs, digestive organs, reproductive system, labeled parts, educational illustration, detailed linework, white background, biology textbook style, anatomical boundaries",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of an insect body displayed against a white background in educational textbook style. The illustration shows the insect anatomically divided into three distinct main body regions clearly demarcated by boundary lines: the head at the anterior end, the thorax in the middle section, and the abdomen at the posterior end. The head region features prominent compound eyes positioned laterally, showing the hexagonal facet structure characteristic of insect vision. Two segmented antennae extend from the head, labeled as sensory organs responsible for detecting smell and touch stimuli. The mouthparts are clearly visible and anatomically accurate, showing the specialized feeding structures. The thorax is the locomotor center with exactly six jointed legs attached in three pairs, with each leg consisting of coxa, trochanter, femur, tibia, and tarsus segments. The thorax also houses the flight muscles. The abdomen is shown in cross-section revealing internal anatomy, displaying the digestive system including the esophagus, crop, midgut, and hindgut, along with the reproductive organs including ovaries or testes depending on sex. The illustration includes comprehensive anatomical labels pointing to the compound eyes, antennae, mouthparts, all six legs, thoracic segments, abdominal segments, digestive organs, and reproductive structures. The diagram uses precise anatomical accuracy with color coding and clear labeling positioned near each structure for educational clarity in a scientific illustration format.",
+        "gen_time_s": 606.7
+      },
+      {
+        "attempt": 3,
+        "mode": "img2img(str=0.50)",
+        "seed": 42,
+        "sas": 0.2643,
+        "clip_passed": true,
+        "llm_score": 7.5,
+        "llm_passed": true,
+        "passed_combined": true,
+        "clip_score": 0.28990668058395386,
+        "violations": [],
+        "missing_structures": [
+          "Compound eyes label",
+          "Mouthparts label",
+          "Leg segment labels (femur, tibia, tarsus)",
+          "Wing vein details/labels",
+          "Text labels on diagram"
+        ],
+        "improvement_suggestions": "Add specific text labels for each major structure (head, thorax, abdomen) and include identifiable compound eyes on the head. Include labels for wing structures and leg segments to enhance educational value.",
+        "clip_prompt": "scientific cross-section diagram, insect anatomy, head thorax abdomen, compound eyes, antennae, mouthparts, six legs, wings, labeled anatomical parts, educational illustration, detailed linework, white background, biology textbook style",
+        "t5_prompt": "A highly detailed scientific cross-section diagram of a complete insect body shown in anatomical profile view against a clean white background. The insect is divided into three distinctly labeled main body regions: the head anteriorly, the thorax in the middle, and the abdomen posteriorly. The head region features two large prominent compound eyes positioned laterally, each composed of thousands of individual ommatidia forming a faceted surface, with clear labels identifying them as compound eyes. Two segmented antennae extend from the head's anterior region, labeled as sensory organs for olfaction and tactile sensation. The mouthparts are clearly visible in the head region, including mandibles, maxillae, and labium structures, with educational callout labels explaining their feeding function. The thorax is the muscular middle section containing exactly six jointed legs arranged in three pairs: a front pair of legs, a middle pair of legs, and a hind pair of legs, all clearly labeled and showing segmented structure with coxa, trochanter, femur, tibia, and tarsus components. The thorax also displays two pairs of wings attached dorsally: the anterior forewings and the posterior hindwings, with distinct labels differentiating their structures and positions. The abdomen is the posterior segmented region containing visible internal structures including the digestive system, reproductive organs, and abdominal segments with spiracles for respiration, labeled with anatomical callout boxes. The entire diagram employs color-coded regions with clear black text labels for all major structures. Scientific textbook illustration style, educational diagram, accurate biology reference material, white background, professional anatomical rendering.",
+        "gen_time_s": 525.5
+      }
+    ]
+  }
+]

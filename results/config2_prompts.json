@@ -1,0 +1,242 @@
+[
+  {
+    "id": "q01",
+    "original_query": "Draw a labeled diagram of a plant cell showing all major organelles",
+    "subject": "a plant cell",
+    "constraints_retrieved": [
+      "A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane",
+      "Mitochondria have an outer membrane and a folded inner membrane",
+      "Chloroplasts are found only in plant cells and perform photosynthesis",
+      "The nucleus is the control center and contains the cell's DNA",
+      "Photosynthesis takes place in the chloroplasts of plant cells",
+      "Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers",
+      "Ribosomes are small organelles that synthesize proteins",
+      "Stipules are small leaf-like appendages at the base of the petiole"
+    ],
+    "constraints_used": [
+      "A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane",
+      "Chloroplasts are found only in plant cells and perform photosynthesis",
+      "Photosynthesis takes place in the chloroplasts of plant cells",
+      "The nucleus is the control center and contains the cell's DNA",
+      "Mitochondria have an outer membrane and a folded inner membrane"
+    ],
+    "structured_prompt": "A highly detailed scientific cross-section diagram of a plant cell, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, Chloroplasts are found only in plant cells and perform photosynthesis, Photosynthesis takes place in the chloroplasts of plant cells, nucleus with the control center and contains the cell's DNA, Mitochondria with an outer membrane and a folded inner membrane, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+    "negative_prompt": "blurry, cartoon, deformed, extra limbs, wrong anatomy, mislabeled, missing structures, low quality, watermark, text overlay, abstract art"
+  },
+  {
+    "id": "q02",
+    "original_query": "Draw a detailed cross-section of a mitochondria showing cristae and matrix",
+    "subject": "a mitochondria",
+    "constraints_retrieved": [
+      "Mitochondria have an outer membrane and a folded inner membrane",
+      "Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers",
+      "Mitochondrial DNA is located in the matrix",
+      "Mitochondria are the powerhouse of the cell, producing ATP via respiration",
+      "ATP synthesis occurs along the inner membrane (cristae)",
+      "The inner membrane folds are called cristae, which increase surface area",
+      "Lateral veins branch off the midrib and transport water and nutrients",
+      "Nodes of Ranvier are gaps in the myelin sheath"
+    ],
+    "constraints_used": [
+      "Mitochondria have an outer membrane and a folded inner membrane",
+      "Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers",
+      "Mitochondrial DNA is located in the matrix",
+      "Mitochondria are the powerhouse of the cell, producing ATP via respiration",
+      "ATP synthesis occurs along the inner membrane (cristae)"
+    ],
+    "structured_prompt": "A highly detailed scientific cross-section diagram of a mitochondria, Mitochondria with an outer membrane and a folded inner membrane, Mitochondria are typically oval-shaped with diameter 0.5-10 micrometers, Mitochondrial DNA with located in the matrix, Mitochondria are the powerhouse of the cell, producing ATP via respiration, ATP synthesis occurs along the inner membrane (cristae), scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+    "negative_prompt": "blurry, cartoon, deformed, extra limbs, wrong anatomy, mislabeled, missing structures, low quality, watermark, text overlay, abstract art"
+  },
+  {
+    "id": "q03",
+    "original_query": "Draw a labeled diagram of a neuron showing axon, dendrites and myelin sheath",
+    "subject": "a neuron",
+    "constraints_retrieved": [
+      "A neuron has a cell body (soma), dendrites, and an axon",
+      "The myelin sheath insulates the axon and speeds signal transmission",
+      "Dendrites receive signals from other neurons",
+      "Schwann cells produce the myelin sheath in the peripheral nervous system",
+      "Axon terminals release neurotransmitters into the synapse",
+      "Nodes of Ranvier are gaps in the myelin sheath",
+      "The axon transmits electrical signals away from the cell body",
+      "The optic nerve transmits signals from the retina to the brain"
+    ],
+    "constraints_used": [
+      "A neuron has a cell body (soma), dendrites, and an axon",
+      "Dendrites receive signals from other neurons",
+      "The myelin sheath insulates the axon and speeds signal transmission",
+      "Schwann cells produce the myelin sheath in the peripheral nervous system",
+      "Axon terminals release neurotransmitters into the synapse"
+    ],
+    "structured_prompt": "A highly detailed scientific cross-section diagram of a neuron, neuron with a cell body (soma), dendrites, and an axon, Dendrites receive signals from other neurons, The myelin sheath insulates the axon and speeds signal transmission, Schwann cells produce the myelin sheath in the peripheral nervous system, Axon terminals release neurotransmitters into the synapse, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+    "negative_prompt": "blurry, cartoon, deformed, extra limbs, wrong anatomy, mislabeled, missing structures, low quality, watermark, text overlay, abstract art"
+  },
+  {
+    "id": "q04",
+    "original_query": "Draw a cross-section of a human eye showing retina, lens, cornea and optic nerve",
+    "subject": "a human eye",
+    "constraints_retrieved": [
+      "The cornea is the transparent front part of the eye that refracts light",
+      "The retina contains photoreceptor cells (rods and cones)",
+      "The fovea is the area of sharpest vision in the retina",
+      "The optic nerve transmits signals from the retina to the brain",
+      "The lens focuses light onto the retina",
+      "The iris controls the size of the pupil",
+      "The vitreous gel fills the space between the lens and retina",
+      "The head contains compound eyes, antennae, and mouthparts"
+    ],
+    "constraints_used": [
+      "The cornea is the transparent front part of the eye that refracts light",
+      "The head contains compound eyes, antennae, and mouthparts",
+      "The retina contains photoreceptor cells (rods and cones)",
+      "The fovea is the area of sharpest vision in the retina",
+      "The optic nerve transmits signals from the retina to the brain"
+    ],
+    "structured_prompt": "A highly detailed scientific cross-section diagram of a human eye, cornea with the transparent front part of the eye that refracts light, head with compound eyes, antennae, and mouthparts, retina with photoreceptor cells (rods and cones), fovea with the area of sharpest vision in the retina, The optic nerve transmits signals from the retina to the brain, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+    "negative_prompt": "blurry, cartoon, deformed, extra limbs, wrong anatomy, mislabeled, missing structures, low quality, watermark, text overlay, abstract art"
+  },
+  {
+    "id": "q05",
+    "original_query": "Draw a labeled diagram of the human digestive system",
+    "subject": "the human digestive system",
+    "constraints_retrieved": [
+      "The digestive system begins at the mouth and ends at the anus",
+      "The abdomen contains the digestive and reproductive organs",
+      "The esophagus connects the mouth to the stomach",
+      "The stomach uses acid and enzymes to break down food",
+      "The large intestine absorbs water and forms feces",
+      "The small intestine absorbs nutrients",
+      "The pancreas secretes digestive enzymes into the small intestine",
+      "The liver produces bile to help digest fats"
+    ],
+    "constraints_used": [
+      "The digestive system begins at the mouth and ends at the anus",
+      "The abdomen contains the digestive and reproductive organs",
+      "The pancreas secretes digestive enzymes into the small intestine",
+      "The esophagus connects the mouth to the stomach",
+      "The stomach uses acid and enzymes to break down food"
+    ],
+    "structured_prompt": "A highly detailed scientific cross-section diagram of the human digestive system, The digestive system begins at the mouth and ends at the anus, abdomen with the digestive and reproductive organs, The pancreas secretes digestive enzymes into the small intestine, The esophagus connects the mouth to the stomach, The stomach uses acid and enzymes to break down food, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+    "negative_prompt": "blurry, cartoon, deformed, extra limbs, wrong anatomy, mislabeled, missing structures, low quality, watermark, text overlay, abstract art"
+  },
+  {
+    "id": "q06",
+    "original_query": "Draw a labeled diagram of the human heart showing ventricles, atria and aorta",
+    "subject": "the human heart",
+    "constraints_retrieved": [
+      "The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle",
+      "The aorta carries oxygenated blood from the left ventricle to the body",
+      "The septum separates the left and right sides of the heart",
+      "The heart's left side receives oxygenated blood and pumps it to the body",
+      "The heart's right side receives deoxygenated blood and pumps it to the lungs",
+      "The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs",
+      "Valves prevent backflow of blood between chambers",
+      "The digestive system begins at the mouth and ends at the anus"
+    ],
+    "constraints_used": [
+      "The heart has four chambers: right atrium, left atrium, right ventricle, left ventricle",
+      "The septum separates the left and right sides of the heart",
+      "The heart's left side receives oxygenated blood and pumps it to the body",
+      "The heart's right side receives deoxygenated blood and pumps it to the lungs",
+      "The aorta carries oxygenated blood from the left ventricle to the body"
+    ],
+    "structured_prompt": "A highly detailed scientific cross-section diagram of the human heart, heart with four chambers: right atrium, left atrium, right ventricle, left ventricle, The septum separates the left and right sides of the heart, The heart's left side receives oxygenated blood and pumps it to the body, The heart's right side receives deoxygenated blood and pumps it to the lungs, The aorta carries oxygenated blood from the left ventricle to the body, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+    "negative_prompt": "blurry, cartoon, deformed, extra limbs, wrong anatomy, mislabeled, missing structures, low quality, watermark, text overlay, abstract art"
+  },
+  {
+    "id": "q07",
+    "original_query": "Draw a labeled diagram of the parts of a flower including petal, sepal, stamen and pistil",
+    "subject": "the parts of a flower",
+    "constraints_retrieved": [
+      "Sepals are leaf-like structures that protect the flower bud",
+      "Stipules are small leaf-like appendages at the base of the petiole",
+      "A flower has petals that attract pollinators",
+      "The stamen is the male reproductive organ consisting of anther and filament",
+      "The petiole is the stalk that attaches the leaf to the stem",
+      "The pistil is the female reproductive organ consisting of stigma, style, and ovary",
+      "An insect body is divided into three main parts: head, thorax, and abdomen",
+      "A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane"
+    ],
+    "constraints_used": [
+      "Sepals are leaf-like structures that protect the flower bud",
+      "Stipules are small leaf-like appendages at the base of the petiole",
+      "The stamen is the male reproductive organ consisting of anther and filament",
+      "The pistil is the female reproductive organ consisting of stigma, style, and ovary",
+      "A plant cell has a rigid cell wall made of cellulose surrounding the cell membrane"
+    ],
+    "structured_prompt": "A highly detailed scientific cross-section diagram of the parts of a flower, Sepals are leaf-like structures that protect the flower bud, Stipules are small leaf-like appendages at the base of the petiole, stamen with the male reproductive organ consisting of anther and filament, pistil with the female reproductive organ consisting of stigma, style, and ovary, plant cell with a rigid cell wall made of cellulose surrounding the cell membrane, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+    "negative_prompt": "blurry, cartoon, deformed, extra limbs, wrong anatomy, mislabeled, missing structures, low quality, watermark, text overlay, abstract art"
+  },
+  {
+    "id": "q08",
+    "original_query": "Draw a labeled diagram of a leaf showing blade, midrib, petiole and veins",
+    "subject": "a leaf",
+    "constraints_retrieved": [
+      "The midrib is the central vein running through the leaf",
+      "The leaf margin is the edge of the blade",
+      "The petiole is the stalk that attaches the leaf to the stem",
+      "Lateral veins branch off the midrib and transport water and nutrients",
+      "Stipules are small leaf-like appendages at the base of the petiole",
+      "A leaf has a flat blade (lamina) that captures sunlight",
+      "The head contains compound eyes, antennae, and mouthparts",
+      "An insect body is divided into three main parts: head, thorax, and abdomen"
+    ],
+    "constraints_used": [
+      "The midrib is the central vein running through the leaf",
+      "The leaf margin is the edge of the blade",
+      "The petiole is the stalk that attaches the leaf to the stem",
+      "Stipules are small leaf-like appendages at the base of the petiole",
+      "A leaf has a flat blade (lamina) that captures sunlight"
+    ],
+    "structured_prompt": "A highly detailed scientific cross-section diagram of a leaf, midrib with the central vein running through the leaf, leaf margin with the edge of the blade, petiole with the stalk that attaches the leaf to the stem, Stipules are small leaf-like appendages at the base of the petiole, leaf with a flat blade (lamina) that captures sunlight, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+    "negative_prompt": "blurry, cartoon, deformed, extra limbs, wrong anatomy, mislabeled, missing structures, low quality, watermark, text overlay, abstract art"
+  },
+  {
+    "id": "q09",
+    "original_query": "Draw a diagram illustrating the process of photosynthesis with inputs and outputs",
+    "subject": "diagram illustrating the process of photosynthesis",
+    "constraints_retrieved": [
+      "The inputs of photosynthesis are carbon dioxide (CO2), water (H2O), and sunlight",
+      "The outputs of photosynthesis are glucose (C6H12O6) and oxygen (O2)",
+      "Photosynthesis takes place in the chloroplasts of plant cells",
+      "The Calvin cycle (light-independent reactions) occurs in the stroma",
+      "Chloroplasts are found only in plant cells and perform photosynthesis",
+      "The light-dependent reactions occur in the thylakoid membranes",
+      "Chlorophyll molecules in the leaves absorb radiant energy from sunlight",
+      "A leaf has a flat blade (lamina) that captures sunlight"
+    ],
+    "constraints_used": [
+      "The inputs of photosynthesis are carbon dioxide (CO2), water (H2O), and sunlight",
+      "The outputs of photosynthesis are glucose (C6H12O6) and oxygen (O2)",
+      "Photosynthesis takes place in the chloroplasts of plant cells",
+      "Chloroplasts are found only in plant cells and perform photosynthesis",
+      "The Calvin cycle (light-independent reactions) occurs in the stroma"
+    ],
+    "structured_prompt": "A highly detailed scientific cross-section diagram of diagram illustrating the process of photosynthesis, The inputs of photosynthesis are carbon dioxide (CO2), water (H2O), and sunlight, The outputs of photosynthesis are glucose (C6H12O6) and oxygen (O2), Photosynthesis takes place in the chloroplasts of plant cells, Chloroplasts are found only in plant cells and perform photosynthesis, The Calvin cycle (light-independent reactions) occurs in the stroma, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+    "negative_prompt": "blurry, cartoon, deformed, extra limbs, wrong anatomy, mislabeled, missing structures, low quality, watermark, text overlay, abstract art"
+  },
+  {
+    "id": "q10",
+    "original_query": "Draw a labeled diagram of an insect body showing head, thorax, abdomen and antennae",
+    "subject": "an insect body",
+    "constraints_retrieved": [
+      "An insect body is divided into three main parts: head, thorax, and abdomen",
+      "The head contains compound eyes, antennae, and mouthparts",
+      "Insects have exactly 6 legs attached to the thorax",
+      "Antennae are sensory organs used for smell and touch",
+      "The abdomen contains the digestive and reproductive organs",
+      "Wings, when present, are attached to the thorax",
+      "The stamen is the male reproductive organ consisting of anther and filament",
+      "The midrib is the central vein running through the leaf"
+    ],
+    "constraints_used": [
+      "An insect body is divided into three main parts: head, thorax, and abdomen",
+      "The head contains compound eyes, antennae, and mouthparts",
+      "Insects have exactly 6 legs attached to the thorax",
+      "Antennae are sensory organs used for smell and touch",
+      "The abdomen contains the digestive and reproductive organs"
+    ],
+    "structured_prompt": "A highly detailed scientific cross-section diagram of an insect body, insect body with divided into three main parts: head, thorax, and abdomen, head with compound eyes, antennae, and mouthparts, Insects with exactly 6 legs attached to the thorax, Antennae are sensory organs used for smell and touch, abdomen with the digestive and reproductive organs, scientific educational illustration, detailed diagram, white background, labeled anatomical parts, accurate biology textbook style",
+    "negative_prompt": "blurry, cartoon, deformed, extra limbs, wrong anatomy, mislabeled, missing structures, low quality, watermark, text overlay, abstract art"
+  }
+]
